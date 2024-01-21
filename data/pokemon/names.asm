@@ -51,7 +51,7 @@ MonsterNames::
 	db "GOLEM@@@@@"
 	db "BALUMBA@@@"	; Barunda
 	db "MAGMAR@@@@"
-	db "BUU@@@@@@@"
+	db "IGWOO@@@@@"
 	db "ELECTABUZZ"
 	db "MAGNETON@@"
 	db "KOFFING@@@"
