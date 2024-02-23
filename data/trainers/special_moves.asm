@@ -666,7 +666,7 @@ SpecialTrainerMoves:
 	
 	db GIOVANNI, 2	; Silph Co. Giovanni
 	db 1, 2, DOUBLE_EDGE
-	db 1, 3, POISON_STING
+	db 1, 3, MEGA_STING
 	db 2, 3, MEGA_PUNCH
 	db 3, 1, SUBSTITUTE
 	db 3, 2, SEISMIC_TOSS

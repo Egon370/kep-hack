@@ -192,6 +192,7 @@
 	const NASTY_PLOT   ; b8
 	const UPPERCUT	   ; b9
 	const POWDER_SNOW	; b10
+	const MEGA_STING ; b11
 	const STRUGGLE     ; formerly a5, now c0
 DEF NUM_ATTACKS EQU const_value - 1
 

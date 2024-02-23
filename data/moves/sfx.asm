@@ -187,6 +187,7 @@ MoveSoundTable:
 	db SFX_BATTLE_09,          $e8, $10 ; NASTY_PLOT
 	db SFX_SUPER_EFFECTIVE,    $00, $e0 ; UPPERCUT
 	db SFX_BATTLE_28,          $40, $80 ; POWDER_SNOW
+	db SFX_BATTLE_1B,          $00, $80 ; MEGA_STING
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 

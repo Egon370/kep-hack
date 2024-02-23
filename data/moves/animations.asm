@@ -186,6 +186,7 @@ AttackAnimationPointers:
 	dw NastyPlotAnim
 	dw UppercutAnim
 	dw PowderSnowAnim
+	dw MegaStingAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -501,6 +502,7 @@ TailWhipAnim:
 	battle_anim AMNESIA, SE_RESET_MON_POSITION
 	db -1 ; end
 
+MegaStingAnim:
 PoisonStingAnim:
 	battle_anim NO_MOVE, SUBANIM_0_PIN_JAB, 0, 1
 	battle_anim POISON_STING, SUBANIM_0_STAR, 0, 6

@@ -1718,12 +1718,12 @@ BeedrillEvosMoves:
 ; Learnset
 	db 10, FURY_ATTACK
 	db 16, FOCUS_ENERGY
-	db 20, TWINEEDLE
+	db 20, PIN_MISSILE
 	db 25, RAGE
-	db 30, PIN_MISSILE
+	db 30, TWINEEDLE
 	db 35, AGILITY
 	db 40, SWORDS_DANCE ; Prototype
-	db 45, TAKE_DOWN ; Prototype
+	db 45, MEGA_STING
 	db 50, TOXIC ; Prototype
 	db 0
 

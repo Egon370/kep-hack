@@ -51,7 +51,7 @@ Moves:
 	move DOUBLE_EDGE,  RECOIL_EFFECT,              100, NORMAL,       100, 15
 	move TAIL_WHIP,    DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30
 	move POISON_STING, POISON_SIDE_EFFECT1,         15, POISON,       100, 35
-	move TWINEEDLE,    TWINEEDLE_EFFECT,            25, BUG,          100, 20
+	move TWINEEDLE,    ATTACK_TWICE_EFFECT,            25, BUG,          100, 20
 	move PIN_MISSILE,  TWO_TO_FIVE_ATTACKS_EFFECT,  14, BUG,           85, 20
 	move LEER,         DEFENSE_DOWN1_EFFECT,         0, NORMAL,       100, 30
 	move BITE,         FLINCH_SIDE_EFFECT1,         60, NORMAL,       100, 25
@@ -191,11 +191,12 @@ Moves:
 	move MIRROR_SHOT,  ACCURACY_DOWN1_EFFECT, 		65, STEEL,		   85, 10
 	move SMART_STRIKE, SWIFT_EFFECT,                70, STEEL,        100, 10
 	move FAKE_TEARS,   SPECIAL_DOWN2_EFFECT,		 0, DARK,		  100, 20
-	move FALSE_SURRENDER, SWIFT_EFFECT,             80, DARK,         100, 10 ; figure out the actual name another time
+	move FALSE_SURRENDER, SWIFT_EFFECT,             80, DARK,         100, 10 
 	move KOWTOW_CLEAVE,   SWIFT_EFFECT,             85, DARK,         100, 10
 	move DISARMING_VOICE, SWIFT_EFFECT,             40, FAIRY,        100, 10
 	move NASTY_PLOT,      SPECIAL_UP2_EFFECT,        0, DARK,         100, 10
 	move UPPERCUT,     FLINCH_SIDE_EFFECT2,         55, FIGHTING,      80, 15
-	move POWDER_SNOW,     FREEZE_SIDE_EFFECT,         40, ICE,      100, 25
+	move POWDER_SNOW,     FREEZE_SIDE_EFFECT,       40, ICE,          100, 25
+	move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         80, POISON,       100, 15 
 	move STRUGGLE,        RECOIL_EFFECT,            50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS
