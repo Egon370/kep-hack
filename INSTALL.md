@@ -1,6 +1,6 @@
 # NOTICE
 
-This file comes with base pokered. To install KEP, use https://github.com/PlagueVonKarma/kep-hack whenever the link to the pokered repository comes up.
+This file comes with base pokered. To install KEP, use https://github.com/Egon370/kep-hack whenever the link to the pokered repository comes up.
 
 Also, **PLEASE** read this carefully. 99.9% of the install issues you will face will come from not reading this properly. Follow it to the letter, just with the above considered.
 
