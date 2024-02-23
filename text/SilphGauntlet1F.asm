@@ -89,8 +89,8 @@ _SilphGauntlet1FEndBattleText5::
 _SilphGauntlet1FAfterBattleText5::
 	text "BELLIGNAN loves"
 	line "eating bugs, so"
-	cont "it's perfect"
-	cont "for me!"
+	cont "it's a perfect"
+	cont "#MON for me!"
 	done
 
 _SilphGauntlet1FBattleText6::

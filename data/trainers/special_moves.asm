@@ -163,8 +163,9 @@ SpecialTrainerMoves:
 	
 	db BROCK, 7		; Brock 6 badges
 	db 1, 1, SELFDESTRUCT
-	db 2, 2, SURF
-	db 2, 3, ICE_BEAM
+	db 2, 1, SPIKE_CANNON
+	db 2, 3, SURF
+	db 2, 4, ICE_BEAM
 	db 3, 1, SURF
 	db 3, 2, ROCK_THROW
 	db 3, 3, SWORDS_DANCE
@@ -357,7 +358,7 @@ SpecialTrainerMoves:
 	db 3, 3, EMBER
 	db 4, 1, CUT
 	db 4, 4, DIG
-	db 5, 4, BODY_SLAM
+	db 5, 3, BODY_SLAM
 	db 0
 
 	db RIVAL2, 10		; Pokemon Tower Rival w/Raichu
@@ -1370,12 +1371,10 @@ SpecialTrainerMoves:
 	db 2, 1, BLIZZARD
 	db 2, 2, THUNDERBOLT
 	db 2, 3, SING
-	db 2, 4, HYPER_BEAM
-	db 3, 1, IRON_HEAD
-	db 3, 3, HYPER_BEAM
-	db 4, 1, EXPLOSION
+	db 2, 4, SURF
+	db 3, 3, BULLET_PUNCH
+	db 4, 1, FIRE_PUNCH
 	db 4, 2, THUNDERBOLT
-	db 4, 4, ICE_PUNCH
 	db 5, 1, THUNDERBOLT
 	db 5, 2, ICE_BEAM
 	db 5, 3, RECOVER
@@ -1391,12 +1390,10 @@ SpecialTrainerMoves:
 	db 2, 1, BLIZZARD
 	db 2, 2, THUNDERBOLT
 	db 2, 3, SING
-	db 2, 4, HYPER_BEAM
-	db 3, 1, IRON_HEAD
-	db 3, 3, HYPER_BEAM
-	db 4, 1, EXPLOSION
+	db 2, 4, SURF
+	db 3, 3, BULLET_PUNCH
+	db 4, 1, FIRE_PUNCH
 	db 4, 2, THUNDERBOLT
-	db 4, 4, ICE_PUNCH
 	db 5, 1, THUNDERBOLT
 	db 5, 2, ICE_BEAM
 	db 5, 3, RECOVER

@@ -816,6 +816,7 @@ DragoniteTradebackMoves:
 	db 1, LIGHT_SCREEN
 	db 1, MIST
 	db 1, SUPERSONIC
+        db 1, FLY
 	db 1, HYDRO_PUMP
 	db 0
 
@@ -1824,6 +1825,7 @@ EspeonTradebackMoves:
 	db 0
 	
 UmbreonTradebackMoves:
+	db 1, PSYCHIC_M
 	db 1, HEADBUTT
 	db 1, GROWTH
 	db 1, ROAR

@@ -899,7 +899,7 @@ _RapidashGDexEntry::
 	dex
 
 _SlowbroGDexEntry::
-	text "The DISTUBAN that"
+	text "The DISTURBAN that"
 	next "bit SLOWBRO has"
 	next "made it poisonous."
 	
@@ -915,7 +915,7 @@ _SlowkingGDexEntry::
 	
 	page "Mumbling eerie"
 	next "spells, it makes"
-	next "strange POTIONs"
+	next "strange potions"
 	dex
 
 _MukADexEntry::

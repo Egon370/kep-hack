@@ -763,10 +763,7 @@ BrockAI:
 MistyAI:
 	cp 25 percent + 1
 	ret nc
-	ld a, 5
-	call AICheckIfHPBelowFraction
-	ret nc
-	jp AIUsePotion ; Replicates Starmie using Recover. Unlike other trainers that heal, Misty will do this 26% of the time instead of 51%.
+	jp AIUseXSpecial
 
 LtSurgeAI:
 	cp 20 percent + 1

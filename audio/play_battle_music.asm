@@ -43,23 +43,23 @@ PlayBattleMusic::
 	cp OPP_ID_OFFSET
 	jp c, .wildBattle
 	cp OPP_YUJIROU
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_KOICHI
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_BROCK			; there's probably a much better way of doing this, but this allows the Gym leader rematches in SIlph to play the Gym Battle music
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_MISTY
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_LT_SURGE
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_ERIKA
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_KOGA
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_SABRINA
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_BLAINE
-	jp z, .GymOrElite4Battle
+	jp z, .GymBattle
 	cp OPP_ROCKET
 	jr z, .RocketBattle
 	cp OPP_JESSIE_JAMES
@@ -71,20 +71,23 @@ PlayBattleMusic::
 	cp OPP_CHIEF
 	jr z, .Giovanni
 	cp OPP_LORELEI ; elite four now play the gym leader battle theme
-	jr z, .GymOrElite4Battle
+	jr z, .Elite4Battle
 	cp OPP_BRUNO
-	jr z, .GymOrElite4Battle
+	jr z, .Elite4Battle
 	cp OPP_AGATHA
-	jr z, .GymOrElite4Battle
+	jr z, .Elite4Battle
 	cp OPP_LANCE
-	jr z, .GymOrElite4Battle
-	cp OPP_PROF_OAK ; could also use the final battle theme, but I think the gym leader/elite 4 theme fits better instead. I'm happy to change this if it isn't well-liked.
-	jr z, .GymOrElite4Battle 
+	jr z, .Elite4Battle
+	cp OPP_PROF_OAK ; could also use the final battle theme, but I think the elite 4 theme fits better instead. I'm happy to change this if it isn't well-liked.
+	jr z, .Elite4Battle 
 	cp OPP_RIVAL3
 	jr z, .finalBattle  
 	jr nz, .normalTrainerBattle
-.GymOrElite4Battle
+.GymBattle
 	ld a, MUSIC_GYM_LEADER_BATTLE
+	jr .playSong
+.Elite4Battle
+	ld a, MUSIC_ELITE_FOUR_BATTLE
 	jr .playSong
 .normalTrainerBattle
 	ld a, MUSIC_TRAINER_BATTLE

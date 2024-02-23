@@ -1,7 +1,7 @@
 Gauntlet4FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 	db 48, HAUNTER
-	db 48, MAROWAK
+	db 48, GUARDIA
 	db 49, NINETALES
 	db 49, BALUMBA
 	db 49, HAUNTER

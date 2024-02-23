@@ -181,7 +181,7 @@ _ChiefPainting2::
 	
 _ChiefMonologueRematch::
 	text "CHIEF: What?"
-	line "you're back?"
+	line "You're back?"
 	
 	para "Hmm...you're"
 	line "looking for a"

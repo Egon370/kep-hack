@@ -184,6 +184,8 @@ ErikaPreBattleText:
 
 ReceivedRainbowBadgeText:
 	text_far _ReceivedRainbowBadgeText
+	sound_get_key_item
+	text_promptbutton
 	text_end
 
 ErikaPostBattleAdviceText:

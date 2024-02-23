@@ -216,8 +216,8 @@ _AfterTrade6Text::
 	text "Isn't the Combat"
 	line "Breed amazing?"
 	
-	para "HI JUMP KICK is"
-	line "so worth it!"
+	para "JUMP KICK is so"
+	line "worth it!"
 	done
 
 _WannaTrade7Text::

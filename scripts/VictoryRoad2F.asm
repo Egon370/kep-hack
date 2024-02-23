@@ -222,18 +222,16 @@ DoubleEdgeGuy:
 
 TM10PreReceiveText:
 	text "You should be"
-	line "proud of"
-	cont "yourself,"
-	cont "having battled"
-	cont "your way through"
-	cont "VICTORY ROAD so"
-	cont "courageously."
+	line "proud of your-"
+	cont "self, having"
+	cont "battled your way"
+	cont "through VICTORY"
+	cont "ROAD so bravely."
 	
-	para "In recognition"
-	line "of your feat,"
-	cont "I can teach your"
-	cont "#MON"
-	cont "DOUBLE-EDGE."
+	para "In recognition of"
+	line "your feat, I can"
+	cont "teach your #-"
+	cont "MON DOUBLE-EDGE."
 	prompt
 
 ReceivedTM10Text:
@@ -253,7 +251,8 @@ TM10ExplanationText:
 
 TM10Refused:
 	text "I'll teach your"
-	line "#MON anytime."
+	line "#MON at any"
+	cont "time."
 	done
 
 DoubleEdgeNoRoomText:

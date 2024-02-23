@@ -370,14 +370,23 @@ VermilionBeauty:
 	; All it really achieves is weird architecture for like 3-4 less machine cycles.
 	ld a, [wBeautyCounter] ; Alright, if you got here, then the event is in progress.
 	cp 5 ; Do you have 5 of the scrunklies?
-	jr z, .eventIsFinished ; Big if true.
-	jr nz, .eventInProgress ; Small if false.
+;	jr z, .eventIsFinished ; Big if true.
+;	jr nz, .eventInProgress ; Small if false.
+	jr nc, .eventIsFinished ; A set z flag happens for exactly 5. A cleared carry flag happens for values 5 to 255.
+	jr c, .eventInProgress ; And a set carry flag happens for values 0 to 4.
 
 ; Let us start the game.
 .eventStart
 	ld hl, BeautyText1 ; Let's open the text.
 	call PrintText
 	call CatsDogsChoice
+	
+	;account for cancelling with the B button
+	ld hl, _BeautyWait
+	ldh a, [hJoyHeld]
+	and B_BUTTON
+	jr nz, .skip5
+	
 	ld a, [wCurrentMenuItem] ; Let's load what they picked. 0 is cats, 1 is dogs.
 	and a
 	jr nz, .getArcanine ; Skip storing Growlithe if dogs.
@@ -401,7 +410,8 @@ VermilionBeauty:
 
 ; Now if the event is finished, she needs to hand the Pokemon over.
 .eventIsFinished
-	call SaveScreenTilesToBuffer1 ; saves us from some corruption disasters if nicknaming.
+;	call SaveScreenTilesToBuffer1 ; saves us from some corruption disasters if nicknaming.
+;	...not needed anymore as this was fixed in commit dd71684
 	ld hl, BeautyFinish1
 	ld a, [wBeautyChoice]
 	cp GROWLITHE
@@ -418,10 +428,10 @@ VermilionBeauty:
 .skip3
 	call GivePokemon
 	jr nc, .done
-	call LoadScreenTilesFromBuffer1 ; saves us from some corruption disasters if nicknaming.
+;	call LoadScreenTilesFromBuffer1 ; saves us from some corruption disasters if nicknaming.
 	SetEvent EVENT_VERMILION_BEAUTY_DONE ; and now we can finally rest.
-	ld hl, wd72e
-	set 0, [hl]
+;	ld hl, wd72e	;not needed since EVENT_VERMILION_BEAUTY_DONE is the event bit for this.
+;	set 0, [hl]
 	jr .done
 
 ; Now if it's already been said and done, we go here.
@@ -435,6 +445,7 @@ VermilionBeauty:
 .skip4
 	call PrintText
 	ld hl, BeautyExplainCont
+.skip5
 	call PrintText
 	;fallthrough
 .done
@@ -490,3 +501,9 @@ BeautyExplain2:
 BeautyExplainCont:
 	text_far _BeautyExplainCont
 	text_end
+
+_BeautyWait:
+	text "I can wait on"
+	line "your answer."
+	done
+	db "@"

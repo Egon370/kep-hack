@@ -152,6 +152,6 @@ _VermilionGymGuidePostBattleText::
 	done
 
 _SurgeRematchDefeatedText::
-	text "Absolutely"
-	line "shocking!"
+	text "Hah!"
+	line "Shocking!"
 	prompt

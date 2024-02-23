@@ -309,8 +309,8 @@ SilphCo7TrainerHeader3:
 SilphCo7Text1:
 ; lapras guy
 	text_asm
-	ld a, [wd72c]
-	bit 2, a
+	ld a, [wd72e]
+	bit 0, a
 	jr z, .givelapras
 	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	jr nz, .savedsilph
@@ -329,8 +329,8 @@ SilphCo7Text1:
 	call EnableAutoTextBoxDrawing
 	ld hl, .HeresYourLaprasText
 	call PrintText
-	ld hl, wd72c
-	set 2, [hl]
+	ld hl, wd72e
+	set 0, [hl]
 	jr .done
 .savedsilph
 	ld hl, .LaprasGuySavedText

@@ -383,6 +383,8 @@ INCLUDE "crysaudio/music/RBY/legendarybattle.asm"
 INCLUDE "crysaudio/music/RBY/giovannisroom.asm"
 INCLUDE "crysaudio/music/RBY/rocketrby.asm"
 INCLUDE "crysaudio/music/RBY/giovannibattle.asm"
+INCLUDE "crysaudio/music/RBY/elitefourbattle.asm"
+INCLUDE "crysaudio/music/RBY/champrival.asm"
 
 SECTION "TCG Songs 1", ROMX
 

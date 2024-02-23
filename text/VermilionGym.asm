@@ -24,16 +24,15 @@ _LTSurgePreBattleText:: ; Yellow text, which works better with his rematch text.
 _SurgeRematchPreBattleText::
 	text "Hey there, kid!"
 	line "Pretty shocking"
-	cont "you made it"
+	cont "that you made it"
 	cont "through the"
 	cont "#MON LEAGUE!"
 	
-	para "I can't think"
-	line "of a stronger"
-	cont "TRAINER I've"
-	cont "battled since"
-	cont "first arriving"
-	cont "in KANTO..."
+	para "I can't think of"
+	line "anyone stronger"
+	cont "since I first"
+	cont "arrived here in"
+	cont "KANTO..."
 	
 	para "Let's have a"
 	line "rematch, eh?"

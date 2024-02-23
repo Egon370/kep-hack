@@ -1018,6 +1018,7 @@ SeelEvosMoves:
 	db EV_LEVEL, 34, DEWGONG
 	db 0
 ; Learnset
+	db 10, WATER_GUN
 	db 15, POWDER_SNOW
 	db 20, GROWL
 	db 25, AURORA_BEAM
@@ -1516,8 +1517,8 @@ OmanyteEvosMoves:
 	db 21, ROCK_THROW
 	db 34, HORN_ATTACK
 	db 39, LEER
-	db 46, SPIKE_CANNON
-	db 53, HYDRO_PUMP
+	db 44, SPIKE_CANNON
+	db 49, HYDRO_PUMP
 	db 0
 
 OmastarEvosMoves:
@@ -1527,8 +1528,8 @@ OmastarEvosMoves:
 	db 21, ROCK_THROW
 	db 34, HORN_ATTACK
 	db 39, LEER
-	db 44, SPIKE_CANNON
-	db 49, HYDRO_PUMP
+	db 46, SPIKE_CANNON
+	db 53, HYDRO_PUMP
 	db 0
 
 JigglypuffEvosMoves:
@@ -1566,7 +1567,7 @@ EeveeEvosMoves:
 ; Learnset
 	db 8, SAND_ATTACK
 	db 16, GROWL
-	db 27, QUICK_ATTACK
+	db 23, QUICK_ATTACK
 	db 30, BITE
 	db 36, FOCUS_ENERGY
 	db 42, TAKE_DOWN
@@ -1794,6 +1795,7 @@ DewgongEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	DB 10, WATER_GUN
 	db 15, POWDER_SNOW
 	db 20, GROWL
 	db 25, AURORA_BEAM
@@ -2734,7 +2736,7 @@ ScizorEvosMoves:
 	db 29, SLASH
 	db 35, SWORDS_DANCE
 	db 42, AGILITY
-	db 50, BULLET_PUNCH
+	db 50, IRON_HEAD
 	db 0
 
 RhyperiorEvosMoves:

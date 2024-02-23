@@ -69,8 +69,8 @@ _SilphGauntlet2FEndBattleText4::
 
 _SilphGauntlet2FAfterBattleText4::
 	text "The second I heard"
-	line "of the #MON"
-	cont "I could meet here,"
+	line "of the #MON I"
+	cont "could meet here,"
 	cont "I was stoked!"
 	
 	para "I could never have"

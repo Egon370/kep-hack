@@ -61,3 +61,5 @@ Music:
 	dba Music_GiovannisRoom
 	dba Music_RocketRBY
 	dba Music_GiovanniBattle
+	dba Music_EliteFourBattle
+	dba Music_ChampRival

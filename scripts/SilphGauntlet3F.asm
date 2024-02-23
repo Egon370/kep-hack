@@ -31,7 +31,7 @@ SilphGauntlet3FTrainerHeader2:
 SilphGauntlet3FTrainerHeader3:
 	trainer EVENT_BEAT_GAUNTLET_ENGINEER, 1, SilphGauntlet3FBattleText4, SilphGauntlet3FEndBattleText4, SilphGauntlet3FAfterBattleText4
 SilphGauntlet3FTrainerHeader4:
-	trainer EVENT_BEAT_GAUNTLET_ROCKER, 1, SilphGauntlet3FBattleText5, SilphGauntlet3FEndBattleText5, SilphGauntlet3FAfterBattleText5
+	trainer EVENT_BEAT_GAUNTLET_ROCKER, 2, SilphGauntlet3FBattleText5, SilphGauntlet3FEndBattleText5, SilphGauntlet3FAfterBattleText5
 SilphGauntlet3FTrainerHeader5:
 	trainer EVENT_BEAT_GAUNTLET_FISHER, 2, SilphGauntlet3FBattleText6, SilphGauntlet3FEndBattleText6, SilphGauntlet3FAfterBattleText6
 	db -1 ; end

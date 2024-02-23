@@ -13,7 +13,7 @@ _SilphGauntlet5FAfterBattleText1::
 	text "You have what it"
 	line "takes to beat"
 	cont "the strongest of"
-	cont "TRAINERs."
+	cont "trainers."
 	
 	para "You have my"
 	line "support!"
@@ -93,7 +93,7 @@ _SilphGauntlet5FAfterBattleText5::
 
 _SilphGauntlet5FBattleText6::
 	text "Once, I was the"
-	line "CHAMPION!"
+	line "champion!"
 	done
 
 _SilphGauntlet5FEndBattleText6::
@@ -102,9 +102,9 @@ _SilphGauntlet5FEndBattleText6::
 	prompt
 
 _SilphGauntlet5FAfterBattleText6::
-	text "Many TRAINERs have"
+	text "Many trainers have"
 	line "held the title of"
-	cont "CHAMPION!"
+	cont "champion before!"
 	
 	para "In fact, I've"
 	line "recognised a few"

@@ -110,4 +110,5 @@ TypeEffects:
 	db POISON,       FAIRY,        SUPER_EFFECTIVE
 	db STEEL,        FAIRY,        SUPER_EFFECTIVE
 	db DRAGON,       FAIRY,        NO_EFFECT
+	db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
 	db -1 ; end

@@ -138,23 +138,6 @@ _SilphGauntlet6FAfterBattleText4::
 	cont "we're working"
 	cont "on it!"
 	done
-	
-; An alternate quote.
-; It's a bit too fanficy and I think Erika getting zooted off Vileplume violates her lore a bit.
-; Maybe it could be used somewhere else?
-;	text "Hmm? Why am I"
-;	line "always asleep?"
-;	
-;	para "VILEPLUME'S"
-;	line "SLEEP POWDER..."
-;	
-;	para "Before I drift"
-;	line "off, it gives"
-;	cont "a euphoric"
-;	cont "feeling..."
-;	
-;	para "Zzz..."
-
 
 _SilphGauntlet6FBattleText5::
 	text "Fwahahaha!"
@@ -188,9 +171,10 @@ _SilphGauntlet6FAfterBattleText5::
 	done
 
 _SilphGauntlet6FBattleText6::
-	text "After defeating"
-	line "the KARATE KING,"
-	cont "I felt nigh-"
+	text "When the DOJO's"
+	line "MASTER fell to"
+	cont "my #MON, I"
+	cont "felt nearly"
 	cont "unstoppable..."
 	
 	para "But you humbled"

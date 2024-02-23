@@ -42,7 +42,7 @@ CuboneSalesmanText:
 	ld hl, .NoMoneyText
 	jr .printText
 .enoughMoney
-	lb bc, CUBONE, 17
+	lb bc, CUBONE, 23
 	call GivePokemon
 	jr nc, .done
 	xor a

@@ -71,12 +71,10 @@ _SilphGauntlet3FEndBattleText4::
 _SilphGauntlet3FAfterBattleText4::
 	text "CHIEF called me"
 	line "here to fix some"
-	cont "lights."
-	
-	para "But..."
-	
-	para "They're working"
-	line "just fine..?"
+	cont "lights, but they"
+	cont "don't seem to be"
+	cont "malfunctioning"
+	cont "at all..."
 	done
 
 _SilphGauntlet3FBattleText5:: ; Rolling Stones reference, Jumpin' Jack Flash (1968).
