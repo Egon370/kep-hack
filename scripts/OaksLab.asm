@@ -856,6 +856,25 @@ OaksLab_TextPointers2:
 	dw OaksLabText9
 	dw OaksLabText10
 	dw OaksLabText11
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText	;placeholder
+	dw OakLabEmailText
 
 OaksLabText1:
 	text_asm

@@ -153,3 +153,4 @@ _KoichiRematchDefeatedText::
 	text "I have"
 	line "been defeated"
 	cont "once more..."
+	done
