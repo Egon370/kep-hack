@@ -521,6 +521,7 @@ SpecialTrainerMoves:
 	db 0
 
 	db KOICHI, 3		;  Koichi 2 badges
+	db 1, 1, LEER
 	db 3, 3, TACKLE
 	db 4, 4, TACKLE
 	db 5, 3, TACKLE
@@ -588,7 +589,7 @@ SpecialTrainerMoves:
 	db KOICHI, 9		; Koichi 8 badges
 	db 1, 1, ROCK_SLIDE
 	db 1, 2, EARTHQUAKE
-	db 1, 3, SUBMISSION
+	db 1, 3, KARATE_CHOP
 	db 2, 2, PIN_MISSILE
 	db 2, 3, MEGA_PUNCH
 	db 3, 1, LOW_KICK

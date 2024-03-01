@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/annihilape.pic", 0, 1 ; sprite dimensions
 	dw AnnihilapePicFront, AnnihilapePicBack
 
-	db SCRATCH, LEER, UPPERCUT, KARATE_CHOP ; level 1 learnset
+	db SCRATCH, LEER, UPPERCUT, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset

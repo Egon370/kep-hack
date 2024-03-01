@@ -803,7 +803,7 @@ MachokeEvosMoves:
 	db 25, LEER
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 52, KARATE_CHOP
 	db 60, MEGA_PUNCH ; Prototype
 	db 66, MEGA_KICK ; Prototype
 	db 0
@@ -1004,13 +1004,13 @@ MankeyEvosMoves:
 	db 0
 ; Learnset
 	db 9, LOW_KICK
-	db 15, KARATE_CHOP
+	db 15, SEISMIC_TOSS
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
-	db 33, SEISMIC_TOSS
+	db 33, SUBMISSION
 	db 39, THRASH
 	db 45, SCREECH
-	db 51, SUBMISSION
+	db 51, KARATE_CHOP
 	db 58, COUNTER
 	db 0
 
@@ -1628,7 +1628,7 @@ MachopEvosMoves:
 	db 25, LEER
 	db 32, FOCUS_ENERGY
 	db 39, SEISMIC_TOSS
-	db 46, SUBMISSION
+	db 46, KARATE_CHOP
 	db 53, MEGA_PUNCH ; Prototype
 	db 60, MEGA_KICK ; Prototype
 	db 0
@@ -1759,14 +1759,14 @@ PrimeapeEvosMoves:
 	db 0
 ; Learnset
 	db 9, LOW_KICK
-	db 15, KARATE_CHOP
+	db 15, SEISMIC_TOSS
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
 	db 28, RAGE
-	db 37, SEISMIC_TOSS
+	db 37, SUBMISSION
 	db 45, SCREECH
 	db 46, THRASH
-	db 54, SUBMISSION
+	db 54, KARATE_CHOP
 	db 62, COUNTER
 	db 0
 
@@ -1876,7 +1876,7 @@ MachampEvosMoves:
 	db 25, LEER
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 52, KARATE_CHOP
 	db 60, MEGA_PUNCH ; Prototype
 	db 66, MEGA_KICK ; Prototype
 	db 0
@@ -3045,10 +3045,10 @@ CarapthorEvosMoves:
 	db 20, DEFENSE_CURL
 	db 25, SWIFT
 	db 30, MEGA_PUNCH
-	db 35, SUBSTITUTE
+	db 35, SUBMISSION
 	db 40, SEISMIC_TOSS
-	db 45, TAKE_DOWN
-	db 50, SUBMISSION
+	db 45, SUBSTITUTE
+	db 50, KARATE_CHOP
 	db 0
 	
 MagnezoneEvosMoves:
@@ -3072,15 +3072,15 @@ AnnihilapeEvosMoves:
 	db 0
 ; Learnset
 	db 9, LOW_KICK
-	db 15, KARATE_CHOP
+	db 15, SEISMIC_TOSS
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
 	db 28, RAGE
-	db 37, SEISMIC_TOSS
+	db 37, SUBMISSION
 	db 45, SCREECH
 	db 46, THRASH
 	db 50, NIGHT_SHADE
-	db 54, SUBMISSION
+	db 54, KARATE_CHOP
 	db 62, COUNTER
 	db 0
 
@@ -3281,7 +3281,7 @@ SandslashAEvosMoves:
 	db 0
 ; Learnset
 	db 21, SWIFT
-	db 24, FURY_SWIPES
+	db 24, SPIKE_CANNON
 	db 27, IRON_DEFENSE
 	db 30, SLASH
 	db 33, IRON_HEAD
