@@ -2374,7 +2374,6 @@ DisplayBagMenu:
 	ld [wBagSavedMenuItem], a
 	ld a, $0
 	ld [wMenuWatchMovingOutOfBounds], a
-	ld [wMenuItemToSwap], a
 	jp c, DisplayBattleMenu ; go back to battle menu if an item was not selected
 
 UseBagItem:
@@ -2455,7 +2454,6 @@ PartyMenuOrRockOrRun:
 	call LoadScreenTilesFromBuffer1
 	xor a ; NORMAL_PARTY_MENU
 	ld [wPartyMenuTypeOrMessageID], a
-	ld [wMenuItemToSwap], a
 	call DisplayPartyMenu
 .checkIfPartyMonWasSelected
 	jp nc, .partyMonWasSelected ; if a party mon was selected, jump, else we quit the party menu

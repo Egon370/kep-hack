@@ -11,7 +11,6 @@ StartMenu_Pokemon::
 	and a
 	jp z, RedisplayStartMenu
 	xor a
-	ld [wMenuItemToSwap], a
 	ld [wPartyMenuTypeOrMessageID], a
 	ld [wUpdateSpritesEnabled], a
 	call DisplayPartyMenu

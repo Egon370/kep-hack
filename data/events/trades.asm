@@ -4,7 +4,7 @@ TradeMons:
 	; give mon, get mon, dialog id, nickname
 	db POLIWHIRL,  JYNX,        TRADE_DIALOGSET_CASUAL,    "LOLA@@@@@@@" ; Cerulean City 
 	db ABRA,       MR_MIME,     TRADE_DIALOGSET_CASUAL,    "MARCEL@@@@@" ; Route 2
-	db BUTTERFREE, BEEDRILL,    TRADE_DIALOGSET_HAPPY,     "CHIKUCHIKU@" ; Viridian Forest gate
+	db BUTTERFREE, BEEDRILL,    TRADE_DIALOGSET_HAPPY,     "STINGER@@@@" ; Viridian Forest gate
 	db RAICHU,     KADABRA,     TRADE_DIALOGSET_EVOLUTION, "HARRY@@@@@@" ; Citrine City, new trade to complete the 4 main trade evos
 	db SPEAROW,    FARFETCHD,   TRADE_DIALOGSET_HAPPY,     "DUX@@@@@@@@" ; Vermilion City
 	db PERSIAN,    TAUROS,      TRADE_DIALOGSET_CASUAL,    "JIMBO@@@@@@" ; Route 17-18 gate, from JP Blue

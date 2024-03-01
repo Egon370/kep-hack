@@ -18,7 +18,6 @@ DisplayListMenuID::
 	ld hl, wd730
 	set 6, [hl] ; turn off letter printing delay
 	xor a
-	ld [wMenuItemToSwap], a ; 0 means no item is currently being swapped
 	ld [wListCount], a
 	ld a, [wListPointer]
 	ld l, a
@@ -313,7 +312,6 @@ DisplayChooseQuantityMenu::
 	ret
 .buttonBPressed ; the player chose to cancel the transaction
 	xor a
-	ld [wMenuItemToSwap], a ; 0 means no item is currently being swapped
 	ld a, $ff
 	ret
 
@@ -335,7 +333,6 @@ ExitListMenu::
 	res 6, [hl]
 	call BankswitchBack
 	xor a
-	ld [wMenuItemToSwap], a ; 0 means no item is currently being swapped
 	scf
 	ret
 

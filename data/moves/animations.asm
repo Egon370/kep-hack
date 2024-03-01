@@ -187,6 +187,7 @@ AttackAnimationPointers:
 	dw UppercutAnim
 	dw PowderSnowAnim
 	dw MegaStingAnim
+	dw InfectionAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1208,6 +1209,7 @@ DizzyPunchAnim:
 	battle_anim DOUBLESLAP, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 
+InfectionAnim:
 SporeAnim:
 	battle_anim SPORE, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end

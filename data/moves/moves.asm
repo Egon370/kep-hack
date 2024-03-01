@@ -197,6 +197,7 @@ Moves:
 	move NASTY_PLOT,      SPECIAL_UP2_EFFECT,        0, DARK,         100, 10
 	move UPPERCUT,     FLINCH_SIDE_EFFECT2,         55, FIGHTING,      80, 15
 	move POWDER_SNOW,     FREEZE_SIDE_EFFECT,       40, ICE,          100, 25
-	move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         80, POISON,       100, 15 
+	move MEGA_STING,    FLINCH_SIDE_EFFECT2,         80, POISON,      100, 15
+	move INFECTION,   LEECH_SEED_EFFECT,            0, GRASS,         90, 10
 	move STRUGGLE,        RECOIL_EFFECT,            50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

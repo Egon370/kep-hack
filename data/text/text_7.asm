@@ -346,3 +346,8 @@ _BulbasaurText::
 	text "BULBASAUR: Bubba!"
 	line "Zoar!@"
 	text_end
+	
+_InfectedText::
+	text "Fungus sprouts om"
+	line "<TARGET>!"
+	prompt

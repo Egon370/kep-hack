@@ -187,5 +187,6 @@ MoveNames:: ; 12chr limit
 	li "UPPERCUT"
 	li "POWDER SNOW"
 	li "MEGA STING"
+	li "INFECTION"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

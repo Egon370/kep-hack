@@ -124,9 +124,9 @@ TestBattle:
 	ld [hli], a
 	ld a, POWDER_SNOW ; New move animation test
 	ld [hli], a
-	ld a, FAKE_TEARS ; New move animation test
+	ld a, MEGA_STING ; New move animation test
 	ld [hli], a
-	ld a, NASTY_PLOT ; Skip turn, New move animation test
+	ld a, INFECTION ; Skip turn, New move animation test
 	ld [hli], a
 	
 	; Opponent's Pokemon.
