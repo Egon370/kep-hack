@@ -876,8 +876,8 @@ _HurtByBurnText::
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
-	line "<USER>!"
+	text "<USER>'s"
+	line "energy is sapped!"
 	prompt
 
 _EnemyMonFaintedText::

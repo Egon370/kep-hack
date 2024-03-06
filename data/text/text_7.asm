@@ -348,6 +348,7 @@ _BulbasaurText::
 	text_end
 	
 _InfectedText::
-	text "Fungus sprouts om"
+	text "Fungus sprouts on"
 	line "<TARGET>!"
 	prompt
+	
