@@ -312,11 +312,12 @@ ClefairyEvosMoves:
 	db EV_ITEM, MOON_STONE, 1, CLEFABLE
 	db 0
 ; Learnset
+	db 6, DISARMING_VOICE
 	db 13, SING
 	db 18, DOUBLESLAP
 	db 24, MINIMIZE
-	db 28, TAKE_DOWN ; Prototype
-	db 31, METRONOME
+	db 28, METRONOME
+	db 31, DAZZLE_GLEAM
 	db 35, BODY_SLAM
 	db 39, DEFENSE_CURL
 	db 48, LIGHT_SCREEN
@@ -812,10 +813,10 @@ MrMimeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, CONFUSION
+	db 15, DRAININGKISS
 	db 23, LIGHT_SCREEN
 	db 31, DOUBLESLAP
-	db 39, MEDITATE
+	db 39, DISARMING_VOICE
 	db 47, SUBSTITUTE
 	db 0
 
@@ -1538,13 +1539,13 @@ JigglypuffEvosMoves:
 	db EV_ITEM, MOON_STONE, 1, WIGGLYTUFF
 	db 0
 ; Learnset
-	db 9, COUNTER ; Prototype - Pound made L1 because lol imagine using puff otherwise
+	db 9, DISARMING_VOICE
 	db 14, DISABLE
 	db 19, DEFENSE_CURL
 	db 24, DOUBLESLAP
 	db 29, REST
 	db 34, BODY_SLAM
-	db 39, TAKE_DOWN ; Prototype
+	db 39, DAZZLE_GLEAM
 	db 44, DOUBLE_EDGE
 	db 0
 
@@ -3357,7 +3358,7 @@ RapidashGEvosMoves:
 	db 24, STOMP
 	db 31, PSYBEAM
 	db 37, AGILITY
-	db 46, DAZZLE_GLEAM
+	db 46, SPIRIT_BREAK
 	db 52, TAKE_DOWN
 	db 56, PSYCHIC_M
 	db 0

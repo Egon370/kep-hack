@@ -200,5 +200,6 @@ Moves:
 	move MEGA_STING,   FLINCH_SIDE_EFFECT2,         80, POISON,       100, 15
 	move INFECTION,    LEECH_SEED_EFFECT,            0, GRASS,         90, 10
 	move ROOST,  	   HEAL_EFFECT,                  0, FLYING,       100, 10
+	move SPIRIT_BREAK, SPECIAL_DOWN_SIDE_EFFECT,    75, FAIRY,        100, 15 
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

@@ -189,6 +189,7 @@ AttackAnimationPointers:
 	dw MegaStingAnim
 	dw InfectionAnim
 	dw RoostAnim
+	dw SpiritBreakAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1527,3 +1528,8 @@ RoostAnim: ; from PureRGB
 	battle_anim CONFUSE_RAY, SE_SHOOT_BALLS_UPWARD
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end	
+	
+SpiritBreakAnim:
+	battle_anim DOUBLE_TEAM, SE_WAVY_SCREEN
+	battle_anim UPPERCUT, SUBANIM_0_STAR_ASCENDING, 0, 8
+	db -1 ; end

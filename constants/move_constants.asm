@@ -195,6 +195,7 @@
 	const MEGA_STING ; bb
 	const INFECTION ; bc
 	const ROOST ; bd
+	const SPIRIT_BREAK ; be
 	const STRUGGLE     ; formerly a5, now c0
 DEF NUM_ATTACKS EQU const_value - 1
 

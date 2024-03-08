@@ -189,5 +189,6 @@ MoveNames:: ; 12chr limit
 	li "MEGA STING"
 	li "INFECTION"
 	li "ROOST"
+	li "SPIRIT BREAK"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

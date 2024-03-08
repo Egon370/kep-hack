@@ -540,7 +540,7 @@ StatModifierDownEffect:
 	ld bc, wEnemyBattleStatus1
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .statModifierDownEffect
+	jr z, .statModifierDownEffectPart1
 	ld hl, wPlayerMonStatMods
 	ld de, wEnemyMoveEffect
 	ld bc, wPlayerBattleStatus1
@@ -548,19 +548,29 @@ StatModifierDownEffect:
 	;; the ai's 25% miss chance on status moves.
 	; ld a, [wLinkState]
 	; cp LINK_STATE_BATTLING
-	; jr z, .statModifierDownEffect
+	; jr z, .statModifierDownEffectPart1
 	; call BattleRandom
 	; cp 25 percent + 1 ; chance to miss by in regular battle
 	; jp c, MoveMissed
-.statModifierDownEffect
+.statModifierDownEffectPart1
 	call CheckTargetSubstitute ; can't hit through substitute
 	jp nz, MoveMissed
 	ld a, [de]
 	cp ATTACK_DOWN_SIDE_EFFECT
 	jr c, .nonSideEffect
+	ld hl, wPlayerMoveNum
+	ldh a, [hWhoseTurn]
+	and a
+	jr z, .statModifierDownEffectPart2
+	ld hl, wEnemyMoveNum
+.statModifierDownEffectPart2
+	ld a, [hl]
+	cp SPIRIT_BREAK
+	jr z, .statModifierDownEffectPart3
 	call BattleRandom
 	cp 33 percent + 1 ; chance for side effects
 	jp nc, CantLowerAnymore
+.statModifierDownEffectPart3
 	ld a, [de]
 	sub ATTACK_DOWN_SIDE_EFFECT ; map each stat to 0-3
 	jr .decrementStatMod

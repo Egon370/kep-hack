@@ -190,6 +190,7 @@ MoveSoundTable:
 	db SFX_BATTLE_26,          $f0, $20 ; MEGA_STING
 	db SFX_BATTLE_1B,          $03, $60 ; INFECTION
 	db SFX_BATTLE_33,          $00, $80 ; ROOST
+	db SFX_SUPER_EFFECTIVE,    $00, $e0 ; UPPERCUT
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 
