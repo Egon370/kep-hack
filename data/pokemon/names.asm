@@ -250,7 +250,7 @@ MonsterNames::
 	db "TAUROS@@@@" ; Paldean, Combat
 	db "TAUROS@@@@" ; Paldean, Aqua
 	db "TAUROS@@@@" ; Paldean, Blaze
-	db "GORILLAIMO"
+	db "SHADEBUG@@"
 	db "MISSINGNO."
 	db "MISSINGNO."
 	db "MISSINGNO."

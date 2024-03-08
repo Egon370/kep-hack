@@ -9,7 +9,7 @@ Route15WildMons:
 	db 26, GAOTORA
 	db 30, VENOMOTH
 	db 28, TANGELA
-	db 28, GORILLAIMO
+	db 28, SHADEBUG
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -919,7 +919,7 @@ SpecialTrainerMoves:
 	db 2, 1, EARTHQUAKE
 	db 2, 3, ROCK_SLIDE
 	db 2, 4, EXPLOSION
-	db 3, 1, THUNDERBOLT
+	db 3, 1, SMART_STRIKE
 	db 4, 1, SUBMISSION
 	db 5, 1, BODY_SLAM
 	db 5, 2, MEDITATE
@@ -1448,7 +1448,7 @@ SpecialTrainerMoves:
 	db 3, 1, BODY_SLAM
 	db 3, 2, BRUTAL_SWING
 	db 3, 3, SWORDS_DANCE
-	db 4, 1, THUNDERBOLT
+	db 4, 1, SMART_STRIKE
 	db 5, 2, BODY_SLAM
 	db 5, 3, HI_JUMP_KICK
 	db 5, 4, DIG

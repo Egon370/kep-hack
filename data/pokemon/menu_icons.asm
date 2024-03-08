@@ -208,7 +208,7 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Tauros-PA
 	nybble ICON_FAIRY     ; Chansey
 	nybble ICON_FAIRY     ; Blissey
-	nybble ICON_MON       ; Gorillaimo
+	nybble ICON_BUG       ; Shadebug
 	nybble ICON_GRASS	  ; Cactormus
 	nybble ICON_MON       ; Mr.Mime
 	nybble ICON_MON       ; Mr.Rime

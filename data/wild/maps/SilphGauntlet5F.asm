@@ -6,7 +6,7 @@ Gauntlet5FWildMons:
 	db 50, SCYTHER
 	db 50, PINSIR
 	db 51, TAUROS
-	db 51, GORILLAIMO
+	db 51, SHADEBUG
 	db 52, KANGASKHAN
 	db 52, TRAMPEL
 	db 54, CHANSEY

@@ -212,7 +212,7 @@
 	const DEX_TAUROS_PA  ;		(206)
 	const DEX_CHANSEY    ; 113	(207)
 	const DEX_BLISSEY    ;		(208)
-	const DEX_GORILLAIMO ;		(209)	- Rare/Special Pokemon
+	const DEX_SHADEBUG   ;		(209)	- Rare/Special Pokemon
 	const DEX_CACTORMUS  ;		(210)
 	const DEX_MR_MIME    ; 122	(211)
 	const DEX_MR_RIME    ;		(212)

@@ -7,7 +7,7 @@ FarawayIslandInsideMons:
 	db 24, MANKEY
 	db 30, DECILLA
 	db 26, MANKEY
-	db 30, GORILLAIMO
+	db 30, SHADEBUG
 	db 27, BUTTERFREE
 	db 30, AERODACTYL
 	end_grass_wildmons

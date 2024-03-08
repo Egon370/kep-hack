@@ -107,7 +107,7 @@ BugCatcherData:
 	db 16, VENONAT, PARAS, 0 ; By this point, the player has fought like, 2 "three bugs" trainers. Toning it down.
 	db 17, BUTTERFREE, 0 ; this is that one boss fight-like one, levelled down for learnset reasons
 ; Silph Gauntlet 1F (Viridian Forest)
-	db 56, SCIZOR, CARAPTHOR, PARASECT, VENOMOTH, TRICULES, KLEAVOR, 0
+	db 56, VENOMOTH, CARAPTHOR, PARASECT, SHADEBUG, TRICULES, KLEAVOR, 0
 ; Route 9
 	db 19, BUTTERFREE, BEEDRILL, 0
 	db 20, PUPAL, VENONAT, BEEDRILL, 0
@@ -412,7 +412,7 @@ CueBallData:
 ; Route 21
 	db 31, TENTACOOL, TENTACOOL, TENTACRUEL, 0
 ; Silph Gauntlet 5F (Safari Zone)
-	db 60, ANNIHILAPE, RATICATE_A, CROAKOZUNA, PERSIAN_A, MACHAMP, GORILLAIMO, 0
+	db 60, ANNIHILAPE, RATICATE_A, CROAKOZUNA, PERSIAN_A, MACHAMP, TAUROS_P, 0
 
 ; Big variety, kind of aimless; seems to be a counterparts thing.
 GamblerData:
@@ -549,7 +549,7 @@ BlackbeltData:
 ; Fighting Dojo Trainers
 	db 31, MANKEY, MACHOKE, JABETTA, 0
 	db 32, PRIMEAPE, CARAPTHOR, 0
-	db 35, GORILLAIMO, 0
+	db 35, SIRFETCHD, 0
 	db 33, MACHOP, POLIWRATH, 0
 ; Viridian Gym	- changed to fit the Ground-type gym theme
 	db 40, MAROWAK, GOLEM, 0
@@ -558,7 +558,7 @@ BlackbeltData:
 ; Victory Road 2F
 	db 43, MACHOKE, MACHOP, MACHOKE, 0
 ; Silph Gauntlet 2F (Mt. Moon)
-	db 63, HITMONTOP, JABETTA, GORILLAIMO, POLIWRATH, CARAPTHOR, MACHAMP, 0
+	db 63, HITMONTOP, JABETTA, HITMONCHAN, POLIWRATH, CARAPTHOR, MACHAMP, 0
 
 ; Uses Silph products and Steel-types
 ChiefData:
@@ -728,7 +728,7 @@ ChannelerData:
 	db 23, VULPIII, GASTLY, 0
 	db 24, VULPIX, 0
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, MUK, GUARDIA, ANNIHILAPE, HYPNO, NINETALES, GENGAR, 0
+	db 59, SHADEBUG, GUARDIA, ANNIHILAPE, HYPNO, NINETALES, GENGAR, 0
 ; Pokémon Tower 3F
 	db 25, GASTLY, HAUNTER, 0
 ; Pokémon Tower 4F, now unused 

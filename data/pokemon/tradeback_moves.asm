@@ -255,7 +255,7 @@ TradebackMovesPointerTable:
 	dw TaurosPTradebackMoves
 	dw TaurosPATradebackMoves
 	dw TaurosPBTradebackMoves
-	dw GorillaimoTradebackMoves
+	dw ShadebugTradebackMoves
 	dw FossilKabutopsTradebackMoves
 	dw FossilAerodactylTradebackMoves
 	dw MonGhostTradebackMoves
@@ -2221,11 +2221,10 @@ TaurosPBTradebackMoves:
 	db 1, QUICK_ATTACK
 	db 0
 
-GorillaimoTradebackMoves:
+ShadebugTradebackMoves:
     db 1, HEADBUTT,
-    db 1, DEFENSE_CURL
-    db 1, KARATE_CHOP
-    db 1, FOCUS_ENERGY
+    db 1, POISONPOWDER
+    db 1, LIGHT_SCREEN
     db 0
 
 FossilKabutopsTradebackMoves:

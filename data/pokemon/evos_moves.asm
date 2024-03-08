@@ -262,7 +262,7 @@ EvosMovesPointerTable:
 	dw TaurosPEvosMoves
 	dw TaurosPAEvosMoves
 	dw TaurosPBEvosMoves
-	dw GorillaimoEvosMoves
+	dw ShadebugEvosMoves
 	dw FossilKabutopsEvosMoves
 	dw FossilAerodactylEvosMoves
 	dw MonGhostEvosMoves
@@ -3474,17 +3474,16 @@ TaurosPBEvosMoves:
 	db 51, FIRE_SPIN
 	db 0
 	
-GorillaimoEvosMoves:
+ShadebugEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 7, ROAR
-	db 15, BITE
-	db 22, THUNDERPUNCH ; In King Kong vs. Godzilla (1962), King Kong has an affinity for using electricity. He's not only immune to electricity, but is also powered up by it, so Gorillaimo would be given Lightning Rod/Motor Drive as an ability if it were brought into a later generation.
-	db 29, SEISMIC_TOSS
-	db 35, BODY_SLAM
-	db 42, AMNESIA
-	db 49, SUBMISSION
+	db 10, FEINT_ATTACK
+	db 18, STUN_SPORE
+	db 26, NIGHT_SHADE
+	db 35, RAZOR_LEAF
+	db 42, SLEEP_POWDER
+	db 50, NIGHT_SLASH
 	db 0
 	
 FossilKabutopsEvosMoves:

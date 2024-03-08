@@ -87,7 +87,7 @@ IF DEF(_DEBUG)
 	ld [hli], a
 	ld a, PSYCHIC_M
 	ld [hli], a
-	ld a, THUNDERBOLT
+	ld a, DIG
 	ld [hli], a
 	ld a, RECOVER
 	ld [hl], a
@@ -99,6 +99,7 @@ IF DEF(_DEBUG)
 	ld a, 99
 	ld [hli], a
 	ld [hl], a
+	
 
 	; Eevee (Pokemon 6) gets Flash
 	ld hl, wPartyMon6Moves + 2

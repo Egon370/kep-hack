@@ -411,6 +411,8 @@ Orchid: Luxwan (back), Buu (back)
 
 Zeta_Null: Porygon (front)
 
+Axel_Comics: [Shadebug] (https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143) (edited by Egon370) 
+
 Official sprites: Crobat (front, edited by Martha’s Against Humanity), Disturban, Espeon (front, edited by Martha’s Against Humanity), Slowking (front), Steelix (front), Tricules, Umbreon (front, edited by Martha’s Against Humanity)
 
 Original README.md proceeding;

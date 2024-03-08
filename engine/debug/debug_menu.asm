@@ -120,17 +120,17 @@ TestBattle:
 	; This function gives you a way to waste a turn, never know when you'll need it.
 	; Alternatively, add a move to test.
 	ld hl, wPartyMon1Moves
-	ld a, UPPERCUT ; New move animation test
+	ld a, NASTY_PLOT ; Leftover from original KEP development, wastes a turn
 	ld [hli], a
-	ld a, POWDER_SNOW ; New move animation test
+	ld a, TOXIC ; Reference for testing Infection
 	ld [hli], a
-	ld a, MEGA_STING ; New move animation test
+	ld a, MEGA_STING ; New move test
 	ld [hli], a
-	ld a, INFECTION ; Skip turn, New move animation test
+	ld a, INFECTION ; Skip turn, New move effect test
 	ld [hli], a
 	
 	; Opponent's Pokemon.
-	ld a, NIDORINO
+	ld a, EXEGGUTOR ; further testing of Infection required
 	ld [wCurOpponent], a
 	ld a, 50 ; Set the level you want here.
 	ld [wCurEnemyLVL], a

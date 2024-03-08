@@ -988,14 +988,14 @@ _TaurosPADexEntry::
 	next "tips of its horns"
 	dex
 	
-_GorillaimoDexEntry::
-	text "Intelligent enough"
-	next "to craft items of"
-	next "clothing. Ancient"
+_ShadebugDexEntry::
+	text "A symbol of bad"
+	next "luck. Every leaf"
+	next "it touches will"
 	
-	page "scripture shows a"
-	next "giant GORILLAIMO"
-	next "battling GAWARHED"
+	page "start to wither."
+	next " "
+	next " "
 	dex
 
 _MissingNoDexEntry::	; unused

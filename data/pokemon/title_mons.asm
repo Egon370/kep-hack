@@ -4,6 +4,7 @@ TitleMons:
 	db PARASECT
 	db KINGLER
 	db BUTTERFREE
+	db SHADEBUG	
 	db RAPIDASH_G       ; The Fairies
 	db MR_MIME
 	db CLEFABLE
@@ -15,5 +16,5 @@ TitleMons:
 	db PIDGEOT
 	db SANDSLASH_A  ; Personal favorites
 	db IGUANARCH
-	db PENDRAKEN
+
 	
