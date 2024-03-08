@@ -25,14 +25,14 @@ LeechSeedEffect_:
 	callfar PlayCurrentMoveAnimation
 	ldh a, [hWhoseTurn]
 	and a
-	ld b, SHAKE_SCREEN_ANIM
 	ld hl, wPlayerBattleStatus3
 	ld a, [wEnemyMoveNum]
 	ld de, wPlayerToxicCounter
-	ld b, ENEMY_HUD_SHAKE_ANIM
+	jr nz, .ok
 	ld hl, wEnemyBattleStatus3
 	ld a, [wPlayerMoveNum]
 	ld de, wEnemyToxicCounter
+.ok	
 	cp INFECTION
 	jr nz, .normalSeed ; done if move is not Infection
 	set BADLY_POISONED, [hl] ; else set Toxic battstatus
