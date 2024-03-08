@@ -965,7 +965,7 @@ SpecialTrainerMoves:
 
 	db RIVAL3, 1		; Champion Rival w/Totartle
 	db 1, 1, FLY
-	db 1, 2, SKY_ATTACK
+	db 1, 2, DRILL_PECK
 	db 1, 3, DOUBLE_EDGE
 	db 2, 1, THUNDER_WAVE
 	db 3, 2, BODY_SLAM
@@ -983,7 +983,7 @@ SpecialTrainerMoves:
 
 	db RIVAL3, 2		; Champion Rival w/Venusaur
 	db 1, 1, FLY
-	db 1, 2, SKY_ATTACK
+	db 1, 2, DRILL_PECK
 	db 1, 3, DOUBLE_EDGE
 	db 2, 1, THUNDER_WAVE
 	db 3, 2, BODY_SLAM
@@ -1000,7 +1000,7 @@ SpecialTrainerMoves:
 
 	db RIVAL3, 3		; Champion Rival w/Charizard
 	db 1, 1, FLY
-	db 1, 2, SKY_ATTACK
+	db 1, 2, DRILL_PECK
 	db 1, 3, DOUBLE_EDGE
 	db 2, 1, THUNDER_WAVE
 	db 3, 2, BODY_SLAM

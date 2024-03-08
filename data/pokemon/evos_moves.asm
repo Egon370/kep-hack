@@ -728,9 +728,9 @@ PidgeyEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 19, WHIRLWIND
-	db 28, WING_ATTACK
+	db 28, DRILL_PECK
 	db 36, AGILITY
-	db 44, MIRROR_MOVE
+	db 44, ROOST
 	db 0
 
 SlowpokeEvosMoves:
@@ -1227,7 +1227,7 @@ ArticunoEvosMoves:
 ; Learnset
 	db 51, BLIZZARD
 	db 55, AGILITY
-	db 60, MIST
+	db 60, ROOST
 	db 0
 
 ZapdosEvosMoves:
@@ -2154,9 +2154,9 @@ PidgeottoEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 31, DRILL_PECK
 	db 40, AGILITY
-	db 49, MIRROR_MOVE
+	db 49, ROOST
 	db 0
 
 PidgeotEvosMoves:
@@ -2166,9 +2166,9 @@ PidgeotEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 31, DRILL_PECK
 	db 44, AGILITY
-	db 54, MIRROR_MOVE
+	db 54, ROOST
 	db 0
 
 StarmieEvosMoves:

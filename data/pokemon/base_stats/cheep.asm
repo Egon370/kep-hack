@@ -17,7 +17,7 @@
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
 	     DOUBLE_EDGE,  BUBBLEBEAM,   WATER_GUN,    ICE_BEAM,     BLIZZARD,     \
 	     COUNTER,      SEISMIC_TOSS, RAGE,         MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SKY_ATTACK,   REST,         SUBSTITUTE,   SURF
+	     BIDE,         REST,         SUBSTITUTE,   SURF
 	; end
 
 	db BANK(CheepPicFront)

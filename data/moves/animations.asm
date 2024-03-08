@@ -188,6 +188,7 @@ AttackAnimationPointers:
 	dw PowderSnowAnim
 	dw MegaStingAnim
 	dw InfectionAnim
+	dw RoostAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1517,3 +1518,12 @@ FakeTearsEnemyAnim:
 	battle_anim NO_MOVE, SE_SHAKE_SCREEN
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
+
+RoostAnim: ; from PureRGB
+	battle_anim FLY, SE_HIDE_MON_PIC
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim RECOVER, SE_BLINK_MON
+	battle_anim NO_MOVE, SE_SQUISH_MON_PIC
+	battle_anim CONFUSE_RAY, SE_SHOOT_BALLS_UPWARD
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	db -1 ; end	
