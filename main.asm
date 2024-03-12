@@ -154,6 +154,7 @@ INCLUDE "engine/battle/move_effects/focus_energy.asm"
 SECTION "Battle Engine 4", ROMX
 
 INCLUDE "engine/battle/move_effects/leech_seed.asm"
+INCLUDE "engine/battle/move_effects/moody_powder.asm"
 
 
 SECTION "Battle Engine 5", ROMX

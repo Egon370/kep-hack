@@ -480,7 +480,16 @@ UpdateStatDone:
 	call nz, Bankswitch
 	pop de
 .notMinimize
+    ldh a, [hWhoseTurn]
+    and a
+    ld a, [wPlayerMovePower]
+    jr z, .gotUsersPower1
+    ld a, [wEnemyMovePower]
+.gotUsersPower1
+    and a ; Skip animation if damage dealing move
+    jr nz, .skipAnimation
 	call PlayCurrentMoveAnimation
+.skipAnimation
 	ld a, [de]
 	cp MINIMIZE
 	jr nz, .applyBadgeBoostsAndStatusPenalties
@@ -540,7 +549,7 @@ StatModifierDownEffect:
 	ld bc, wEnemyBattleStatus1
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .statModifierDownEffectPart1
+	jr z, .statModifierDownEffect
 	ld hl, wPlayerMonStatMods
 	ld de, wEnemyMoveEffect
 	ld bc, wPlayerBattleStatus1
@@ -548,33 +557,23 @@ StatModifierDownEffect:
 	;; the ai's 25% miss chance on status moves.
 	; ld a, [wLinkState]
 	; cp LINK_STATE_BATTLING
-	; jr z, .statModifierDownEffectPart1
+	; jr z, .statModifierDownEffect
 	; call BattleRandom
 	; cp 25 percent + 1 ; chance to miss by in regular battle
 	; jp c, MoveMissed
-.statModifierDownEffectPart1
+.statModifierDownEffect
 	call CheckTargetSubstitute ; can't hit through substitute
 	jp nz, MoveMissed
 	ld a, [de]
 	cp ATTACK_DOWN_SIDE_EFFECT
-	jr c, .nonSideEffect
-	ld hl, wPlayerMoveNum
-	ldh a, [hWhoseTurn]
-	and a
-	jr z, .statModifierDownEffectPart2
-	ld hl, wEnemyMoveNum
-.statModifierDownEffectPart2
-	ld a, [hl]
-	cp SPIRIT_BREAK
-	jr z, .statModifierDownEffectPart3
+	jr c, .nonSideEffect1
 	call BattleRandom
 	cp 33 percent + 1 ; chance for side effects
 	jp nc, CantLowerAnymore
-.statModifierDownEffectPart3
 	ld a, [de]
 	sub ATTACK_DOWN_SIDE_EFFECT ; map each stat to 0-3
 	jr .decrementStatMod
-.nonSideEffect ; non-side effects only
+.nonSideEffect1 ; non-side effects only
 	push hl
 	push de
 	push bc
@@ -582,12 +581,22 @@ StatModifierDownEffect:
 	pop bc
 	pop de
 	pop hl
+	ldh a, [hWhoseTurn]
+	ld hl, wPlayerMovePower
+	and a
+	jr z, .nonSideEffect2
+	ld hl, wEnemyMovePower
+.nonSideEffect2
+    ld a, [hl]
+	and a ; skip accuracy check if the move already did damage
+	jr nz, .nonSideEffect3
 	ld a, [wMoveMissed]
 	and a
 	jp nz, MoveMissed
 	ld a, [bc]
 	bit INVULNERABLE, a ; fly/dig
 	jp nz, MoveMissed
+.nonSideEffect3
 	ld a, [de]
 	sub ATTACK_DOWN1_EFFECT
 	cp EVASION_DOWN1_EFFECT + $3 - ATTACK_DOWN1_EFFECT ; covers all -1 effects
@@ -692,6 +701,14 @@ UpdateLoweredStatDone:
 	ld a, [de]
 	cp $44
 	jr nc, .ApplyBadgeBoostsAndStatusPenalties
+	ldh a, [hWhoseTurn] ; check who is using the move
+    and a
+ 	ld a, [wPlayerMovePower]
+    jr z, .gotUsersPower2
+    ld a, [wEnemyMovePower]
+.gotUsersPower2
+	and a ; Skip animation if damage dealing move
+	jr nz, .ApplyBadgeBoostsAndStatusPenalties
 	call PlayCurrentMoveAnimation2
 .ApplyBadgeBoostsAndStatusPenalties
 	ldh a, [hWhoseTurn]
@@ -1288,6 +1305,9 @@ MimicLearnedMoveText:
 
 LeechSeedEffect:
 	jpfar LeechSeedEffect_
+	
+MoodyPowderEffect:
+	jpfar MoodyPowderEffect_
 
 SplashEffect:
 	call PlayCurrentMoveAnimation

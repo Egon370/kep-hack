@@ -5,4 +5,5 @@ HighCriticalMoves:
 	db CRABHAMMER
 	db SLASH
 	db NIGHT_SLASH
+	db SICKLE_SWIPE
 	db -1 ; end

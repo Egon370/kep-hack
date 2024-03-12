@@ -1,9 +1,9 @@
 	db DEX_SANDSLASH ; pokedex id
 
-	db  75, 100, 110,  65,  55
+	db  75, 100, 110,  80,  55
 	;   hp  atk  def  spd  spc
 
-	db GROUND, GROUND ; type
+	db GROUND, NORMAL ; type
 	db 90 ; catch rate
 	db 163 ; base exp
 

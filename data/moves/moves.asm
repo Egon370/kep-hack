@@ -21,7 +21,7 @@ Moves:
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          75, ICE,          100, 15
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       75, ELECTRIC,     100, 15
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, NORMAL,       100, 30
+	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, BUG,          100, 30
 	move GUILLOTINE,   OHKO_EFFECT,                  1, BUG,           30,  5
 	move RAZOR_WIND,   CHARGE_EFFECT,              140, FLYING,        90, 10
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
@@ -94,11 +94,11 @@ Moves:
 	move STRING_SHOT,  SPEED_DOWN1_EFFECT,           0, BUG,           95, 40
 	move DRAGON_RAGE,  SPECIAL_DAMAGE_EFFECT,        1, DRAGON,       100, 10
 	move FIRE_SPIN,    TRAPPING_EFFECT,             15, FIRE,          70, 15
-	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,      40, ELECTRIC,      100, 30
+	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
 	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15
 	move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
 	move THUNDER,      PARALYZE_SIDE_EFFECT2,     120, ELECTRIC,       70, 10
-	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          65, 15
+	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          90, 15
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
 	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 10
@@ -200,6 +200,11 @@ Moves:
 	move MEGA_STING,   FLINCH_SIDE_EFFECT2,         80, POISON,       100, 15
 	move INFECTION,    LEECH_SEED_EFFECT,            0, GRASS,         90, 10
 	move ROOST,  	   HEAL_EFFECT,                  0, FLYING,       100, 10
-	move SPIRIT_BREAK, SPECIAL_DOWN_SIDE_EFFECT,    75, FAIRY,        100, 15 
+	move SPIRIT_BREAK, SPECIAL_DOWN1_EFFECT,        75, FAIRY,        100, 15 
+	move THUNDER_FANG, FLINCH_SIDE_EFFECT1,         65, ELECTRIC,      95, 15
+	move SHADOW_BONE,  DEFENSE_DOWN_SIDE_EFFECT,    85, GHOST,        100, 10
+	move SICKLE_SWIPE, NO_ADDITIONAL_EFFECT,        70, BUG,          100, 20
+	move MOODY_POWDER, MOODY_POWDER_EFFECT,          0, GRASS,         75, 15
+	move DRACO_SLAM,   NO_ADDITIONAL_EFFECT,       120, DRAGON,        75,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

@@ -190,7 +190,12 @@ MoveSoundTable:
 	db SFX_BATTLE_26,          $f0, $20 ; MEGA_STING
 	db SFX_BATTLE_1B,          $03, $60 ; INFECTION
 	db SFX_BATTLE_33,          $00, $80 ; ROOST
-	db SFX_SUPER_EFFECTIVE,    $00, $e0 ; UPPERCUT
+	db SFX_SUPER_EFFECTIVE,    $00, $e0 ; SPIRIT_BREAK
+	db SFX_BATTLE_1E,          $00, $80 ; THUNDER_FANG
+	db SFX_BATTLE_2B,          $f0, $60 ; SHADOW_BONE
+	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SICKLE_SWIPE
+	db SFX_BATTLE_1C,          $11, $a0 ; MOODY_POWDER
+	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; DRACO_SLAM
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 

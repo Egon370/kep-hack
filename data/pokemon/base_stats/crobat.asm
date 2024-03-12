@@ -15,8 +15,9 @@
 
 	; tm/hm learnset
 	tmhm RAZOR_WIND,   WHIRLWIND,    TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  \
-	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   MIMIC,        DOUBLE_TEAM,  \
-	     BIDE,         SWIFT,        REST,         SUBSTITUTE,   FLY           \
+	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   PSYCHIC_M,    MIMIC,        \
+	     DOUBLE_TEAM,  BIDE,         SWIFT,        REST,         SUBSTITUTE,   \
+		 FLY
 	; end
 
 	db BANK(CrobatPicFront)

@@ -190,6 +190,11 @@ AttackAnimationPointers:
 	dw InfectionAnim
 	dw RoostAnim
 	dw SpiritBreakAnim
+	dw ThunderFangAnim
+	dw ShadowBoneAnim
+	dw SickleSwipeAnim
+	dw MoodyPowderAnim
+	dw DracoSlamAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -379,6 +384,7 @@ BindAnim:
 	battle_anim BIND, SUBANIM_0_BIND, 0, 4
 	db -1 ; end
 
+DracoSlamAnim:
 SlamAnim:
 	battle_anim SLAM, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
@@ -772,6 +778,7 @@ PoisonPowderAnim:
 	battle_anim POISONPOWDER, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+MoodyPowderAnim:
 StunSporeAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
 	battle_anim STUN_SPORE, SE_DELAY_ANIMATION_10
@@ -1312,6 +1319,7 @@ SuperFangAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+SickleSwipeAnim:
 SlashAnim:
 	battle_anim SLASH, SUBANIM_0_SCRATCHES, 0, 6
 	db -1 ; end
@@ -1533,3 +1541,17 @@ SpiritBreakAnim:
 	battle_anim DOUBLE_TEAM, SE_WAVY_SCREEN
 	battle_anim UPPERCUT, SUBANIM_0_STAR_ASCENDING, 0, 8
 	db -1 ; end
+
+ThunderFangAnim:
+	battle_anim THUNDERPUNCH, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim BITE, SUBANIM_1_LIGHTNING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+ShadowBoneAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim BONEMERANG, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	

@@ -387,7 +387,7 @@ IvysaurEvosMoves:
 	db 21, POISONPOWDER
 	db 24, GROWTH
 	db 28, RAZOR_LEAF
-	db 31, TAKE_DOWN ; Prototype
+	db 31, STUN_SPORE
 	db 34, BODY_SLAM
 	db 39, SLEEP_POWDER
 	db 43, MEGA_DRAIN ; Prototype 
@@ -543,7 +543,7 @@ GyaradosEvosMoves:
 ; Learnset
 	db 20, BITE
 	db 25, DRAGON_RAGE
-	db 32, LEER
+	db 32, GLARE
 	db 41, HYDRO_PUMP
 	db 52, HYPER_BEAM
 	db 0
@@ -597,9 +597,9 @@ ScytherEvosMoves:
 	db 20, FOCUS_ENERGY
 	db 24, DOUBLE_TEAM
 	db 29, SLASH
-	db 32, WING_ATTACK
 	db 35, SWORDS_DANCE
 	db 42, AGILITY
+	db 50, SICKLE_SWIPE
 	db 0
 
 StaryuEvosMoves:
@@ -1421,9 +1421,9 @@ KabutoEvosMoves:
 	db 0
 ; Learnset
 	db 21, ROCK_THROW
-	db 34, ABSORB
+	db 34, LEECH_LIFE
 	db 39, SLASH
-	db 44, LEER
+	db 44, ROCK_SLIDE
 	db 49, HYDRO_PUMP
 	db 0
 
@@ -1432,9 +1432,9 @@ KabutopsEvosMoves:
 	db 0
 ; Learnset
 	db 21, ROCK_THROW
-	db 34, ABSORB
+	db 34, LEECH_LIFE
 	db 39, SLASH
-	db 46, LEER
+	db 46, ROCK_SLIDE
 	db 53, HYDRO_PUMP
 	db 0
 
@@ -1519,7 +1519,7 @@ OmanyteEvosMoves:
 	db 21, ROCK_THROW
 	db 34, HORN_ATTACK
 	db 39, LEER
-	db 44, SPIKE_CANNON
+	db 44, ROCK_SLIDE
 	db 49, HYDRO_PUMP
 	db 0
 
@@ -1530,7 +1530,7 @@ OmastarEvosMoves:
 	db 21, ROCK_THROW
 	db 34, HORN_ATTACK
 	db 39, LEER
-	db 46, SPIKE_CANNON
+	db 46, ROCK_SLIDE
 	db 53, HYDRO_PUMP
 	db 0
 
@@ -1713,6 +1713,7 @@ KakunaEvosMoves:
 	db 7, HARDEN
 	db 8, HARDEN
 	db 9, HARDEN
+	db 100, ACID_ARMOR
 	db 0
 
 BeedrillEvosMoves:
@@ -1849,6 +1850,7 @@ MetapodEvosMoves:
 	db 7, HARDEN
 	db 8, HARDEN
 	db 9, HARDEN
+	db 100, BARRIER
 	db 0
 
 ButterfreeEvosMoves:
@@ -2188,7 +2190,7 @@ BulbasaurEvosMoves:
 	db 19, POISONPOWDER
 	db 22, GROWTH
 	db 25, RAZOR_LEAF
-	db 28, TAKE_DOWN ; Prototype
+	db 28, STUN_SPORE
 	db 32, BODY_SLAM
 	db 37, SLEEP_POWDER
 	db 41, MEGA_DRAIN ; Prototype 
@@ -2207,7 +2209,7 @@ VenusaurEvosMoves:
 	db 21, POISONPOWDER
 	db 24, GROWTH
 	db 28, RAZOR_LEAF
-	db 31, TAKE_DOWN ; Prototype
+	db 31, STUN_SPORE
 	db 36, BODY_SLAM
 	db 41, SLEEP_POWDER
 	db 45, MEGA_DRAIN ; Prototype 
@@ -2283,7 +2285,7 @@ KotoraEvosMoves:
 	db 6, LEER
 	db 11, ROAR
 	db 17, QUICK_ATTACK
-	db 28, BITE
+	db 28, THUNDER_FANG
 	db 34, THUNDER
 	db 43, AGILITY
 	db 0
@@ -2296,7 +2298,7 @@ GaotoraEvosMoves:
 	db 6, LEER
 	db 11, ROAR
 	db 23, QUICK_ATTACK
-	db 30, BITE
+	db 30, THUNDER_FANG
 	db 37, THUNDER
 	db 45, AGILITY
 	db 0
@@ -2308,7 +2310,7 @@ GorotoraEvosMoves:
 	db 6, LEER
 	db 11, ROAR
 	db 23, QUICK_ATTACK
-	db 30, BITE
+	db 30, THUNDER_FANG
 	db 40, THUNDER
 	db 48, AGILITY
 	db 0
@@ -2441,7 +2443,7 @@ AerodactylEvosMoves:
 	db 21, ROCK_THROW
 	db 33, SUPERSONIC
 	db 38, BITE
-	db 45, TAKE_DOWN
+	db 45, ROCK_SLIDE
 	db 54, HYPER_BEAM
 	db 0
 
@@ -2689,6 +2691,7 @@ VileplumeEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 28, MOODY_POWDER
 	db 0
 
 BellsproutEvosMoves:
@@ -3034,6 +3037,7 @@ PupalEvosMoves:
 	db 7, HARDEN
 	db 8, HARDEN
 	db 9, HARDEN
+	db 100, IRON_DEFENSE
 	db 0
 
 CarapthorEvosMoves:
@@ -3413,7 +3417,7 @@ ExeggutorAEvosMoves:
 	db 28, LEECH_SEED
 	db 32, STUN_SPORE
 	db 37, POISONPOWDER
-	db 42, SOLARBEAM
+	db 42, DRACO_SLAM
 	db 48, SLEEP_POWDER
 	db 0
 
@@ -3425,7 +3429,7 @@ MarowakAEvosMoves:
 	db 25, LEER
 	db 33, EMBER
 	db 41, THRASH
-	db 48, BONEMERANG
+	db 48, SHADOW_BONE
 	db 55, FLAMETHROWER
 	db 0
 	

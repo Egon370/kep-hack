@@ -1,6 +1,6 @@
 	db DEX_SANDSLASH_A ; pokedex id
 
-	db  75, 100, 120,  65,  65
+	db  75, 100, 120,  80,  65
 	;   hp  atk  def  spd  spc
 
 	db ICE, STEEL ; type

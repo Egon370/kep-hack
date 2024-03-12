@@ -180,23 +180,28 @@
 	const FEINT_ATTACK ; ac
 	const IRON_HEAD    ; ad
 	const BRUTAL_SWING ; ae
-	const CHARM 	 ; af
+	const CHARM 	   ; af
 	const SWEET_KISS   ; b0
 	const BULLET_PUNCH ; b1
 	const MIRROR_SHOT  ; b2
 	const SMART_STRIKE ; b3
 	const FAKE_TEARS   ; b4
 	const FALSE_SURRENDER ; b5
-	const KOWTOW_CLEAVE ; b6
+	const KOWTOW_CLEAVE   ; b6
 	const DISARMING_VOICE ; b7
 	const NASTY_PLOT   ; b8
 	const UPPERCUT	   ; b9
-	const POWDER_SNOW	; ba
-	const MEGA_STING ; bb
-	const INFECTION ; bc
-	const ROOST ; bd
+	const POWDER_SNOW  ; ba
+	const MEGA_STING   ; bb
+	const INFECTION    ; bc
+	const ROOST        ; bd
 	const SPIRIT_BREAK ; be
-	const STRUGGLE     ; formerly a5, now c0
+	const THUNDER_FANG ; bf
+	const SHADOW_BONE  ; c0
+	const SICKLE_SWIPE ; c1
+	const MOODY_POWDER ; c2
+	const DRACO_SLAM   ; c3
+	const STRUGGLE     ; formerly a5, now idk but i don't have to worry abt it according to pretcord
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.

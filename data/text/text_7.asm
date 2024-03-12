@@ -351,4 +351,10 @@ _InfectedText::
 	text "Fungus sprouts on"
 	line "<TARGET>!"
 	prompt
+
+_DemotivatedText::
+	text "<TARGET>"
+	line "lost its"
+	line "motivation!"
+	prompt
 	
