@@ -9,8 +9,7 @@ ParalyzeEffect_:
 .next
 	ld a, [hl]
 	and a ; does the target already have a status ailment?
-	jr nz, .didntAffect
-; check if the target is immune due to types
+	jr z, .didntAffect
 	ld a, [de]
 	cp ELECTRIC
 	jr nz, .hitTest

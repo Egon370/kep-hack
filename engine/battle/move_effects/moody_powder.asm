@@ -18,5 +18,5 @@ MoodyPowderEffect_:
 
 DemotivatedText:
 	text_pause
-	text_far _GettingPumpedText
+	text_far _DemotivatedText
 	text_end

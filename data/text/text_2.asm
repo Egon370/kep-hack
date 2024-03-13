@@ -1867,3 +1867,8 @@ _GreedyBastardText::
 	text "Better not get"
 	line "greedy..."
 	done
+	
+_CantUsePCHere:: ; new, for portablePC
+	text "You cannot use"
+	line "this here!"
+	prompt
