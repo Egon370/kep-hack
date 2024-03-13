@@ -1,6 +1,78 @@
-Kanto Expansion Pak
+Kanto Expansion Pak + Bugs
+=================== 
+This is a fork of the Kanto Expansion Hack ROM hack, buffing various Pokemon. Most noticably, it improves every single fully evolved Bug-type.
+
+The New Pokemon
+====
+Shadebug, better known as the Kage no Mushi, has been added to replace Gorillaimo (since it was a slot filler anyway). It is a Bug/Ghost type, using dual powder, Reflect, and an odd set of coverage moves to check physical attackers. The sprite is provided by [Axel_Comics](https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143), though it was edited by me to better fit the "withering" aesthetic of my interpretation.
+
+New Moves
+====
+- Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
+- Infection is a "canned" version of the Toxic + Leech Seed glitch exclusive to Parasect.
+- Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB.
+- Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
+- Thunder Fang finally fixes the Kotora line's midgame issues.
+- Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
+- Sickle Swipe is a Bug-type Slash given to Scyther, and its evolutions by extension.
+- Vileplume can now use Moody Powder to apply the infamously terrible Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
+- Draco Slam is an inaccurate yet strong Dragon move for Alolan Exeggutor.
+
+Move Changes
+====
+- Twineedle has a high critical hit ratio effectively making it a Bug-type Karate Chop, and loses its poison chance as well.
+- Gust is Flying type, providing a smoother early game for the Pidgey line.
+- Karate Chop is Fighting type, giving three more lines a proper endgame STAB.
+- Dizzy Punch has an actual confusion chance.
+- Egg Bomb is 100% accurate.
+- Bind is 35 base power so that it's not a direct Wrap downgrade anymore.
+- Spike Cannon is Steel type, functioning as early STAB for Alolan Sandslash.
+- Thunder has its higher paralysis chance from GSC.
+- Sky Attack is now slightly weaker Flying type Hyper Beam.
+- Fly is now 80 base power, matching Drill Peck in the same way Dig matches Earthquake.
+- Razor Wind is now effectively a clone of what Sky Attack was.
+- Vicegrip is Bug type, giving its learners an early-game power boost.
+- Pokemon are now sober when using Rock Throw.
+
+Learnset, Typing, and Stat Changes
+====
+- Beedrill is now EXTREMELY minmaxed. Proportional to its BST, it has the same spread as its Mega. It also recieves Body Slam.
+- Butterfree's attack is dumped even harder, funneling into its HP to give it something approaching bulk.
+- Pidgeot has Body Slam and Drill Peck. It's finally functional!
+- With Sky Attack's new effect, it is now exclusive to the legendary birds as well as Gyarados, Dragonite, and Aerodactyl.
+- The mons that became Fairy in Gen 6 are now part-Fairy here, with movepools to match.
+- The Krabby line is now part Bug type, switching in on Earthquake with ease.
+- Decilla now has a movepool derived from its evolution, including BoltBeam coverage.
+- Seel is Water/Ice type, giving it a nicer early game.
+- Moltres now has Flamethrower; Leer was likely a typo.
+- The Bittybat line has Psychic, similar to the beta.
+- Hyper Beam is now standardized, benefitting Luxwan, Sirfetch'd and the Hitmons and hurting every formerly fully-evolved mon except Pinsir, Scyther, and Porygon2.
+- The fossils now finally have Rock Slide by both TM and level-up. Kabutops also has Absorb replaced by Leech Life.
+- Arcanine now has Earthquake.
+- The Nidos now have Dig so you don't have to wait an eternity to give them a Ground move.
+- The Bulbasaur line is pure Grass type.
+- gyarados? more like glaredos
+- Scyther is now pure Bug, alleviating its weaknesses and better fitting its Pokedex entry.
+- Venomoth is now very slightly faster, letting it speed tie Jynx.
+- The cocoons each get a different +2 Defense move at level 100. This technically carries over to their evolutions as well.
+- Mimmeo gets Reflect by TM since it got it by level up.
+- The Sandshrew family is significantly faster, with the Kantonian versions being Ground/Normal.
+
+Misc/Aesthetic Changes
+====
+- The Select Swap glitch from Red & Green is back.
+- Various moves that don't do typed damage have their types change for flavor.
+- Porygon now uses Sylveon's palette.
+- Solar Beam has a space in its name.
+- The Portable PC has been added.
+
+Find the spreadsheet ("forked" from Misty's, which I'm surprised wasn't linked originally) [here!](https://docs.google.com/spreadsheets/d/1P-_5qGxEqmWK0ss4WeowkCE42TijfOjhDFMtC4cQ4IQ/edit#gid=343006014)
+
+Original README.md proceeding:
+
+Kanto Expansion Pak 
 ===================
-This is a ROM Hack of Pokémon Red and Blue, aiming to expand the Kanto region with new Kanto-related Pokemon, more interesting locations, and QoL changes. It is a port of my [Pokemon Showdown Mod](https://github.com/PlagueVonKarma?tab=repositories), in a sense.
+This is a ROM hack of Pokémon Red and Blue, aiming to expand the Kanto region with new Kanto-related Pokemon, more interesting locations, and QoL changes. It is a port of my [Pokemon Showdown Mod](https://github.com/PlagueVonKarma?tab=repositories), in a sense.
 
 If playing on an emulator, BGB is strongly recommended for its accuracy and features. Inaccurate emulators, such as VBA and TGB Dual, can experience unintended glitches. This hack is fully playable on official hardware as well.
 
@@ -384,7 +456,7 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 * ZumiIsawhat? - Restorations of prototype OST.
 * FrenchOrange - Reconstructions of various overworld prototype sprites.
 * Helix Chamber (RacieBeep & Orchid) - Prototype Pokémon sprites. Precise credits are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png) and below.
-* Vortiene/Vortyne - Reused a bit of code from their pureRGB hack, including their Trainer AI, move animations and Pokedex stats page. Assisted in bug fixes & new move effects. Used their sprite sheet generator.
+* Vortiene/Vortyne - Reused a bit of code from their pureRGB hack, including their Trainer AI, move animations and Pokedex stats page. Assisted in bug fixes. Used their sprite sheet generator.
 * Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites and the Battle Tent.
 * Rangi - Reused a bit of code from their Red* / Blue* hack to make HMs usable in the overworld, and generally being an amazing individual.
 * BGVC - Composed the original 4-channel version of the unused Koukan (trading) music.
@@ -410,9 +482,7 @@ RacieBeep sprites: Balumba, Blastyke, Blottle, Buu, Cactormus, Cheep, Coinpur, C
 Orchid: Luxwan (back), Buu (back)
 
 Zeta_Null: Porygon (front)
-
-Axel_Comics: [Shadebug](https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143) (edited by Egon370) 
-
+ 
 Official sprites: Crobat (front, edited by Martha’s Against Humanity), Disturban, Espeon (front, edited by Martha’s Against Humanity), Slowking (front), Steelix (front), Tricules, Umbreon (front, edited by Martha’s Against Humanity)
 
 Original README.md proceeding;
