@@ -201,6 +201,7 @@
 	const SICKLE_SWIPE ; c1
 	const MOODY_POWDER ; c2
 	const DRACO_SLAM   ; c3
+	const SLEEPING_GAS ; c4
 	const STRUGGLE     ; formerly a5, now idk but i don't have to worry abt it according to pretcord
 DEF NUM_ATTACKS EQU const_value - 1
 

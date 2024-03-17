@@ -195,6 +195,7 @@ AttackAnimationPointers:
 	dw SickleSwipeAnim
 	dw MoodyPowderAnim
 	dw DracoSlamAnim
+	dw SleepingGasAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1065,6 +1066,7 @@ LickAnim:
 	battle_anim SLUDGE, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db -1 ; end
 
+SleepingGasAnim:
 SmogAnim:
 	battle_anim LEECH_SEED, SE_DARKEN_MON_PALETTE
 	battle_anim SMOG, SUBANIM_1_CLOUD_TOSS, 1, 6

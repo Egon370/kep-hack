@@ -979,7 +979,7 @@ KoffingEvosMoves:
 	db 17, SLUDGE
 	db 21, SMOKESCREEN
 	db 25, SELFDESTRUCT
-	db 33, HAZE
+	db 33, SLEEPING_GAS
 	db 41, EXPLOSION
 	db 0
 
@@ -2074,7 +2074,7 @@ WeezingEvosMoves:
 	db 17, SLUDGE
 	db 21, SMOKESCREEN
 	db 25, SELFDESTRUCT
-	db 33, HAZE
+	db 33, SLEEPING_GAS
 	db 46, EXPLOSION
 	db 0
 
@@ -3441,7 +3441,7 @@ WeezingGEvosMoves:
 	db 17, SLUDGE
 	db 21, SMOKESCREEN
 	db 25, SELFDESTRUCT
-	db 33, HAZE
+	db 33, SLEEPING_GAS
 	db 39, DAZZLE_GLEAM
 	db 46, EXPLOSION
 	db 0

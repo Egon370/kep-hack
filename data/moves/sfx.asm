@@ -196,6 +196,7 @@ MoveSoundTable:
 	db SFX_NOT_VERY_EFFECTIVE, $01, $ff ; SICKLE_SWIPE
 	db SFX_BATTLE_1C,          $11, $a0 ; MOODY_POWDER
 	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; DRACO_SLAM
+	db SFX_BATTLE_1C,          $01, $ff ; SLEEPING_GAS
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 

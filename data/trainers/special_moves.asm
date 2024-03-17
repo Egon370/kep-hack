@@ -275,7 +275,7 @@ SpecialTrainerMoves:
 	
 	db LT_SURGE, 4		; Surge 3 badges
 	db 1, 2, SWIFT
-	db 2, 1, THUNDERSHOCK
+	db 2, 1, QUICK_ATTACK
 	db 2, 3, THUNDER_WAVE
 	db 4, 3, THUNDERBOLT
 	db 4, 4, THUNDER_WAVE
@@ -1314,7 +1314,7 @@ SpecialTrainerMoves:
 	db 4, 2, ICE_PUNCH
 	db 4, 3, SLUDGE
 	db 4, 4, EXPLOSION
-	db 5, 1, THUNDERBOLT
+	db 5, 1, SLEEPING_GAS
 	db 5, 2, FIRE_BLAST
 	db 5, 3, SLUDGE
 	db 6, 1, MEGA_DRAIN
@@ -1373,6 +1373,7 @@ SpecialTrainerMoves:
 	db 2, 2, THUNDERBOLT
 	db 2, 3, SING
 	db 2, 4, SURF
+	db 3, 1, SICKLE_SWIPE
 	db 3, 3, BULLET_PUNCH
 	db 4, 1, FIRE_PUNCH
 	db 4, 2, THUNDERBOLT
@@ -1392,6 +1393,7 @@ SpecialTrainerMoves:
 	db 2, 2, THUNDERBOLT
 	db 2, 3, SING
 	db 2, 4, SURF
+	db 3, 1, SICKLE_SWIPE
 	db 3, 3, BULLET_PUNCH
 	db 4, 1, FIRE_PUNCH
 	db 4, 2, THUNDERBOLT
@@ -1414,7 +1416,7 @@ SpecialTrainerMoves:
 	db 3, 3, EXPLOSION
 	db 3, 4, EARTHQUAKE
 	db 4, 1, SLUDGE
-	db 4, 2, THUNDERBOLT
+	db 4, 2, SLEEPING_GAS
 	db 4, 3, FIRE_BLAST
 	db 5, 3, BODY_SLAM
 	db 6, 1, FIRE_BLAST
@@ -1470,7 +1472,7 @@ SpecialTrainerMoves:
 	db 4, 3, WRAP
 	db 4, 4, EARTHQUAKE
 	db 5, 1, GROWTH
-	db 5, 3, TOXIC
+	db 5, 3, CHARM
 	db 6, 1, THUNDERBOLT
 	db 6, 2, ICE_PUNCH
 	db 6, 4, PSYCHIC_M

@@ -382,7 +382,6 @@ GrimerTradebackMoves:
 	db 1, THUNDERPUNCH
 	db 1, FIRE_PUNCH
 	db 1, ICE_PUNCH
-	db 1, HAZE
 	db 1, LICK
 	db 0
 
@@ -843,7 +842,6 @@ DoduoTradebackMoves:
 	db 1, SWIFT
 	db 1, HAZE
 	db 1, SUPERSONIC
-	db 1, QUICK_ATTACK
 	db 1, LOW_KICK
 	db 0
 
@@ -1007,7 +1005,6 @@ KabutoTradebackMoves:
 	db 1, MEGA_DRAIN
 	db 1, SAND_ATTACK
 	db 1, AURORA_BEAM
-	db 1, ROCK_THROW
 	db 1, DIG
 	db 0
 
@@ -1015,7 +1012,6 @@ KabutopsTradebackMoves:
 	db 1, MEGA_DRAIN
 	db 1, SAND_ATTACK
 	db 1, AURORA_BEAM
-	db 1, ROCK_THROW
 	db 1, DIG
 	db 1, HEADBUTT
 	db 0
@@ -1075,7 +1071,6 @@ OmanyteTradebackMoves:
 	db 1, HAZE
 	db 1, SLAM
 	db 1, SUPERSONIC
-	db 1, ROCK_THROW
 	db 0
 
 OmastarTradebackMoves:
@@ -1086,7 +1081,6 @@ OmastarTradebackMoves:
 	db 1, HAZE
 	db 1, SLAM
 	db 1, SUPERSONIC
-	db 1, ROCK_THROW
 	db 0
 
 JigglypuffTradebackMoves:
@@ -1211,7 +1205,6 @@ DodrioTradebackMoves:
 	db 1, SWIFT
 	db 1, HAZE
 	db 1, SUPERSONIC
-	db 1, QUICK_ATTACK
 	db 1, LOW_KICK
 	db 0
 
@@ -1370,7 +1363,6 @@ MukTradebackMoves:
 	db 1, THUNDERPUNCH
 	db 1, FIRE_PUNCH
 	db 1, ICE_PUNCH
-	db 1, HAZE
 	db 1, LICK
 	db 0
 
@@ -1537,7 +1529,6 @@ SeakingTradebackMoves:
 	db 1, HAZE
 	db 1, HYDRO_PUMP
 	db 1, PSYBEAM
-	db 1, SWORDS_DANCE
 	db 0
 
 ; Ok so Kotora LITERALLY has a learnset...but we used it already.
@@ -1658,7 +1649,6 @@ AerodactylTradebackMoves:
 	db 1, ROAR
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
-	db 1, ROCK_THROW
 	db 0
 
 BlastykeTradebackMoves:
@@ -1829,6 +1819,7 @@ UmbreonTradebackMoves:
 	db 1, HEADBUTT
 	db 1, GROWTH
 	db 1, ROAR
+	db 1, CHARM
 	db 0
 	
 LeafeonTradebackMoves:
@@ -2170,7 +2161,6 @@ MukATradebackMoves:
 	db 1, THUNDERPUNCH
 	db 1, FIRE_PUNCH
 	db 1, ICE_PUNCH
-	db 1, HAZE
 	db 1, LICK
 	db 0
 

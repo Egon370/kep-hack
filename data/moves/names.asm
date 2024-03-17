@@ -195,5 +195,6 @@ MoveNames:: ; 12chr limit
 	li "SICKLE SWIPE"
 	li "MOODY POWDER"
 	li "DRACO SLAM"
+	li "SLEEPING GAS"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
