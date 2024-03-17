@@ -17,6 +17,7 @@ New Moves
 - Sickle Swipe is a Bug-type Slash given to Scyther, and its evolutions by extension.
 - Vileplume can now use Moody Powder to apply the infamously terrible Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
 - Draco Slam is an inaccurate yet strong Dragon move for Alolan Exeggutor.
+- The Koffing family gets Sleeping Gas, a sleep inflicting move nearly as good as Spore. This gives Koga another "sleep technique".
 
 Move Changes
 ====
@@ -33,6 +34,7 @@ Move Changes
 - Razor Wind is now effectively a clone of what Sky Attack was.
 - Vicegrip is Bug type, giving its learners an early-game power boost.
 - Pokemon are now sober when using Rock Throw.
+- Constrict has its previously pathetic base power improved.
 
 Learnset, Typing, and Stat Changes
 ====
@@ -57,6 +59,7 @@ Learnset, Typing, and Stat Changes
 - The cocoons each get a different +2 Defense move at level 100. This technically carries over to their evolutions as well.
 - Mimmeo gets Reflect by TM since it got it by level up.
 - The Sandshrew family is significantly faster, with the Kantonian versions being Ground/Normal.
+- Tradeback moves have been adjusted, giving Umbreon Charm from GSC and wiping out redundant moves (i.e. Quick Attack Dodrio).
 
 Misc/Aesthetic Changes
 ====
