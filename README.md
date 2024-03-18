@@ -38,7 +38,7 @@ Move Changes
 
 Learnset, Typing, and Stat Changes
 ====
-- The Bulbasaur line is pure Grass type.
+- The Bulbasaur line is pure Grass type & receives Stun Spore.
 - Pidgeot has Body Slam and Drill Peck. It's finally functional!
 - The cocoons each get a different +2 Defense move at level 100. This technically carries over to their evolutions as well.
 - Butterfree's attack is dumped even harder, funneling into its HP to give it something approaching bulk.
