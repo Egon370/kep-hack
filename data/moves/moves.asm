@@ -111,7 +111,7 @@ Moves:
 	move QUICK_ATTACK, NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 30
 	move RAGE,         RAGE_EFFECT,                 20, NORMAL,       100, 20
 	move TELEPORT,     SWITCH_AND_TELEPORT_EFFECT,   0, PSYCHIC_TYPE, 100, 20
-	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        0, GHOST,        100, 15
+	move NIGHT_SHADE,  SPECIAL_DAMAGE_EFFECT,        1, GHOST,        100, 15
 	move MIMIC,        MIMIC_EFFECT,                 0, NORMAL,       100, 10
 	move SCREECH,      DEFENSE_DOWN2_EFFECT,         0, NORMAL,        85, 40
 	move DOUBLE_TEAM,  EVASION_UP1_EFFECT,           0, NORMAL,       100, 15
@@ -147,7 +147,7 @@ Moves:
 	move KINESIS,      ACCURACY_DOWN1_EFFECT,        0, PSYCHIC_TYPE,  80, 15
 	move SOFTBOILED,   HEAL_EFFECT,                  0, NORMAL,       100, 10
 	move HI_JUMP_KICK, JUMP_KICK_EFFECT,            85, FIGHTING,      90, 20
-	move GLARE,        PARALYZE_EFFECT,              0, DRAGON,        75, 30
+	move GLARE,        PARALYZE_EFFECT,              0, DRAGON,        90, 30
 	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 15
 	move POISON_GAS,   POISON_EFFECT,                0, POISON,        55, 40
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        85, 20
@@ -207,5 +207,6 @@ Moves:
 	move MOODY_POWDER, MOODY_POWDER_EFFECT,          0, GRASS,         75, 15
 	move DRACO_SLAM,   NO_ADDITIONAL_EFFECT,       120, DRAGON,        75,  5
 	move SLEEPING_GAS, SLEEP_EFFECT,                 0, POISON,        90, 15
+	move HEAL_BELL,    HEAL_BELL_EFFECT,             0, NORMAL,       100,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

@@ -1,6 +1,6 @@
 roms := \
-	kep.gbc \
-	kep_debug.gbc
+	kep.gb \
+	kep_debug.gb
 patches := \
 	kep.patch
 
@@ -42,8 +42,8 @@ RGBLINK ?= $(RGBDS)rgblink
 .PHONY: all red blue blue_debug clean tidy compare tools
 
 all: $(roms)
-kep:        kep.gbc
-kep_debug:  kep_debug.gbc
+kep:        kep.gb
+kep_debug:  kep_debug.gb
 
 clean: tidy
 	find gfx \
@@ -54,10 +54,10 @@ clean: tidy
 
 tidy:
 	$(RM) $(roms) \
-	      $(roms:.gbc=.sym) \
-	      $(roms:.gbc=.map) \
+	      $(roms:.gb=.sym) \
+	      $(roms:.gb=.map) \
 	      $(patches) \
-	      $(patches:.patch=_vc.gbc) \
+	      $(patches:.patch=_vc.gb) \
 	      $(patches:.patch=_vc.sym) \
 	      $(patches:.patch=_vc.map) \
 	      $(patches:%.patch=vc/%.constants.sym) \
@@ -82,7 +82,7 @@ endif
 $(kep_obj):        RGBASMFLAGS += -D _KEP
 $(kep_debug_obj):  RGBASMFLAGS += -D _KEP -D _DEBUG
 
-%.patch: vc/%.constants.sym %_vc.gbc %.gbc vc/%.patch.template
+%.patch: vc/%.constants.sym %_vc.gb %.gb vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
 
 rgbdscheck.o: rgbdscheck.asm
@@ -123,7 +123,7 @@ kep_debug_pad  = 0xff
 kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
 kep_debug_opt  = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
 
-%.gbc: $$(%_obj) layout.link
+%.gb: $$(%_obj) layout.link
 	$(RGBLINK) -p $($*_pad) -d -m $*.map -n $*.sym -l layout.link -o $@ $(filter %.o,$^)
 	$(RGBFIX) -p $($*_pad) $($*_opt) $@
 

@@ -358,3 +358,6 @@ _DemotivatedText::
 	line "motivation!"
 	prompt
 	
+_HealBellText::
+	text "A bell chimed!"
+	prompt

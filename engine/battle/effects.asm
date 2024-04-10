@@ -1308,6 +1308,9 @@ LeechSeedEffect:
 	
 MoodyPowderEffect:
 	jpfar MoodyPowderEffect_
+	
+HealBellEffect:
+	jpfar HealBellEffect_
 
 SplashEffect:
 	call PlayCurrentMoveAnimation

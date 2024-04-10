@@ -2823,6 +2823,7 @@ SylveonEvosMoves:
 	db 30, DRAININGKISS
 	db 36, DAZZLE_GLEAM
 	db 42, TAKE_DOWN
+	db 52, HEAL_BELL
 	db 0
 
 LickilickyEvosMoves:

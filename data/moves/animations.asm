@@ -196,6 +196,7 @@ AttackAnimationPointers:
 	dw MoodyPowderAnim
 	dw DracoSlamAnim
 	dw SleepingGasAnim
+	dw HealBellAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -941,6 +942,7 @@ DoubleTeamAnim:
 	battle_anim BARRIER, SUBANIM_1_BARRIER, 1, 6
 	db -1 ; end
 
+HealBellAnim:
 RecoverAnim:
 	battle_anim CONFUSE_RAY, SE_BLINK_MON
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE

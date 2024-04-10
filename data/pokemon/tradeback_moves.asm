@@ -366,6 +366,7 @@ LickitungTradebackMoves:
 	db 1, THUNDERPUNCH
 	db 1, FLAMETHROWER
 	db 1, DOUBLESLAP
+	db 1, HEAL_BELL
 	db 0
 
 ExeggcuteTradebackMoves:
@@ -762,6 +763,7 @@ TaurosTradebackMoves:
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
 	db 1, QUICK_ATTACK
+	db 1, HEAL_BELL
 	db 0
 
 TrampelTradebackMoves:
@@ -1092,6 +1094,7 @@ JigglypuffTradebackMoves:
 	db 1, FLAMETHROWER
 	db 1, DIZZY_PUNCH
 	db 1, PETAL_DANCE
+	db 1, HEAL_BELL
 	db 0
 
 WigglytuffTradebackMoves:
@@ -1103,6 +1106,7 @@ WigglytuffTradebackMoves:
 	db 1, FLAMETHROWER
 	db 1, DIZZY_PUNCH
 	db 1, PETAL_DANCE
+	db 1, HEAL_BELL
 	db 0
 
 EeveeTradebackMoves:
@@ -1849,6 +1853,7 @@ LickilickyTradebackMoves:
 	db 1, THUNDERPUNCH
 	db 1, FLAMETHROWER
 	db 1, DOUBLESLAP
+	db 1, HEAL_BELL
 	db 0
 
 TangrowthTradebackMoves:
@@ -1882,6 +1887,7 @@ BlisseyTradebackMoves:
 	db 1, DREAM_EATER
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
+	db 1, HEAL_BELL
 	db 0
 
 HitmontopTradebackMoves:

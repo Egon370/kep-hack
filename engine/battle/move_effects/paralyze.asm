@@ -9,7 +9,7 @@ ParalyzeEffect_:
 .next
 	ld a, [hl]
 	and a ; does the target already have a status ailment?
-	jr z, .didntAffect
+	jr nz, .didntAffect
 	ld a, [de]
 	cp ELECTRIC
 	jr nz, .hitTest

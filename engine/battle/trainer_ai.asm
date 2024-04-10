@@ -164,6 +164,8 @@ AIMoveChoiceModification1:
 	jp z, .checkSeeded
 	cp FOCUS_ENERGY_EFFECT
 	jr z, .checkPumpedUp
+	cp MOODY_POWDER_EFFECT
+	jr z, .checkDemotivated
 	cp LIGHT_SCREEN_EFFECT
 	jp z, .checkLightScreenUp
 	cp REFLECT_EFFECT
@@ -176,6 +178,8 @@ AIMoveChoiceModification1:
 	jp z, .checkFullHealth
 	cp MIRROR_MOVE_EFFECT
 	jp z, .checkNoMirrorMoveOnFirstTurn
+	cp HEAL_BELL_EFFECT
+	jp z, .checkPartyStatus
 	ld a, [wEnemyMoveEffect]
 	push hl
 	push de
@@ -205,7 +209,7 @@ AIMoveChoiceModification1:
 	ld a, [hl]
 	add $5 ; heavily discourage move
 	ld [hl], a
-	jr .nextMove
+	jp .nextMove
 .ohko
 	call WillOHKOMoveAlwaysFail
 	jp nc, .nextMove
@@ -220,6 +224,10 @@ AIMoveChoiceModification1:
 	bit GETTING_PUMPED, a
 	jr nz, .discourage ; if the enemy has used focus energy don't use again
 	jp .nextMove
+.checkDemotivated
+	ld a, [wPlayerBattleStatus2]
+	bit DEMOTIVATED, a
+	jr nz, .discourage ; if the player is already demotivated don't use moody powder again
 .checkAsleep
 	ld a, [wAITargetMonStatus]
 	and SLP_MASK
@@ -278,8 +286,28 @@ AIMoveChoiceModification1:
 	and a
 	jp z, .discourage ; don't use mirror move if the player has never selected a move yet
 	jp .nextMove
-
-
+.checkPartyStatus
+	ld a, 0
+	ld hl, wEnemyMon1Status
+	cp [hl]
+	jr nz, .done
+	ld hl, wEnemyMon2Status
+	cp [hl]
+	jr nz, .done
+	ld hl, wEnemyMon3Status
+	cp [hl]
+	jr nz, .done
+	ld hl, wEnemyMon4Status
+	cp [hl]
+	jr nz, .done
+	ld hl, wEnemyMon5Status
+	cp [hl]
+	jr nz, .done
+	ld hl, wEnemyMon6Status
+	cp [hl]
+	jr nz, .done
+	jp .discourage
+.done
 StatusAilmentMoveEffects:
 	db SLEEP_EFFECT
 	db POISON_EFFECT

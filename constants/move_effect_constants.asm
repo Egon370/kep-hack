@@ -92,4 +92,5 @@
 	const SPLASH_EFFECT              ; $55
 	const DISABLE_EFFECT             ; $56
 	const MOODY_POWDER_EFFECT		 ; $57
+	const HEAL_BELL_EFFECT           ; $58
 DEF NUM_MOVE_EFFECTS EQU const_value - 1

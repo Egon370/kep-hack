@@ -4800,16 +4800,22 @@ CriticalHitTest:
 	dec hl
 	ld c, [hl]                   ; read move id
 	ld a, [de]
-	bit GETTING_PUMPED, a        ; test for focus energy
-	jr nz, .focusEnergyUsed      ; bug: using focus energy causes a shift to the right instead of left,
-	                             ; resulting in 1/4 the usual crit chance
+	bit DEMOTIVATED, a           ; test for moody powder
+	jr nz, .demotivated          
 	sla b                        ; (effective (base speed/2)*2)
-	jr nc, .noFocusEnergyUsed
+	bit GETTING_PUMPED, a        ; test for focus energy
+	jr nz, .focusEnergyUsed
+	jr nc, .noModifiers
 	ld b, $ff                    ; cap at 255/256
-	jr .noFocusEnergyUsed
-.focusEnergyUsed
+	jr .noModifiers
+.demotivated
 	srl b
-.noFocusEnergyUsed
+	jr .noModifiers
+.focusEnergyUsed
+	sla b
+	jr nc, .noModifiers
+	ld b, $ff 					 ; cap at 255/256
+.noModifiers
 	ld hl, HighCriticalMoves     ; table of high critical hit moves
 .Loop
 	ld a, [hli]                  ; read move from move table
@@ -4909,7 +4915,7 @@ HandleCounterMove:
 ApplyAttackToEnemyPokemon:
 	ld a, [wPlayerMoveEffect]
 	cp OHKO_EFFECT
-	jr z, ApplyDamageToEnemyPokemon
+	jp z, ApplyDamageToEnemyPokemon
 	cp SUPER_FANG_EFFECT
 	jr z, .superFangEffect
 	cp SPECIAL_DAMAGE_EFFECT
@@ -5075,7 +5081,7 @@ ApplyAttackToPlayerPokemon:
 	ld b, a
 	srl a
 	add b
-	ld b, a ; b = attacker's level * 1.5
+	ld b, a ; b = level * 1.5
 ; loop until a random number in the range [0, b) is found
 ; this differs from the range when the player attacks, which is [1, b)
 ; it's possible for the enemy to do 0 damage with Psywave, but the player always does at least 1 damage

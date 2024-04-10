@@ -5,9 +5,10 @@ MoodyPowderEffect_:
 	jr z, .notEnemy
 	ld hl, wPlayerBattleStatus2
 .notEnemy
-	bit GETTING_PUMPED, [hl] ; is mon already using focus energy?
+	bit DEMOTIVATED, [hl] ; is mon already demotivated?
 	jr nz, .alreadyUsing
-	set GETTING_PUMPED, [hl] ; mon is now using focus energy
+	set DEMOTIVATED, [hl] ; mon is now demotivated
+	res GETTING_PUMPED, [hl] ; clear focus energy
 	callfar PlayCurrentMoveAnimation
 	ld hl, DemotivatedText
 	jp PrintText

@@ -8,6 +8,7 @@ FocusEnergyEffect_:
 	bit GETTING_PUMPED, [hl] ; is mon already using focus energy?
 	jr nz, .alreadyUsing
 	set GETTING_PUMPED, [hl] ; mon is now using focus energy
+	res DEMOTIVATED, [hl] ; clear moody powder
 	callfar PlayCurrentMoveAnimation
 	ld hl, GettingPumpedText
 	jp PrintText

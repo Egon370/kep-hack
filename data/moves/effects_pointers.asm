@@ -88,4 +88,5 @@ MoveEffectPointerTable:
 	dw SplashEffect              ; SPLASH_EFFECT
 	dw DisableEffect             ; DISABLE_EFFECT
 	dw MoodyPowderEffect         ; MOODY_POWDER_EFFECT
+	dw HealBellEffect            ; HEAL_BELL_EFFECT
 	assert_table_length NUM_MOVE_EFFECTS
