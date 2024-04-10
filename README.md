@@ -8,55 +8,58 @@ Shadebug, better known as the Kage no Mushi, has been added to replace Gorillaim
 
 New Moves
 ====
-- Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
-- Infection is a "canned" version of the Toxic + Leech Seed glitch exclusive to Parasect.
-- Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB.
-- Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
-- Thunder Fang finally fixes the Kotora line's midgame issues.
-- Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
 - Sickle Swipe is a Bug-type Slash given to Scyther, and its evolutions by extension.
-- Vileplume can now use Moody Powder to apply the infamously terrible Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
 - Draco Slam is an inaccurate yet strong Dragon move for Alolan Exeggutor.
+- Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB.
+- Thunder Fang finally fixes the Kotora line's midgame issues.
+- Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
+- Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
+- Infection is a "canned" version of the Toxic + Leech Seed glitch exclusive to Parasect.
+- Vileplume can now use Moody Powder to apply the infamously terrible Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
+- Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
+- The Koffing family gets Sleeping Gas, a sleep inflicting move nearly as good as Spore. This gives Koga another "sleep technique" like he talks about in his pre-fight monologue.
 
 Move Changes
 ====
 - Twineedle has a high critical hit ratio effectively making it a Bug-type Karate Chop, and loses its poison chance as well.
-- Gust is Flying type, providing a smoother early game for the Pidgey line.
+- Vicegrip is Bug type, giving its learners an early-game power boost.
+- Thunder has its higher paralysis chance from GSC.
 - Karate Chop is Fighting type, giving three more lines a proper endgame STAB.
+- Fly is now 80 base power, matching Drill Peck in the same way Dig matches Earthquake.
+- Gust is Flying type, providing a smoother early game for the Pidgey line.
+- Sky Attack is now slightly weaker Flying type Hyper Beam.
+- Razor Wind is now effectively a clone of what Sky Attack was.
+- Bind is 35 base power so that it's not a direct Wrap downgrade anymore.
+- Constrict has its previously pathetic base power improved.
 - Dizzy Punch has an actual confusion chance.
 - Egg Bomb is 100% accurate.
-- Bind is 35 base power so that it's not a direct Wrap downgrade anymore.
-- Spike Cannon is Steel type, functioning as early STAB for Alolan Sandslash.
-- Thunder has its higher paralysis chance from GSC.
-- Sky Attack is now slightly weaker Flying type Hyper Beam.
-- Fly is now 80 base power, matching Drill Peck in the same way Dig matches Earthquake.
-- Razor Wind is now effectively a clone of what Sky Attack was.
-- Vicegrip is Bug type, giving its learners an early-game power boost.
 - Pokemon are now sober when using Rock Throw.
+- Spike Cannon is Steel type, functioning as early STAB for Alolan Sandslash.
 
 Learnset, Typing, and Stat Changes
 ====
-- Beedrill is now EXTREMELY minmaxed. Proportional to its BST, it has the same spread as its Mega. It also recieves Body Slam.
-- Butterfree's attack is dumped even harder, funneling into its HP to give it something approaching bulk.
+- The Bulbasaur line is pure Grass type & receives Stun Spore.
 - Pidgeot has Body Slam and Drill Peck. It's finally functional!
-- With Sky Attack's new effect, it is now exclusive to the legendary birds as well as Gyarados, Dragonite, and Aerodactyl.
-- The mons that became Fairy in Gen 6 are now part-Fairy here, with movepools to match.
-- The Krabby line is now part Bug type, switching in on Earthquake with ease.
-- Decilla now has a movepool derived from its evolution, including BoltBeam coverage.
-- Seel is Water/Ice type, giving it a nicer early game.
-- Moltres now has Flamethrower; Leer was likely a typo.
-- The Bittybat line has Psychic, similar to the beta.
-- Hyper Beam is now standardized, benefitting Luxwan, Sirfetch'd and the Hitmons and hurting every formerly fully-evolved mon except Pinsir, Scyther, and Porygon2.
-- The fossils now finally have Rock Slide by both TM and level-up. Kabutops also has Absorb replaced by Leech Life.
-- Arcanine now has Earthquake.
-- The Nidos now have Dig so you don't have to wait an eternity to give them a Ground move.
-- The Bulbasaur line is pure Grass type.
-- gyarados? more like glaredos
-- Scyther is now pure Bug, alleviating its weaknesses and better fitting its Pokedex entry.
-- Venomoth is now very slightly faster, letting it speed tie Jynx.
 - The cocoons each get a different +2 Defense move at level 100. This technically carries over to their evolutions as well.
-- Mimmeo gets Reflect by TM since it got it by level up.
+- Butterfree's attack is dumped even harder, funneling into its HP to give it something approaching bulk.
+- Beedrill is now EXTREMELY minmaxed. Proportional to its BST, it has the same spread as its Mega. It also receives Body Slam.
+- The Nidos now have Dig so you don't have to wait an eternity to give them a Ground move.
+- The Bittybat line has Psychic, similar to the beta.
+- The mons that became Fairy in Gen 6 are now part-Fairy here, with movepools to match.
 - The Sandshrew family is significantly faster, with the Kantonian versions being Ground/Normal.
+- With Sky Attack's new effect, it is now exclusive to the legendary birds as well as Gyarados, Dragonite, and Aerodactyl.
+- gyarados? more like glaredos
+- Venomoth is now very slightly faster, letting it speed tie Jynx.
+- Arcanine now has Earthquake.
+- Hyper Beam is now standardized, benefitting Luxwan, Sirfetch'd and the Hitmons and hurting every formerly fully-evolved mon except Pinsir, Scyther, and Porygon2.
+- The Krabby line is now part Bug type, switching in on Earthquake with ease.
+- Seel is Water/Ice type, giving it a nicer early game.
+- Scyther is now pure Bug, alleviating its weaknesses and better fitting its Pokedex entry.
+- Mimmeo gets Reflect by TM since it got it by level up.
+- The fossils now finally have Rock Slide by both TM and level-up. Kabutops also has Absorb replaced by Leech Life.
+- Decilla now has a movepool derived from its evolution, including BoltBeam coverage.
+- Moltres now has Flamethrower; Leer was likely a typo.
+- Tradeback moves have been adjusted, giving Umbreon Charm from GSC and wiping out redundant moves (i.e. Quick Attack Dodrio).
 
 Misc/Aesthetic Changes
 ====
