@@ -11,7 +11,6 @@ StartMenu_Pokemon::
 	and a
 	jp z, RedisplayStartMenu
 	xor a
-	ld [wMenuItemToSwap], a
 	ld [wPartyMenuTypeOrMessageID], a
 	ld [wUpdateSpritesEnabled], a
 	call DisplayPartyMenu
@@ -463,6 +462,46 @@ CannotGetOffHereText:
 INCLUDE "data/items/use_party.asm"
 
 INCLUDE "data/items/use_overworld.asm"
+
+StartMenu_PortablePC:: ; new
+	ld a, [wCurMap] ; we don't want to cheese the Elite 4 or Silph Gauntlet, do we?
+	cp LORELEIS_ROOM
+	jr z, .cantUseItHere
+	cp BRUNOS_ROOM
+	jr z, .cantUseItHere
+	cp AGATHAS_ROOM
+	jr z, .cantUseItHere
+	cp LANCES_ROOM
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_1F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_2F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_3F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_4F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_5F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_6F
+	jr z, .cantUseItHere
+	cp SILPH_GAUNTLET_7F
+	jr z, .cantUseItHere
+; if none of the above cp is met, let's open the pc and do the things
+	callfar ActivatePC ; main part
+	jr .done
+.cantUseItHere ; no cheese!
+	ld hl, CantUsePCHere
+	call PrintText
+.done
+	call LoadScreenTilesFromBuffer2 ; restore saved screen
+	call LoadTextBoxTilePatterns
+	call UpdateSprites
+	jp RedisplayStartMenu
+
+CantUsePCHere:
+	text_far _CantUsePCHere
+	text_end
 
 StartMenu_TrainerInfo::
 	call GBPalWhiteOut
