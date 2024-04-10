@@ -15,7 +15,8 @@ New Moves
 - Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
 - Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
 - Infection is a "canned" version of the Toxic + Leech Seed glitch exclusive to Parasect.
-- Vileplume can now use Moody Powder to apply the infamously terrible Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
+- Vileplume can now use Moody Powder to apply the infamously terrible old version of Focus Energy to the opponent. This can really come in clutch against a Tauros or Luxwan.
+- Heal Bell is added and works how you'd expect, except with all the caveats of Generation I status curing; no getting rid of the paralysis speed drop! It's given to Blissey to turn it into a truly Ubers-level support mon, Tauros for hype endgame situations, Sylveon to give it an edge over the other Eeveelutions, and the Lickitung and Jigglypuff lines because they get it in later gens.
 - Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
 - The Koffing family gets Sleeping Gas, a sleep inflicting move nearly as good as Spore. This gives Koga another "sleep technique" like he talks about in his pre-fight monologue.
 
@@ -23,6 +24,7 @@ Move Changes
 ====
 - Twineedle has a high critical hit ratio effectively making it a Bug-type Karate Chop, and loses its poison chance as well.
 - Vicegrip is Bug type, giving its learners an early-game power boost.
+- Glare is Dragon type, reflecting its learners, and receives its accuracy buff from Generation VI.
 - Thunder has its higher paralysis chance from GSC.
 - Karate Chop is Fighting type, giving three more lines a proper endgame STAB.
 - Fly is now 80 base power, matching Drill Peck in the same way Dig matches Earthquake.
@@ -33,6 +35,7 @@ Move Changes
 - Constrict has its previously pathetic base power improved.
 - Dizzy Punch has an actual confusion chance.
 - Egg Bomb is 100% accurate.
+- Focus Energy now doubles your crit rate instead of quartering it.
 - Pokemon are now sober when using Rock Throw.
 - Spike Cannon is Steel type, functioning as early STAB for Alolan Sandslash.
 
@@ -65,7 +68,7 @@ Misc/Aesthetic Changes
 ====
 - The Select Swap glitch from Red & Green is back.
 - Various moves that don't do typed damage have their types change for flavor.
-- Porygon now uses Sylveon's palette.
+- The Porygons now use Sylveon's palette, and Tricules is grey to better reflect later versions of GSC.
 - Solar Beam has a space in its name.
 - The Portable PC has been added.
 
