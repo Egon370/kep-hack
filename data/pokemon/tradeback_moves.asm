@@ -345,7 +345,6 @@ IvysaurTradebackMoves:
 	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
-	db 1, PETAL_DANCE
 	db 1, RAZOR_WIND
 	db 1, SKULL_BASH
 	db 0
@@ -663,7 +662,6 @@ PsyduckTradebackMoves:
 	db 0
 
 DrowzeeTradebackMoves:
-	db 1, HEADBUTT
 	db 1, FIRE_PUNCH
 	db 1, ICE_PUNCH
 	db 1, THUNDERPUNCH
@@ -732,7 +730,6 @@ KoffingTradebackMoves:
 RamooseTradebackMoves:
 	db 1, HEADBUTT ; TM, oh boy
 	db 1, ROAR ; TM
-	db 1, QUICK_ATTACK ; Egg Move
 	db 0
 
 MankeyTradebackMoves:
@@ -872,7 +869,6 @@ MoltresTradebackMoves:
 	db 1, EMBER
 	db 1, WING_ATTACK
 	db 1, ROAR
-	db 1, FLAMETHROWER
 	db 0
 
 ArticunoTradebackMoves:
@@ -905,7 +901,6 @@ KrabbyTradebackMoves:
 
 CheepTradebackMoves:
 	db 1, HEADBUTT ; TM
-	db 1, WATERFALL ; HM
 	db 1, DOUBLE_KICK ; Egg Move
 	db 1, WING_ATTACK ; Egg Move (from Sato?)
 	db 1, AURORA_BEAM ; Egg Move
@@ -917,7 +912,6 @@ JabettaTradebackMoves:
 	db 1, HEADBUTT ; TM
 	db 1, ROAR ; TM
 	db 1, ICE_PUNCH ; TM
-	db 1, WATERFALL ; HM
 	db 1, DOUBLE_KICK ; Egg Move
 	db 1, WING_ATTACK ; Egg Move (from Sato?)
 	db 1, AURORA_BEAM ; Egg Move
@@ -1146,7 +1140,6 @@ MachopTradebackMoves:
 	db 0
 
 ZubatTradebackMoves:
-	db 1, GUST
 	db 1, QUICK_ATTACK
 	db 0
 
@@ -1283,7 +1276,6 @@ WeirduckTradebackMoves:
 	db 1, WATERFALL
 	db 1, HYPNOSIS
 	db 1, LIGHT_SCREEN
-	db 1, PSYBEAM
 	db 1, PSYCHIC_M
 	db 1, PETAL_DANCE
 	db 1, TRI_ATTACK
@@ -1297,14 +1289,12 @@ GolduckTradebackMoves:
 	db 1, WATERFALL
 	db 1, HYPNOSIS
 	db 1, LIGHT_SCREEN
-	db 1, PSYBEAM
 	db 1, PSYCHIC_M
 	db 1, PETAL_DANCE
 	db 1, TRI_ATTACK
 	db 0
 
 HypnoTradebackMoves:
-	db 1, HEADBUTT
 	db 1, FIRE_PUNCH
 	db 1, ICE_PUNCH
 	db 1, THUNDERPUNCH
@@ -1314,7 +1304,6 @@ HypnoTradebackMoves:
 	db 0
 
 GolbatTradebackMoves:
-	db 1, GUST
 	db 1, QUICK_ATTACK
 	db 0
 
@@ -1486,6 +1475,8 @@ PidgeotTradebackMoves:
 
 StarmieTradebackMoves:
 	db 1, WATERFALL
+	db 1, DREAM_EATER
+	db 1, CONFUSE_RAY
 	db 0
 
 BulbasaurTradebackMoves:
@@ -1493,7 +1484,6 @@ BulbasaurTradebackMoves:
 	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
-	db 1, PETAL_DANCE
 	db 1, RAZOR_WIND
 	db 1, SKULL_BASH
 	db 0
@@ -1503,7 +1493,6 @@ VenusaurTradebackMoves:
 	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
-	db 1, PETAL_DANCE
 	db 1, RAZOR_WIND
 	db 1, SKULL_BASH
 	db 1, ROAR
@@ -1519,14 +1508,12 @@ OrfryTradebackMoves:
 	db 1, HAZE
 	db 1, HYDRO_PUMP
 	db 1, PSYBEAM
-	db 1, SWORDS_DANCE
 	db 0
 
 GoldeenTradebackMoves:
 	db 1, HAZE
 	db 1, HYDRO_PUMP
 	db 1, PSYBEAM
-	db 1, SWORDS_DANCE
 	db 0
 
 SeakingTradebackMoves:
@@ -1574,7 +1561,6 @@ KoltaTradebackMoves:
 PonytaTradebackMoves:
 	db 1, TACKLE
 	db 1, HEADBUTT
-	db 1, FLAMETHROWER
 	db 1, DOUBLE_KICK
 	db 1, HYPNOSIS
 	db 1, QUICK_ATTACK
@@ -1585,7 +1571,6 @@ PonytaTradebackMoves:
 RapidashTradebackMoves:
 	db 1, TACKLE
 	db 1, HEADBUTT
-	db 1, FLAMETHROWER
 	db 1, DOUBLE_KICK
 	db 1, HYPNOSIS
 	db 1, QUICK_ATTACK
@@ -1691,7 +1676,6 @@ CharmanderTradebackMoves:
 	db 1, SMOKESCREEN
 	db 1, DEFENSE_CURL
 	db 1, FIRE_PUNCH
-	db 1, HEADBUTT
 	db 1, BITE
 	db 1, ROCK_SLIDE
 	db 0
@@ -1710,7 +1694,6 @@ CharmeleonTradebackMoves:
 	db 1, SMOKESCREEN
 	db 1, DEFENSE_CURL
 	db 1, FIRE_PUNCH
-	db 1, HEADBUTT
 	db 1, BITE
 	db 1, ROCK_SLIDE
 	db 0
@@ -1729,11 +1712,9 @@ CharizardTradebackMoves:
 	db 1, SMOKESCREEN
 	db 1, DEFENSE_CURL
 	db 1, FIRE_PUNCH
-	db 1, HEADBUTT
 	db 1, BITE
 	db 1, ROCK_SLIDE
 	db 1, ROAR
-	db 1, WING_ATTACK
 	db 0
 
 TotartleTradebackMoves:
@@ -1898,7 +1879,6 @@ HitmontopTradebackMoves:
 	db 0
 
 CrobatTradebackMoves:
-	db 1, GUST
 	db 1, QUICK_ATTACK
 	db 0
 
@@ -1921,7 +1901,6 @@ KingdraTradebackMoves:
 	db 1, WATERFALL
 	db 1, AURORA_BEAM
 	db 1, DISABLE
-	db 1, DRAGON_RAGE
 	db 1, SPLASH
 	db 1, HAZE
 	db 0
@@ -2051,15 +2030,12 @@ MrRimeTradebackMoves:
 	db 1, THUNDERPUNCH ; TM
 	db 1, ICE_PUNCH ; TM
 	db 1, HYPNOSIS ; Egg Move
-	db 1, PSYBEAM ; Egg Move
 	db 0
 	
 MeltanTradebackMoves:
-	db 1, HEADBUTT ; TM
 	db 0
 
 MelmetalTradebackMoves:
-	db 1, HEADBUTT ; TM
 	db 0
 	
 ; Much of the regional forms have the same rough learnsets, so I'm applying and adapting them. Has some cool results.
@@ -2128,7 +2104,6 @@ PersianATradebackMoves:
 	
 GolemATradebackMoves:
 	db 1, FIRE_PUNCH
-	db 1, THUNDERPUNCH
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
 	db 0
@@ -2204,7 +2179,6 @@ TaurosPTradebackMoves:
 TaurosPATradebackMoves:
 	db 1, HORN_ATTACK
 	db 1, THRASH
-	db 1, SURF
 	db 1, HEADBUTT
 	db 1, QUICK_ATTACK
 	db 0
@@ -2213,7 +2187,6 @@ TaurosPBTradebackMoves:
 	db 1, HORN_ATTACK
 	db 1, THRASH
 	db 1, HEADBUTT
-	db 1, FLAMETHROWER
 	db 1, QUICK_ATTACK
 	db 0
 
