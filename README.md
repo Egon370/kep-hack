@@ -22,6 +22,7 @@ New Moves
 
 Move Changes
 ====
+- Leech Life has slightly more base power to bring it in line with other early game moves.
 - Twineedle has a high critical hit ratio effectively making it a Bug-type Karate Chop, and loses its poison chance as well.
 - Vicegrip is Bug type, giving its learners an early-game power boost.
 - Glare is Dragon type, reflecting its learners, and receives its accuracy buff from Generation VI.
@@ -31,11 +32,13 @@ Move Changes
 - Gust is Flying type, providing a smoother early game for the Pidgey line.
 - Sky Attack is now slightly weaker Flying type Hyper Beam.
 - Razor Wind is now effectively a clone of what Sky Attack was.
+- Mega Drain is 60 base power; 40 felt far too weak for a gym reward.
 - Bind is 35 base power so that it's not a direct Wrap downgrade anymore.
 - Constrict has its previously pathetic base power improved.
 - Dizzy Punch has an actual confusion chance.
 - Egg Bomb is 100% accurate.
 - Focus Energy now doubles your crit rate instead of quartering it.
+- Poison-type attacks have been made stronger across the board, though they're still on the weaker side in the grand scheme of things.
 - Pokemon are now sober when using Rock Throw.
 - Spike Cannon is Steel type, functioning as early STAB for Alolan Sandslash.
 
@@ -62,7 +65,7 @@ Learnset, Typing, and Stat Changes
 - The fossils now finally have Rock Slide by both TM and level-up. Kabutops also has Absorb replaced by Leech Life.
 - Decilla now has a movepool derived from its evolution, including BoltBeam coverage.
 - Moltres now has Flamethrower; Leer was likely a typo.
-- Tradeback moves have been adjusted, giving Umbreon Charm from GSC and wiping out redundant moves (i.e. Quick Attack Dodrio).
+- Tradeback moves have been adjusted, giving Umbreon Charm from GSC and wiping out redundant moves (i.e. Quick Attack Dodrio). Additionally, any HMs learned via Tradebacks have been merged into the Pokemon's base learnset; enjoy your Flash Bulbasaur & Surf Tauros!
 
 Misc/Aesthetic Changes
 ====
