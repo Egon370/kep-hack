@@ -18,7 +18,7 @@
 	     DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
 	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    EARTHQUAKE,   FISSURE,      \
 	     MIMIC,        DOUBLE_TEAM,  BIDE,         SKULL_BASH,   REST,         \
-	     ROCK_SLIDE,   SUBSTITUTE,   CUT
+	     ROCK_SLIDE,   SUBSTITUTE,   CUT,		   FLASH
 	; end
 
 	db BANK(TangrowthPicFront)

@@ -18,7 +18,7 @@
 	     RAGE,         MEGA_DRAIN,   SOLARBEAM,    DRAGON_RAGE,  EARTHQUAKE,   \
 	     FISSURE,      PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         SELFDESTRUCT, EGG_BOMB,     REST,         \
-		 PSYWAVE,      EXPLOSION,    SUBSTITUTE,   STRENGTH	   
+		 PSYWAVE,      EXPLOSION,    SUBSTITUTE,   STRENGTH,	 FLASH	   
 	; end
 
 	db BANK(ExeggutorAPicFront)

@@ -19,7 +19,7 @@
 	     HYPER_BEAM,   RAGE,         DRAGON_RAGE,  THUNDERBOLT,  THUNDER,      \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         FIRE_BLAST,   \
 	     SWIFT,        SKULL_BASH,   SKY_ATTACK,   REST,         THUNDER_WAVE, \
-	     SUBSTITUTE,   SURF,         STRENGTH
+	     SUBSTITUTE,   FLY,          SURF,         STRENGTH
 	; end
 
 	db BANK(DragonitePicFront)

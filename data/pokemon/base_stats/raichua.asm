@@ -19,7 +19,7 @@
 	     RAGE,         THUNDERBOLT,  THUNDER,      PSYCHIC_M,    TELEPORT,     \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SWIFT,        \
 	     SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,	     SUBSTITUTE,   \
-	     FLY,          SURF,         FLASH 	   
+	     FLY,          SURF,         STRENGTH,     FLASH 	   
 	; end
 
 	db BANK(RaichuAPicFront)

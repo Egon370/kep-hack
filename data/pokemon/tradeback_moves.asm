@@ -342,7 +342,6 @@ SlowbroTradebackMoves:
 
 IvysaurTradebackMoves:
 	db 1, DEFENSE_CURL
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
 	db 1, RAZOR_WIND
@@ -351,7 +350,6 @@ IvysaurTradebackMoves:
 
 ExeggutorTradebackMoves:
 	db 1, DREAM_EATER
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, CONFUSION
 	db 0
@@ -370,8 +368,6 @@ LickitungTradebackMoves:
 
 ExeggcuteTradebackMoves:
 	db 1, DREAM_EATER
-	db 1, FLASH
-	db 1, STRENGTH
 	db 1, CONFUSION
 	db 1, MEGA_DRAIN
 	db 0
@@ -515,7 +511,6 @@ PinsirTradebackMoves:
 	db 0
 
 TangelaTradebackMoves:
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, AMNESIA
 	db 1, CONFUSION
@@ -639,7 +634,6 @@ ArbokTradebackMoves:
 	db 0
 
 ParasectTradebackMoves:
-	db 1, FLASH
 	db 1, POISONPOWDER
 	db 1, COUNTER
 	db 1, LIGHT_SCREEN
@@ -649,7 +643,6 @@ ParasectTradebackMoves:
 
 PsyduckTradebackMoves:
 	db 1, SCREECH
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, ICE_PUNCH
 	db 1, WATERFALL
@@ -756,7 +749,6 @@ DiglettTradebackMoves:
 TaurosTradebackMoves:
 	db 1, HORN_ATTACK
 	db 1, THRASH
-	db 1, SURF
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
 	db 1, QUICK_ATTACK
@@ -814,7 +806,6 @@ DragoniteTradebackMoves:
 	db 1, LIGHT_SCREEN
 	db 1, MIST
 	db 1, SUPERSONIC
-        db 1, FLY
 	db 1, HYDRO_PUMP
 	db 0
 
@@ -941,7 +932,6 @@ PikachuTradebackMoves:
 	db 1, DEFENSE_CURL
 	db 1, HEADBUTT
 	db 1, THUNDERPUNCH
-	db 1, STRENGTH
 	db 1, DIZZY_PUNCH
 	db 1, DOUBLESLAP
 	db 1, PETAL_DANCE
@@ -952,7 +942,6 @@ RaichuTradebackMoves:
 	db 1, DEFENSE_CURL
 	db 1, HEADBUTT
 	db 1, THUNDERPUNCH
-	db 1, STRENGTH
 	db 1, DIZZY_PUNCH
 	db 1, DOUBLESLAP
 	db 1, PETAL_DANCE
@@ -1150,7 +1139,6 @@ EkansTradebackMoves:
 	db 0
 
 ParasTradebackMoves:
-	db 1, FLASH
 	db 1, POISONPOWDER
 	db 1, COUNTER
 	db 1, LIGHT_SCREEN
@@ -1270,7 +1258,6 @@ MachampTradebackMoves:
 
 WeirduckTradebackMoves:
 	db 1, SCREECH
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, ICE_PUNCH
 	db 1, WATERFALL
@@ -1283,7 +1270,6 @@ WeirduckTradebackMoves:
 
 GolduckTradebackMoves:
 	db 1, SCREECH
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, ICE_PUNCH
 	db 1, WATERFALL
@@ -1481,7 +1467,6 @@ StarmieTradebackMoves:
 
 BulbasaurTradebackMoves:
 	db 1, DEFENSE_CURL
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
 	db 1, RAZOR_WIND
@@ -1490,7 +1475,6 @@ BulbasaurTradebackMoves:
 
 VenusaurTradebackMoves:
 	db 1, DEFENSE_CURL
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, LIGHT_SCREEN
 	db 1, RAZOR_WIND
@@ -1596,8 +1580,6 @@ RaticateTradebackMoves:
 	db 1, FURY_SWIPES
 	db 1, SCREECH
 	db 1, ROAR
-	db 1, CUT
-	db 1, STRENGTH
 	db 0
 
 NidorinoTradebackMoves:
@@ -1609,7 +1591,6 @@ NidorinoTradebackMoves:
 	db 1, DISABLE
 	db 1, SUPERSONIC
 	db 1, LOVELY_KISS
-	db 1, STRENGTH
 	db 0
 
 NidorinaTradebackMoves:
@@ -1619,7 +1600,6 @@ NidorinaTradebackMoves:
 	db 1, DISABLE
 	db 1, SUPERSONIC
 	db 1, LOVELY_KISS
-	db 1, STRENGTH
 	db 0
 
 GeodudeTradebackMoves:
@@ -1665,7 +1645,6 @@ GorochuTradebackMoves:
 	db 1, DEFENSE_CURL
 	db 1, HEADBUTT
 	db 1, THUNDERPUNCH
-	db 1, STRENGTH
 	db 1, DIZZY_PUNCH
 	db 1, DOUBLESLAP
 	db 1, PETAL_DANCE
@@ -1741,37 +1720,31 @@ MoltresGTradebackMoves:
 	db 0
 
 OddishTradebackMoves:
-	db 1, FLASH
 	db 1, RAZOR_LEAF
 	db 1, LEECH_SEED
 	db 0
 
 GloomTradebackMoves:
-	db 1, FLASH
 	db 1, RAZOR_LEAF
 	db 1, LEECH_SEED
 	db 0
 
 VileplumeTradebackMoves:
-	db 1, FLASH
 	db 1, RAZOR_LEAF
 	db 1, LEECH_SEED
 	db 0
 
 BellsproutTradebackMoves:
-	db 1, FLASH
 	db 1, LOVELY_KISS
 	db 1, LEECH_LIFE
 	db 0
 
 WeepinbellTradebackMoves:
-	db 1, FLASH
 	db 1, LOVELY_KISS
 	db 1, LEECH_LIFE
 	db 0
 
 VictreebelTradebackMoves:
-	db 1, FLASH
 	db 1, LOVELY_KISS
 	db 1, LEECH_LIFE
 	db 0
@@ -1838,7 +1811,6 @@ LickilickyTradebackMoves:
 	db 0
 
 TangrowthTradebackMoves:
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, AMNESIA
 	db 1, CONFUSION
@@ -1854,7 +1826,6 @@ KleavorTradebackMoves:
 	db 0
 
 BellignanTradebackMoves:
-	db 1, FLASH
 	db 1, LEECH_LIFE
 	db 0
 
@@ -1886,7 +1857,6 @@ AnimonTradebackMoves:
 	db 0
 	
 BellossomTradebackMoves:
-	db 1, FLASH
 	db 1, RAZOR_LEAF
 	db 1, LEECH_SEED
 	db 0
@@ -2060,15 +2030,12 @@ RaticateATradebackMoves:
 	db 1, FURY_SWIPES
 	db 1, SCREECH
 	db 1, ROAR
-	db 1, CUT
-	db 1, STRENGTH
 	db 0
 	
 RaichuATradebackMoves:
 	db 1, DEFENSE_CURL
 	db 1, HEADBUTT
 	db 1, THUNDERPUNCH
-	db 1, STRENGTH
 	db 1, DIZZY_PUNCH
 	db 1, DOUBLESLAP
 	db 1, PETAL_DANCE
@@ -2147,7 +2114,6 @@ MukATradebackMoves:
 
 ExeggutorATradebackMoves:
 	db 1, DREAM_EATER
-	db 1, FLASH
 	db 1, HEADBUTT
 	db 1, CONFUSION
 	db 0
