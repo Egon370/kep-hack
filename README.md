@@ -74,6 +74,8 @@ Misc/Aesthetic Changes
 - The Porygons now use Sylveon's palette, and Tricules is grey to better reflect later versions of GSC.
 - Solar Beam has a space in its name.
 - The Portable PC has been added.
+- Glitch Pokemon will now duplicate items like Missingno originally did.
+- The Squeamata line has a rejected eye design more in line with their back sprites.
 
 Find the spreadsheet ("forked" from Misty's, which I'm surprised wasn't linked originally) [here!](https://docs.google.com/spreadsheets/d/1P-_5qGxEqmWK0ss4WeowkCE42TijfOjhDFMtC4cQ4IQ/edit#gid=343006014)
 
