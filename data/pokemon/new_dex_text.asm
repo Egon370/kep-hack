@@ -993,9 +993,7 @@ _ShadebugDexEntry::
 	next "luck. Every leaf"
 	next "it touches will"
 	
-	page "start to wither."
-	next " "
-	next " "
+	page "start to wither"
 	dex
 
 _MissingNoDexEntry::	; unused

@@ -265,15 +265,15 @@ ObjectsToHide:
 ; It does have the optimisation of loading wPokedexOwned for processing, anyway.
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
-; [wd11e] = pokedex number
+; [wPokeStorage] = pokedex number
 ; hl = address of bit field
 ; OUTPUT:
 ; 0 = Not Owned
 ; 1 = Owned
 HoFIsPokemonBitSet:
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld hl, wPokedexOwned
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	dec a
 	ld c, a
 	ld b, FLAG_TEST

@@ -400,13 +400,13 @@ BadgeBlkDataLengths:
 DeterminePaletteID:
 	ld a, [hl]
 DeterminePaletteIDOutOfBattle:
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	and a ; is the mon index 0?
 	jr z, .skipDexNumConversion
 	push bc
 	predef IndexToPokedex
 	pop bc
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 .skipDexNumConversion
 	ld e, a
 	ld d, 0

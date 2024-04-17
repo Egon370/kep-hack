@@ -280,7 +280,7 @@ OfficerJennySquirtle:
 	jr nz, .refuse
 	call SaveScreenTilesToBuffer1 ; prevents nickname screen corruption
 	ld a, SQUIRTLE
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld [wcf91], a
 	call GetMonName
 	ld a, $1
@@ -402,7 +402,7 @@ VermilionBeauty:
 ; This is a jump point for if the event was already started.
 .eventInProgress
 	ld a, [wBeautyChoice]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	ld hl, BeautyChoice
 	call PrintText

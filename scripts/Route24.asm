@@ -293,7 +293,7 @@ Route24Damian:
 	jr nz, .asm_515d0
 	call SaveScreenTilesToBuffer1 ; prevents nickname screen corruption
 	ld a, CHARMANDER
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld [wcf91], a
 	call GetMonName
 	ld a, $1

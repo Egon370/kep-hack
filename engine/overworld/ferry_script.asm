@@ -29,7 +29,7 @@ GetFerryTickets:
 	jr z, .done
 	push hl
 	push de
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld b, a
 	predef GetQuantityOfItemInBag
 	pop de
@@ -39,7 +39,7 @@ GetFerryTickets:
 	jr z, .loop
 
 	; A ticket's in the bag
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	ld [de], a
 	inc de
 	push hl
@@ -79,7 +79,7 @@ PrintTicketsInBag:
 	cp $ff
 	ret z
 	push hl
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	coord hl, 2, 2
 	ld a, [$ffdb]

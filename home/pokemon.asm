@@ -89,12 +89,12 @@ LoadFlippedFrontSpriteByMonIndex::
 
 LoadFrontSpriteByMonIndex::
 	push hl
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	push af
 	ld a, [wcf91]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	predef IndexToPokedex
-	ld hl, wd11e
+	ld hl, wPokeStorage
 	ld a, [hl]
 	pop bc
 	ld [hl], b
@@ -345,8 +345,8 @@ PrintLevelFull::
 	ld a, [wLoadedMonLevel] ; level
 
 PrintLevelCommon::
-	ld [wd11e], a
-	ld de, wd11e
+	ld [wPokeStorage], a
+	ld de, wPokeStorage
 	ld b, LEFT_ALIGN | 1 ; 1 byte
 	jp PrintNumber
 
@@ -362,10 +362,10 @@ GetMonHeader::
 	push bc
 	push de
 	push hl
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	push af
 	ld a, [wd0b5]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld de, FossilKabutopsPic
 	ld b, $66 ; size of Kabutops fossil and Ghost sprites
 	cp FOSSIL_KABUTOPS ; Kabutops fossil
@@ -377,8 +377,8 @@ GetMonHeader::
 	ld b, $77 ; size of Aerodactyl fossil sprite
 	cp FOSSIL_AERODACTYL ; Aerodactyl fossil
 	jr z, .specialID
-	predef IndexToPokedex   ; convert pokemon ID in [wd11e] to pokedex number
-	ld a, [wd11e]
+	predef IndexToPokedex   ; convert pokemon ID in [wPokeStorage] to pokedex number
+	ld a, [wPokeStorage]
 	dec a
 	ld bc, BASE_DATA_SIZE
 	ld hl, BaseStats
@@ -399,7 +399,7 @@ GetMonHeader::
 	ld a, [wd0b5]
 	ld [wMonHIndex], a
 	pop af
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	pop hl
 	pop de
 	pop bc

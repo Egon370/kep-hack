@@ -368,7 +368,7 @@ PrintListMenuEntries::
 	ld a, b
 	ld [wWhichPokemon], a
 	ld a, [de]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	cp $ff
 	jp z, .printCancelMenuItem
 	push bc
@@ -428,7 +428,7 @@ PrintListMenuEntries::
 	and a ; PCPOKEMONLISTMENU?
 	jr nz, .skipPrintingPokemonLevel
 .printPokemonLevel
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	push af
 	push hl
 	ld hl, wPartyCount
@@ -461,7 +461,7 @@ PrintListMenuEntries::
 	add hl, bc
 	call PrintLevel
 	pop af
-	ld [wd11e], a
+	ld [wPokeStorage], a
 .skipPrintingPokemonLevel
 	pop hl
 	pop de
@@ -470,7 +470,7 @@ PrintListMenuEntries::
 	cp ITEMLISTMENU
 	jr nz, .nextListEntry
 .printItemQuantity
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	ld [wcf91], a
 	call IsKeyItem ; check if item is unsellable
 	ld a, [wIsKeyItem]
@@ -481,18 +481,18 @@ PrintListMenuEntries::
 	add hl, bc
 	ld a, "×"
 	ld [hli], a
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	push af
 	ld a, [de]
 	ld [wMaxItemQuantity], a
 	push de
-	ld de, wd11e
+	ld de, wPokeStorage
 	ld [de], a
 	lb bc, 1, 2
 	call PrintNumber
 	pop de
 	pop af
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	pop hl
 .skipPrintingItemQuantity
 	inc de

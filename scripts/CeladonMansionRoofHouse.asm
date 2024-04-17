@@ -38,10 +38,10 @@ JackyBeat:
 	jr nz, .skip ; If not, skip this.
 	ld a, PIKACHU ; Load in Pikachu if true
 .skip
-;joenote - If the player's starter was EEVEE, then PIKACHU goes into wd11e.
-;			But if it wasn't EEVEE, then the player's starter would have gone into wd11e. 
-;			With the above alteration, EEVEE is goes into wd11e instead of the starter.
-	ld [wd11e], a
+;joenote - If the player's starter was EEVEE, then PIKACHU goes into wPokeStorage.
+;			But if it wasn't EEVEE, then the player's starter would have gone into wPokeStorage. 
+;			With the above alteration, EEVEE is goes into wPokeStorage instead of the starter.
+	ld [wPokeStorage], a
 	call GetMonName
 	ld a, $1 ; Load Jacky's NPC ID
 	ldh [hSpriteIndex], a ; Slap it in the index

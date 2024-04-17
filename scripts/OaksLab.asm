@@ -388,7 +388,7 @@ OaksLabScript9: ; This is where Blue picks up the ball and removes the sprite.
 	ld a, [wRivalStarterTemp]
 	ld [wRivalStarter], a
 	ld [wcf91], a
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	
 	; why does he do this twice why does he do this twice why does he do this twice
@@ -966,7 +966,7 @@ OaksLabTextEevee:
 
 OaksLabScript_1d133:
 	ld [wcf91], a ; STARTER#
-	ld [wd11e], a ; STARTER#
+	ld [wPokeStorage], a ; STARTER#
 	ld a, b ; BALL???
 	ld [wSpriteIndex], a
 	CheckEvent EVENT_GOT_STARTER
@@ -1060,7 +1060,7 @@ OaksLabMonChoiceMenu:
 	jr nz, OaksLabMonChoiceEnd
 	ld a, [wcf91] ; STARTER# 
 	ld [wPlayerStarter], a
-	ld [wd11e], a ; STARTER# 
+	ld [wPokeStorage], a ; STARTER# 
 	call GetMonName
 	ld a, [wSpriteIndex]
 	cp $2
@@ -1099,7 +1099,7 @@ OaksLabMonChoiceMenu:
 	ld a, 5
 	ld [wCurEnemyLVL], a
 	ld a, [wcf91]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call AddPartyMon
 	ld hl, wd72e
 	set 3, [hl]

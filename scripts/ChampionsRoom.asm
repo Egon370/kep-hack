@@ -326,7 +326,7 @@ GaryText2:
 GaryText3:
 	text_asm
 	ld a, [wPlayerStarter]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	ld hl, GaryText_76120
 	call PrintText

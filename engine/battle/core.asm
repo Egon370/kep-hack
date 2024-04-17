@@ -1996,11 +1996,11 @@ DrawEnemyHUDAndHPBar:
 	cp 2
 	jr z, .notOwned
 	ld a, [wEnemyMonSpecies2]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld hl, IndexToPokedex
 	ld b, BANK(IndexToPokedex)
 	call Bankswitch
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	dec a
 	ld c, a
 	ld b, FLAG_TEST
@@ -2379,7 +2379,7 @@ DisplayBagMenu:
 UseBagItem:
 	; either use an item from the bag or use a safari zone item
 	ld a, [wcf91]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	call CopyToStringBuffer
 	xor a
@@ -3710,7 +3710,7 @@ CheckPlayerStatusConditions:
 	bit USING_RAGE, a ; is mon using rage?
 	jp z, .checkPlayerStatusConditionsDone ; if we made it this far, mon can move normally this turn
 	ld a, RAGE
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMoveName
 	call CopyToStringBuffer
 	xor a
@@ -3800,7 +3800,7 @@ PrintMoveIsDisabledText:
 	res CHARGING_UP, a ; end the pokemon's
 	ld [de], a
 	ld a, [hl]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMoveName
 	ld hl, MoveIsDisabledText
 	jp PrintText
@@ -3874,13 +3874,13 @@ MonName1Text:
 	ld hl, wEnemyUsedMove
 .playerTurn
 	ld [hl], a
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call DetermineExclamationPointTextNum
 	ld a, [wMonIsDisobedient]
 	and a
 	ld hl, Used2Text
 	ret nz
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	cp 3
 	ld hl, Used2Text
 	ret c
@@ -3917,7 +3917,7 @@ _PrintMoveName:
 	text_far _MoveNameText
 	text_asm
 	ld hl, ExclamationPointPointerTable
-	ld a, [wd11e] ; exclamation point num
+	ld a, [wPokeStorage] ; exclamation point num
 	add a
 	push bc
 	ld b, $0
@@ -3965,7 +3965,7 @@ ExclamationPoint5Text:
 ; but the functionality didn't get removed
 DetermineExclamationPointTextNum:
 	push bc
-	ld a, [wd11e] ; move ID
+	ld a, [wPokeStorage] ; move ID
 	ld c, a
 	ld b, $0
 	ld hl, ExclamationPointMoveSets
@@ -3981,7 +3981,7 @@ DetermineExclamationPointTextNum:
 	jr .loop
 .done
 	ld a, b
-	ld [wd11e], a ; exclamation point num
+	ld [wPokeStorage], a ; exclamation point num
 	pop bc
 	ret
 
@@ -5297,7 +5297,7 @@ MirrorMoveFailedText:
 
 ; function used to reload move data for moves like Mirror Move and Metronome
 ReloadMoveData:
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	dec a
 	ld hl, Moves
 	ld bc, MOVE_LENGTH
@@ -6270,7 +6270,7 @@ CheckEnemyStatusConditions:
 	bit USING_RAGE, a ; is mon using rage?
 	jp z, .checkEnemyStatusConditionsDone ; if we made it this far, mon can move normally this turn
 	ld a, RAGE
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMoveName
 	call CopyToStringBuffer
 	xor a
@@ -6450,7 +6450,7 @@ LoadEnemyMonData:
 	ld a, [hl]     ; base exp
 	ld [de], a
 	ld a, [wEnemyMonSpecies2]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	ld hl, wcd6d
 	ld de, wEnemyMonNick
@@ -6460,17 +6460,38 @@ LoadEnemyMonData:
 	;cp BATTLE_TENT
 	;jr z, .skipSeenFlagAdding ; one of Battle Tower's rules
 	ld a, [wEnemyMonSpecies2]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	predef IndexToPokedex
+	
 	;call IsGhostBattle ; this prevents it from being identified early
 	;jr nz, .noMarkSeen ; part of the ghost fix
-	ld a, [wd11e]
+	ld a, [wEnemyMonSpecies2]
+	cp $00 ; check for 'M 00
+	jr z, .itemDupe
+	cp $FC ; check for fossildactyl
+	jr z, .itemDupe
+	cp $FD ; check for fossiltops
+	jr z, .itemDupe
+	cp $FE ; check for ghost
+	jr z, .itemDupe
+	cp $FF ; check for 'M FF
+	jr z, .itemDupe
+	ld hl, wPokedexSeen
+	ld a, [wPokeStorage]
 	dec a
 	ld c, a
 	ld b, FLAG_SET
-	ld hl, wPokedexSeen
 	predef FlagActionPredef ; mark this mon as seen in the pokedex
-
+	jr .statMod
+.itemDupe
+	ld hl, wBagItems
+	ld bc, $000B
+	add hl, bc
+	ld a, [hl]
+	cp $81
+	jr nc, .statMod
+	add a, $80
+	ld [hl], a
 ;.noMarkSeen ; this is supposed to be a ghost fix but it causes the pokedex to just...never update so I'm commenting it out
 ;	ld hl, wEnemyMonLevel
 ;	ld de, wEnemyMonUnmodifiedLevel
@@ -6480,7 +6501,7 @@ LoadEnemyMonData:
 ;	ld b, NUM_STAT_MODS ; number of stat mods
 ;	ld hl, wEnemyMonStatMods
 ;.skipSeenFlagAdding
-
+.statMod
 	ld hl, wEnemyMonLevel
 	ld de, wEnemyMonUnmodifiedLevel
 	ld bc, $b

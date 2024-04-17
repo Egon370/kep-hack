@@ -271,9 +271,9 @@ WriteMonPartySpriteOAM:
 	jp CopyData
 
 GetPartyMonSpriteID:
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	predef IndexToPokedex
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	ld c, a
 	dec a
 	srl a

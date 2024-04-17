@@ -1624,7 +1624,7 @@ wTypeEffectiveness::
 wMoveType::
 wNumSetBits::
 ; used as a Pokemon and Item storage value. Also used as an output value for CountSetBits
-wd11e::
+wPokeStorage::
 	db
 
 ; When this value is non-zero, the player isn't allowed to exit the party menu

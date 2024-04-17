@@ -110,7 +110,7 @@ TestBattle:
 	; Player's Pokemon.
 	ld a, GENGAR
 	ld [wcf91], a
-	ld a, 50
+	ld a, 100
 	ld [wCurEnemyLVL], a
 	xor a
 	ld [wMonDataLocation], a
@@ -120,19 +120,19 @@ TestBattle:
 	; This function gives you a way to waste a turn, never know when you'll need it.
 	; Alternatively, add a move to test.
 	ld hl, wPartyMon1Moves
-	ld a, NASTY_PLOT ; Leftover from original KEP development, wastes a turn
+	ld a, SONICBOOM ; PsyNoise related test
 	ld [hli], a
-	ld a, TOXIC ; Reference for testing Infection
+	ld a, HEAL_BELL ; New move test
 	ld [hli], a
-	ld a, MEGA_STING ; New move test
+	ld a, MOODY_POWDER ; Reworked move test
 	ld [hli], a
-	ld a, INFECTION ; Skip turn, New move effect test
+	ld a, PSYWAVE ; Placeholder
 	ld [hli], a
 	
 	; Opponent's Pokemon.
 	ld a, EXEGGUTOR ; further testing of Infection required
 	ld [wCurOpponent], a
-	ld a, 50 ; Set the level you want here.
+	ld a, 100 ; Set the level you want here.
 	ld [wCurEnemyLVL], a
 
 	predef InitOpponent

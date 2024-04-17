@@ -157,7 +157,7 @@ DisplayPokemartDialogue_::
 	inc a
 	jr z, .buyMenuLoop ; if the player closed the choose quantity menu with the B button
 	ld a, [wcf91] ; item ID
-	ld [wd11e], a ; store item ID for GetItemName
+	ld [wPokeStorage], a ; store item ID for GetItemName
 	call GetItemName
 	call CopyToStringBuffer
 	ld hl, PokemartTellBuyPriceText

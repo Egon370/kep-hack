@@ -3,7 +3,7 @@ GiveItem::
 ; and copy the item's name to wStringBuffer.
 ; Return carry on success.
 	ld a, b
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld [wcf91], a
 	ld a, c
 	ld [wItemQuantity], a

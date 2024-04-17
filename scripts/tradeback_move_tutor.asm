@@ -71,7 +71,7 @@ TradebackTutorText1:
 	; Save the selected move id.
 	ld a, [wcf91]
 	ld [wMoveNum], a
-	ld [wd11e],a
+	ld [wPokeStorage],a
 	call GetMoveName
 	call CopyToStringBuffer ; copy name to wcf4b
 	pop bc

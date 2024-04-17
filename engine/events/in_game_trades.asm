@@ -76,7 +76,7 @@ DoInGameTradeDialogue:
 ; copies name of species a to hl
 InGameTrade_GetMonName:
 	push de
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	ld hl, wcd6d
 	pop de

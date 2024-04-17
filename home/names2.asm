@@ -16,7 +16,7 @@ GetName::
 ;
 ; returns pointer to name in de
 	ld a, [wd0b5]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 
 	push bc ; this fixes some frustrating bollocks - PvK
 	ld b, a

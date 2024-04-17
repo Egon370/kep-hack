@@ -1,9 +1,9 @@
 Route21WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 27, RATICATE
-	db 28, PIDGEOTTO
-	db 30, BALUMBA
-	db 28, GLOOM
+	db 27, ARCANINE
+	db 28, ARCANINE
+	db 30, ARCANINE
+	db 28, ARCANINE
 	db 28, WEEPINBELL
 	db 29, TOEDSCOOL
 	db 29, TOEDSCOOL

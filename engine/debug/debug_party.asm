@@ -81,13 +81,13 @@ IF DEF(_DEBUG)
 	ld [hl], a
 	
 	; Mewtwo (Pokemon 4) has a full moveset
-	; Use for sweeping the 4.
+	; Use for sweeping the 4 & testing Heal Bell.
 	ld hl, wPartyMon4Moves
 	ld a, AMNESIA
 	ld [hli], a
 	ld a, PSYCHIC_M
 	ld [hli], a
-	ld a, DIG
+	ld a, HEAL_BELL
 	ld [hli], a
 	ld a, RECOVER
 	ld [hl], a

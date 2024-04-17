@@ -91,34 +91,34 @@ GetPrizeMenuId:
 	cp 3        ;is TM_menu?
 	jr nz, .putMonName
 	ld a, [wPrize1]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	hlcoord 2, 4
 	call PlaceString
 	ld a, [wPrize2]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	hlcoord 2, 6
 	call PlaceString
 	ld a, [wPrize3]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	hlcoord 2, 8
 	call PlaceString
 	jr .putNoThanksText
 .putMonName
 	ld a, [wPrize1]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	hlcoord 2, 4
 	call PlaceString
 	ld a, [wPrize2]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	hlcoord 2, 6
 	call PlaceString
 	ld a, [wPrize3]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetMonName
 	hlcoord 2, 8
 	call PlaceString
@@ -192,7 +192,7 @@ HandlePrizeChoice:
 	ld hl, wPrize1
 	add hl, de
 	ld a, [hl]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	ld a, [wWhichPrizeWindow]
 	cp 3 ; is prize a TM?
 	jr nz, .getMonName
@@ -213,7 +213,7 @@ HandlePrizeChoice:
 	ld a, [wWhichPrizeWindow]
 	cp $03
 	jr nz, .giveMon
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	ld b, a
 	ld a, 1
 	ld c, a
@@ -221,7 +221,7 @@ HandlePrizeChoice:
 	jr nc, .bagFull
 	jr .subtractCoins
 .giveMon
-	ld a, [wd11e]
+	ld a, [wPokeStorage]
 	ld [wcf91], a
 	push af
 	call GetPrizeMonLevel

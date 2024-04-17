@@ -1246,7 +1246,7 @@ AIPrintItemUse:
 AIPrintItemUse_:
 ; print "x used [wAIItem] on z!"
 	ld a, [wAIItem]
-	ld [wd11e], a
+	ld [wPokeStorage], a
 	call GetItemName
 	ld hl, AIBattleUseItemText
 	jp _PrintText
