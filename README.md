@@ -10,7 +10,7 @@ New Moves
 ====
 - Sickle Swipe is a Bug-type Slash given to Scyther, and its evolutions by extension.
 - Draco Slam is an inaccurate yet strong Dragon move for Alolan Exeggutor.
-- Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB.
+- Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB; credit to Vortyne for the animation.
 - Thunder Fang finally fixes the Kotora line's midgame issues.
 - Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
 - Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
