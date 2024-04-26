@@ -4,7 +4,7 @@ BrunswickGrottoWildMons:
 	db 45, BEEDRILL
 	db 45, BUTTERFREE
 	db 47, CARAPTHOR
-	db 45, SHADEBUG
+	db 45, DECADYBUG
 	db 46, PARASECT
 	db 47, PARASECT
 	db 50, SCYTHER

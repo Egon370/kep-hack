@@ -676,6 +676,7 @@ BalumbaTradebackMoves:
 	db 1, HYPNOSIS ; Egg Move from Psychic-types, interesting buff.
 	db 1, MINIMIZE ; Egg Move from...Chansey?
 	db 1, SPLASH ; Egg Move
+	db 1, SCREECH ; Gets it in JEP, mentioned in its dex entry
 	db 0
 
 MagmarTradebackMoves:
@@ -1618,6 +1619,7 @@ AerodactylTradebackMoves:
 	db 1, ROAR
 	db 1, HEADBUTT
 	db 1, FLAMETHROWER
+	db 1, SUPERSONIC
 	db 0
 
 BlastykeTradebackMoves:

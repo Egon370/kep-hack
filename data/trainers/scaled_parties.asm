@@ -98,9 +98,9 @@ BrunoData:
 	db $FF, 65, JABETTA, 66, STEELIX, 65, SIRFETCHD, 66, TRICULES, 66, HITMONTOP, 68, MACHAMP, 0
 
 AgathaData:
-	db $FF, 55, ANNIHILAPE, 54, CROBAT, 54, GENGAR, 56, SHADEBUG, 56, UMBREON, 58, GENGAR, 0		; Agatha has double Gengars in every single battle in the main-series, it's fine here...
+	db $FF, 55, ANNIHILAPE, 54, CROBAT, 54, GENGAR, 56, DECADYBUG, 56, UMBREON, 58, GENGAR, 0		; Agatha has double Gengars in every single battle in the main-series, it's fine here...
 ; post-game rematch team (currently unused)
-	db $FF, 67, ANNIHILAPE, 68, CROBAT, 67, MAROWAK_A, 68, SHADEBUG, 68, UMBREON, 70, GENGAR, 0
+	db $FF, 67, ANNIHILAPE, 68, CROBAT, 67, MAROWAK_A, 68, DECADYBUG, 68, UMBREON, 70, GENGAR, 0
 
 LanceData:
 	db $FF, 57, GAVILLAIN, 56, GYARADOS, 56, KINGDRA, 58, IGUANARCH, 58, AERODACTYL, 60, DRAGONITE, 0

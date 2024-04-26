@@ -107,7 +107,7 @@ BugCatcherData:
 	db 16, VENONAT, PARAS, 0 ; By this point, the player has fought like, 2 "three bugs" trainers. Toning it down.
 	db 17, BUTTERFREE, 0 ; this is that one boss fight-like one, levelled down for learnset reasons
 ; Silph Gauntlet 1F (Viridian Forest)
-	db 56, VENOMOTH, CARAPTHOR, PARASECT, SHADEBUG, TRICULES, KLEAVOR, 0
+	db 56, VENOMOTH, CARAPTHOR, PARASECT, DECADYBUG, TRICULES, KLEAVOR, 0
 ; Route 9
 	db 19, BUTTERFREE, BEEDRILL, 0
 	db 20, PUPAL, VENONAT, BEEDRILL, 0
@@ -728,7 +728,7 @@ ChannelerData:
 	db 23, VULPIII, GASTLY, 0
 	db 24, VULPIX, 0
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, SHADEBUG, GUARDIA, ANNIHILAPE, HYPNO, NINETALES, GENGAR, 0
+	db 59, DECADYBUG, GUARDIA, ANNIHILAPE, HYPNO, NINETALES, GENGAR, 0
 ; Pokémon Tower 3F
 	db 25, GASTLY, HAUNTER, 0
 ; Pokémon Tower 4F, now unused 

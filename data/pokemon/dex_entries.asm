@@ -2022,6 +2022,6 @@ DecadybugDexEntry:
     db "SHADY@"
 	db 1,0
 	dw 120
-	text_far _ShadebugDexEntry
+	text_far _DecadybugDexEntry
 	text_end
 	

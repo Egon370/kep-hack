@@ -990,12 +990,12 @@ _TaurosPADexEntry::
 	
 _DecadybugDexEntry::
 	text "The leaf on"
-	next "Decadybug's back"
+	next "DECADYBUG's back"
 	next "provides not only"
 	
 	page "shelter, but its"
 	next "vitality. It will"
-	next "inevitably wither."
+	next "inevitably wither"
 	dex
 
 _MissingNoDexEntry::	; unused
