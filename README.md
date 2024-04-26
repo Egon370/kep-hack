@@ -19,6 +19,8 @@ I've renamed a few Pokemon I wasn't satisfied with the names of. They'll be refe
 - Decilla > Gawhine
 - Magnetite > Magnemeld
 - Tricules > Plux (from various other people independently)
+=======
+>>>>>>> dd4c9a8f (shadebug is now decadybug)
 
 New Moves
 ====
