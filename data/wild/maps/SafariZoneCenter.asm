@@ -7,7 +7,7 @@ SafariZoneCenterWildMons:
 	db 26, CUBONE
 	db 27, DODUO
 	db 25, LICKITUNG
-	db 27, SHADEBUG
+	db 27, DECADYBUG
 	db 25, CHANSEY
 	db 28, TRAMPEL
 	end_grass_wildmons

@@ -4,7 +4,7 @@ This is a fork of the Kanto Expansion Hack ROM hack, buffing various Pokemon. Mo
 
 The New Pokemon
 ====
-Shadebug, better known as the Kage no Mushi, has been added to replace Gorillaimo (since it was a slot filler anyway). It is a Bug/Ghost type, using dual powder, Reflect, and an odd set of coverage moves to check physical attackers. The sprite is provided by [Axel_Comics](https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143), though it was edited by me to better fit the "withering" aesthetic of my interpretation.
+Decadybug, better known as the Kage no Mushi, has been added to replace Gorillaimo (since it was a slot filler anyway). It is a Bug/Ghost type, using dual powder, Reflect, and an odd set of coverage moves to check physical attackers. The sprite is provided by [Axel_Comics](https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143), though it was edited by me to better fit the "withering" aesthetic of my interpretation.
 
 New Moves
 ====

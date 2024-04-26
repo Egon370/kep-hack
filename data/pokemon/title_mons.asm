@@ -3,8 +3,8 @@ TitleMons:
 	db BEEDRILL     ; The Bugs
 	db PARASECT
 	db KINGLER
-	db BUTTERFREE
-	db SHADEBUG	
+	db SCYTHER
+	db DECADYBUG	
 	db RAPIDASH_G       ; The Fairies
 	db MR_MIME
 	db CLEFABLE

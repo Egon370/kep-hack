@@ -213,7 +213,7 @@ PokemonCries::
 	mon_cry CRY_SQUIRTLE,     17,  192 ; TAUROS_PA
 	mon_cry CRY_PIDGEOTTO,    10,  320 ; CHANSEY
 	mon_cry CRY_SLOWKING,    659,  320 ; BLISSEY
-	mon_cry CRY_GOLEM,     	 255,  383 ; SHADEBUG
+	mon_cry CRY_GOLEM,     	 255,  383 ; DECADYBUG
 	mon_cry CRY_NIDORAN_M,   128,  144 ; CACTORMUS
 	mon_cry CRY_KRABBY,        8,  192 ; MR_MIME
 	mon_cry CRY_KRABBY,     -256,  232 ; MR_RIME

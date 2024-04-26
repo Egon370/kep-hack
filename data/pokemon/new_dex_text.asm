@@ -988,12 +988,14 @@ _TaurosPADexEntry::
 	next "tips of its horns"
 	dex
 	
-_ShadebugDexEntry::
-	text "A symbol of bad"
-	next "luck. Every leaf"
-	next "it touches will"
+_DecadybugDexEntry::
+	text "The leaf on"
+	next "Decadybug's back"
+	next "provides not only"
 	
-	page "start to wither"
+	page "shelter, but its"
+	next "vitality. It will"
+	next "inevitably wither."
 	dex
 
 _MissingNoDexEntry::	; unused

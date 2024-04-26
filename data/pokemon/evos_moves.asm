@@ -262,7 +262,7 @@ EvosMovesPointerTable:
 	dw TaurosPEvosMoves
 	dw TaurosPAEvosMoves
 	dw TaurosPBEvosMoves
-	dw ShadebugEvosMoves
+	dw DecadybugEvosMoves
 	dw FossilKabutopsEvosMoves
 	dw FossilAerodactylEvosMoves
 	dw MonGhostEvosMoves
@@ -3480,7 +3480,7 @@ TaurosPBEvosMoves:
 	db 51, FIRE_SPIN
 	db 0
 	
-ShadebugEvosMoves:
+DecadybugEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset

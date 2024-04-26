@@ -250,7 +250,7 @@ PokedexEntryPointers:
 	dw TaurosPDexEntry
 	dw TaurosPADexEntry
 	dw TaurosPBDexEntry
-	dw ShadebugDexEntry
+	dw DecadybugDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
@@ -2018,7 +2018,7 @@ MoltresGDexEntry:
 	text_far _MoltresGDexEntry
 	text_end
 	
-ShadebugDexEntry:
+DecadybugDexEntry:
     db "SHADY@"
 	db 1,0
 	dw 120
