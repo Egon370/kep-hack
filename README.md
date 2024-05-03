@@ -6,12 +6,26 @@ The New Pokemon
 ====
 Decadybug, better known as the Kage no Mushi, has been added to replace Gorillaimo (since it was a slot filler anyway). It is a Bug/Ghost type, using dual powder, Reflect, and an odd set of coverage moves to check physical attackers. The sprite is provided by [Axel_Comics](https://www.deviantart.com/axel-comics/art/Kage-no-Mushi-sprite-279709143), though it was edited by me to better fit the "withering" aesthetic of my interpretation.
 
+Pokemon Renamed
+====
+I've renamed a few Pokemon I wasn't satisfied with the names of. They'll be referred to with their new names for the rest of this section of the README.
+- Kotora > Tyker (from Nob Ogasawara)
+- Gaotora > Fryger
+- Gorotora > Straigar (from Nob Ogasawara)
+- Guardia > Guardilage
+- Cheep > Winguppy (from MementoMartha)
+- Totartle > Turtidal (from MementoMartha)
+- Ramoose > Scramoose
+- Decilla > Gawhine
+- Magnetite > Magnemeld
+- Tricules > Plux (from various other people independently)
+
 New Moves
 ====
 - Sickle Swipe is a Bug-type Slash given to Scyther, and its evolutions by extension.
 - Draco Slam is an inaccurate yet strong Dragon move for Alolan Exeggutor.
 - Roost is a reliable recovery move for Pidgeot and Articuno. It's more or less implemented the same as in PureRGB; credit to Vortyne for the animation.
-- Thunder Fang finally fixes the Kotora line's midgame issues.
+- Thunder Fang finally fixes the Tyker line's midgame issues.
 - Spirit Break is an extremely frightening wallbreaking option given to Galarian Rapidash, which should compensate it for the loss of Moonblast early in the Showdown mod's development.
 - Shadow Bone is a Ghost-type attack that actually exists?! It has been given to Alolan Marowak.
 - Infection is a "canned" version of the Toxic + Leech Seed glitch exclusive to Parasect.
@@ -19,6 +33,7 @@ New Moves
 - Heal Bell is added and works how you'd expect, except with all the caveats of Generation I status curing; no getting rid of the paralysis speed drop! It's given to Blissey to turn it into a truly Ubers-level support mon, Tauros for hype endgame situations, Sylveon to give it an edge over the other Eeveelutions, and the Lickitung and Jigglypuff lines because they get it in later gens.
 - Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
 - The Koffing family gets Sleeping Gas, a sleep inflicting move nearly as good as Spore. This gives Koga another "sleep technique" like he talks about in his pre-fight monologue.
+- Plux gains Scissor Stun, a Steel type attack guarunteed to cause paralysis. This should help mitigate its pathetic 45 base Speed.
 
 Move Changes
 ====
@@ -53,6 +68,7 @@ Learnset, Typing, and Stat Changes
 - The Bittybat line has Psychic, similar to the beta.
 - The mons that became Fairy in Gen 6 are now part-Fairy here, with movepools to match.
 - The Sandshrew family is significantly faster, with the Kantonian versions being Ground/Normal.
+- Bellignan gains Sludge, emphasizing its Poison typing.
 - With Sky Attack's new effect, it is now exclusive to the legendary birds as well as Gyarados, Dragonite, and Aerodactyl.
 - gyarados? more like glaredos
 - Venomoth is now very slightly faster, letting it speed tie Jynx.
@@ -63,7 +79,7 @@ Learnset, Typing, and Stat Changes
 - Scyther is now pure Bug, alleviating its weaknesses and better fitting its Pokedex entry.
 - Mimmeo gets Reflect by TM since it got it by level up.
 - The fossils now finally have Rock Slide by both TM and level-up. Kabutops also has Absorb replaced by Leech Life.
-- Decilla now has a movepool derived from its evolution, including BoltBeam coverage.
+- Gawhine now has a movepool derived from its evolution, including BoltBeam coverage.
 - Moltres now has Flamethrower; Leer was likely a typo.
 - Tradeback moves have been adjusted, giving Umbreon Charm from GSC and wiping out redundant moves (i.e. Quick Attack Dodrio). Additionally, any HMs learned via Tradebacks have been merged into the Pokemon's base learnset; enjoy your Flash Bulbasaur & Surf Tauros!
 
@@ -71,7 +87,7 @@ Misc/Aesthetic Changes
 ====
 - The Select Swap glitch from Red & Green is back.
 - Various moves that don't do typed damage have their types change for flavor.
-- The Porygons now use Sylveon's palette, and Tricules is grey to better reflect later versions of GSC.
+- The Porygons now use Sylveon's palette, and Plux is grey to better reflect later versions of GSC.
 - Solar Beam has a space in its name.
 - The Portable PC has been added.
 - Glitch Pokemon will now duplicate items like Missingno originally did.

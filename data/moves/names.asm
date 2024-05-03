@@ -197,5 +197,6 @@ MoveNames:: ; 12chr limit
 	li "DRACO SLAM"
 	li "SLEEPING GAS"
 	li "HEAL BELL"
+	li "SCISSOR STUN"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

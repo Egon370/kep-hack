@@ -208,5 +208,6 @@ Moves:
 	move DRACO_SLAM,   NO_ADDITIONAL_EFFECT,       120, DRAGON,        75,  5
 	move SLEEPING_GAS, SLEEP_EFFECT,                 0, POISON,        90, 15
 	move HEAL_BELL,    HEAL_BELL_EFFECT,             0, NORMAL,       100,  5
+	move SCISSOR_STUN, PARALYZE_EFFECT,             55, STEEL,        100, 30
 	move STRUGGLE,     RECOIL_EFFECT,               50, NORMAL,       100, 10
 	assert_table_length NUM_ATTACKS

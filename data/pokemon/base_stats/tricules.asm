@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/tricules.pic", 0, 1 ; sprite dimensions
 	dw TriculesPicFront, TriculesPicBack
 
-	db VICEGRIP, HARDEN, NO_MOVE, NO_MOVE ; level 1 learnset
+	db SCISSOR_STUN, HARDEN, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

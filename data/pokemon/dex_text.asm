@@ -685,7 +685,7 @@ _NinetalesDexEntry:: ; new entry
 	next "its longevity:"
 	
 	page "'NINETALES, 1,000"
-	next "years, TOTARTLE,"
+	next "years, TURTIDAL,"
 	next "10,000 years.'"
 	dex
 

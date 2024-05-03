@@ -197,6 +197,7 @@ AttackAnimationPointers:
 	dw DracoSlamAnim
 	dw SleepingGasAnim
 	dw HealBellAnim
+	dw ScissorStunAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1099,6 +1100,7 @@ WaterfallAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
 
+ScissorStunAnim:
 ClampAnim:
 	battle_anim CLAMP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
 	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 6

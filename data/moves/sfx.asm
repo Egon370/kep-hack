@@ -198,6 +198,7 @@ MoveSoundTable:
 	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; DRACO_SLAM
 	db SFX_BATTLE_1C,          $01, $ff ; SLEEPING_GAS
 	db SFX_BATTLE_33,          $00, $80 ; HEAL_BELL
+	db SFX_BATTLE_0F,          $20, $40 ; SCISSOR_STUN
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 

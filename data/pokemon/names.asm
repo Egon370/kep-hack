@@ -55,7 +55,7 @@ MonsterNames::
 	db "ELECTABUZZ"
 	db "MAGNETON@@"
 	db "KOFFING@@@"
-	db "RAMOOSE@@@"	; Deer
+	db "SCRAMOOSE@"	; Deer
 	db "MANKEY@@@@"
 	db "SEEL@@@@@@"
 	db "DIGLETT@@@"
@@ -78,7 +78,7 @@ MonsterNames::
 	db "DITTO@@@@@"
 	db "MEOWTH@@@@"
 	db "KRABBY@@@@"
-	db "CHEEP@@@@@"
+	db "WINGUPPY@@"
 	db "JABETTA@@@"
 	db "VULPIII@@@"	; Mikon
 	db "VULPIX@@@@"
@@ -120,7 +120,7 @@ MonsterNames::
 	db "DUGTRIO@@@"
 	db "VENOMOTH@@"
 	db "DEWGONG@@@"
-	db "TRICULES@@"	; Purakkusu
+	db "PLUX@@@@@@"	; Purakkusu
 	db "PENDRAKEN@"
 	db "CATERPIE@@"
 	db "METAPOD@@@"
@@ -136,16 +136,16 @@ MonsterNames::
 	db "COINPUR@@@"	; Konya
 	db "OMEGADGE@@"	; Omega
 	db "MUK@@@@@@@"
-	db "DECILLA@@@"
+	db "GAWHINE@@@"
 	db "KINGLER@@@"
 	db "CLOYSTER@@"
-	db "MAGNETITE@"
+	db "MAGNEMELD@"
 	db "ELECTRODE@"
 	db "CLEFABLE@@"
 	db "WEEZING@@@"
 	db "PERSIAN@@@"
 	db "MAROWAK@@@"
-	db "GUARDIA@@@"
+	db "GUARDILAGE"
 	db "HAUNTER@@@"
 	db "ABRA@@@@@@"
 	db "ALAKAZAM@@"
@@ -158,9 +158,9 @@ MonsterNames::
 	db "ORFRY@@@@@"	; Gyopin
 	db "GOLDEEN@@@"
 	db "SEAKING@@@"
-	db "KOTORA@@@@"
-	db "GAOTORA@@@"
-	db "GOROTORA@@"
+	db "TYKER@@@@@"
+	db "FRYGER@@@@"
+	db "STRAIGAR@@"
 	db "KOLTA@@@@@"	; Puchikoon
 	db "PONYTA@@@@"
 	db "RAPIDASH@@"
@@ -180,7 +180,7 @@ MonsterNames::
 	db "CHARMELEON"
 	db "WARTORTLE@"
 	db "CHARIZARD@"
-	db "TOTARTLE@@"
+	db "TURTIDAL@@"
 	db "ARTICUNO@@" ; Galarian
 	db "ZAPDOS@@@@" ; Galarian
 	db "MOLTRES@@@" ; Galarian

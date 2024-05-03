@@ -424,8 +424,8 @@ _ScizorDexEntry::
 	next "objects with ease."
 
 	page "Battles between it"
-	next "and TRICULES are"
-	next "a sight to behold"
+	next "and PLUX are a"
+	next "sight to behold"
 	dex
 
 _BellossomDexEntry::

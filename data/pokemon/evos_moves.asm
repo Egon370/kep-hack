@@ -2872,6 +2872,7 @@ BellignanEvosMoves:
 	db 13, WRAP
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER
+	db 29, SLUDGE
 	db 40, LOVELY_KISS
 	db 48, SOLARBEAM
 	db 0
