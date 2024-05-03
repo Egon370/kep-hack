@@ -33,7 +33,7 @@ New Moves
 - Heal Bell is added and works how you'd expect, except with all the caveats of Generation I status curing; no getting rid of the paralysis speed drop! It's given to Blissey to turn it into a truly Ubers-level support mon, Tauros for hype endgame situations, Sylveon to give it an edge over the other Eeveelutions, and the Lickitung and Jigglypuff lines because they get it in later gens.
 - Mega Sting is Beedrill's second signature move, a Poison-type version of Iron Head. This allows it to better chip enemy Pokemon into Twineedle range, similar to Stomp Tauros.
 - The Koffing family gets Sleeping Gas, a sleep inflicting move nearly as good as Spore. This gives Koga another "sleep technique" like he talks about in his pre-fight monologue.
-- Plux gains Scissor Stun, a Steel type attack guarunteed to cause paralysis. This should help mitigate its pathetic 45 base Speed.
+- Plux gains Scissor Stun, a Steel type attack guaranteed to cause paralysis. This should help mitigate its pathetic 45 base Speed.
 
 Move Changes
 ====
