@@ -18,7 +18,8 @@ I've renamed a few Pokemon I wasn't satisfied with the names of. They'll be refe
 - Ramoose > Scramoose
 - Decilla > Gawhine
 - Magnetite > Magnemeld
-- Tricules > Plux (from various other people independently)
+- Tricules > Plux (from various other people independently, romanization of original name)
+- Buu > Igwoo (from MementoMartha)
 
 New Moves
 ====
@@ -85,6 +86,7 @@ Learnset, Typing, and Stat Changes
 
 Misc/Aesthetic Changes
 ====
+- The Power Plant now plays the Cinnabar Mansion theme, a change also made in FireRed and LeafGreen.
 - The Select Swap glitch from Red & Green is back.
 - Various moves that don't do typed damage have their types change for flavor.
 - The Porygons now use Sylveon's palette, and Plux is grey to better reflect later versions of GSC.
