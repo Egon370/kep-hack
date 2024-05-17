@@ -6513,6 +6513,13 @@ LoadEnemyMonData:
 	ld [hli], a
 	dec b
 	jr nz, .statModLoop
+	ld a, [wCurMap]
+	cp VICTORY_ROAD_1F
+	call z, LoadAcidDiglett
+	cp VICTORY_ROAD_2F
+	call z, LoadAcidDiglett
+	cp VICTORY_ROAD_3F
+	call z, LoadAcidDiglett
 	ret
 
 ; calls BattleTransition to show the battle transition animation and initializes some battle variables
@@ -7070,6 +7077,9 @@ InitBattleCommon:
 	ld a, $2
 	ld [wIsInBattle], a
 	jp _InitBattleCommon
+	
+LoadAcidDiglett:
+	jpfar AcidDiglettInit
 
 InitWildBattle:
 	ld a, $1

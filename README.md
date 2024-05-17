@@ -39,8 +39,9 @@ New Moves
 Move Changes
 ====
 - Leech Life has slightly more base power to bring it in line with other early game moves.
+- Pin Missile and String Shot have their modern move data.
 - Twineedle has a high critical hit ratio effectively making it a Bug-type Karate Chop, and loses its poison chance as well.
-- Vicegrip is Bug type, giving its learners an early-game power boost.
+- Vicegrip is Bug type and has a 30% paralysis chance, giving its learners a solid Body Slam alternative.
 - Glare is Dragon type, reflecting its learners, and receives its accuracy buff from Generation VI.
 - Thunder has its higher paralysis chance from GSC.
 - Karate Chop is Fighting type, giving three more lines a proper endgame STAB.
@@ -61,6 +62,7 @@ Move Changes
 Learnset, Typing, and Stat Changes
 ====
 - The Bulbasaur line is pure Grass type & receives Stun Spore.
+- Fixed a small inconsistency with Glaceon's learnset.
 - Pidgeot has Body Slam and Drill Peck. It's finally functional!
 - The cocoons each get a different +2 Defense move at level 100. This technically carries over to their evolutions as well.
 - Butterfree's attack is dumped even harder, funneling into its HP to give it something approaching bulk.
@@ -89,11 +91,12 @@ Misc/Aesthetic Changes
 - The Power Plant now plays the Cinnabar Mansion theme, a change also made in FireRed and LeafGreen.
 - The Select Swap glitch from Red & Green is back.
 - Various moves that don't do typed damage have their types change for flavor.
-- The Porygons now use Sylveon's palette, and Plux is grey to better reflect later versions of GSC.
+- The Porygons now use Sylveon's palette, and Plux is grey to better reflect later versions of GSC. Gorochu is also made red simply because it looks cool and gives the Pikachu line a nice gradient.
 - Solar Beam has a space in its name.
 - The Portable PC has been added.
 - Glitch Pokemon will now duplicate items like Missingno originally did.
 - The Squeamata line has a rejected eye design more in line with their back sprites.
+- The Diglett of Victory Road hide a secret...
 
 Find the spreadsheet ("forked" from Misty's, which I'm surprised wasn't linked originally) [here!](https://docs.google.com/spreadsheets/d/1P-_5qGxEqmWK0ss4WeowkCE42TijfOjhDFMtC4cQ4IQ/edit#gid=343006014)
 

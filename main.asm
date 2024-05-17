@@ -365,6 +365,7 @@ INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "engine/items/tm_prices.asm"
 INCLUDE "engine/overworld/ferry_script.asm"
+INCLUDE "engine/pokemon/aciddiglett.asm"
 
 _PartyMenuBattleTentText::
 	text "Select which"

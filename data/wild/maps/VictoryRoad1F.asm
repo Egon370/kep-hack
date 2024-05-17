@@ -9,7 +9,7 @@ VictoryRoad1FWildMons:
 	db 40, GAVILLAIN
 	db 40, RHYHORN
 	db 40, MAROWAK
-	db 42, HITMONTOP ; LGPE Rare Spawn
+	db 42, DIGLETT
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

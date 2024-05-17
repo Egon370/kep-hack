@@ -2807,7 +2807,7 @@ GlaceonEvosMoves:
 	db 16, POWDER_SNOW
 	db 23, QUICK_ATTACK
 	db 30, MIST
-	db 32, HAZE
+	db 36, HAZE
 	db 42, TAKE_DOWN
 	db 47, BLIZZARD
 	db 52, BARRIER

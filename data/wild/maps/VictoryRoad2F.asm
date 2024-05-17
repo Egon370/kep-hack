@@ -9,7 +9,7 @@ VictoryRoad2FWildMons:
 	db 40, GAVILLAIN
 	db 40, RHYHORN
 	db 40, VENOMOTH
-	db 42, HITMONLEE ; LGPE Rare Spawn
+	db 42, DIGLETT
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
