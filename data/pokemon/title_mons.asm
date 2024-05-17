@@ -1,10 +1,10 @@
 TitleMons:
 ; mons on the title screen are randomly chosen from here
 	db BEEDRILL     ; The Bugs
+	db DECADYBUG	
 	db PARASECT
 	db KINGLER
 	db SCYTHER
-	db DECADYBUG	
 	db RAPIDASH_G       ; The Fairies
 	db MR_MIME
 	db CLEFABLE
