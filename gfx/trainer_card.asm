@@ -6,3 +6,6 @@ TrainerInfoTextBoxTileGraphicsEnd:
 CircleTile: INCBIN "gfx/trainer_card/circle_tile.2bpp"
 
 BadgeNumbersTileGraphics: INCBIN "gfx/trainer_card/badge_numbers.2bpp"
+
+FPlayerCharacterTitleGraphics: INCBIN "gfx/title/fplayer.2bpp"
+FPlayerCharacterTitleGraphicsEnd:

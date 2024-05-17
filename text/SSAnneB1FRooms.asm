@@ -31,8 +31,8 @@ _SSAnne10EndBattleText2::
 
 _SSAnne10AfterBattleText2::
 	text "Did you see the"
-	line "FISHING GURU in"
-	cont "VERMILION CITY?"
+	line "FISHING GURU near"
+	cont "CERULEAN CITY?"
 	done
 
 _SSAnne10BattleText3::
@@ -64,7 +64,8 @@ _SSAnne10EndBattleText4::
 _SSAnne10AfterBattleText4::
 	text "Sea #MON live"
 	line "in deep water."
-	cont "You'll need a ROD!"
+	cont "You'll need a"
+	cont "FISHING ROD!"
 	done
 
 _SSAnne10BattleText5::

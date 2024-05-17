@@ -144,6 +144,7 @@ DEF FIRST_SE_ID EQU const_value
 	const SUBANIM_0_PIN_JAB
 	const SUBANIM_0_PIN_MISSILE
 	const SUBANIM_0_BARB_JAB
+	const SUBANIM_DRILL_ROTATE
 DEF NUM_SUBANIMS EQU const_value
 
 ; types of subanimations

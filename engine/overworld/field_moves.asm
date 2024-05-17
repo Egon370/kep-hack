@@ -33,7 +33,7 @@ TrySurf:
 	and a
 	jr nz, .no2
 	call GetPartyMonName2
-	ld a, SURFBOARD
+	ld a, POCKET_LAPRAS
 	ld [wcf91], a
 	ld [wPseudoItemID], a
 	call UseItem

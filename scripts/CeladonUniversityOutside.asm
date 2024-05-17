@@ -37,10 +37,19 @@ CeladonUniversityOutsideText1: ; Starter girl
 	set 6, [hl]
 	set 7, [hl]
 	call Delay3
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jr nz, .hardmode1
 	ld a, OPP_STUDENT
 	ld [wCurOpponent], a
 	ld a, 4
 	ld [wTrainerNo], a
+	jr .skip1
+.hardmode1
+	ld a, OPP_STUDENT
+	ld [wCurOpponent], a
+	ld a, 5
+	ld [wTrainerNo], a
+.skip1
 	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wCeladonUniversityOutsideCurScript], a
@@ -77,10 +86,19 @@ CeladonUniversityOutsideText2: ; Porygon guy
 	set 6, [hl]
 	set 7, [hl]
 	call Delay3
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jr nz, .hardmode2
 	ld a, OPP_SUPER_NERD
 	ld [wCurOpponent], a
 	ld a, 6
 	ld [wTrainerNo], a
+	jr .skip2
+.hardmode2
+	ld a, OPP_SUPER_NERD
+	ld [wCurOpponent], a
+	ld a, 13
+	ld [wTrainerNo], a
+.skip2
 	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wCeladonUniversityOutsideCurScript], a
@@ -117,10 +135,19 @@ CeladonUniversityOutsideText3: ; Golem guy
 	set 6, [hl]
 	set 7, [hl]
 	call Delay3
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jr nz, .hardmode3
 	ld a, OPP_ENGINEER
 	ld [wCurOpponent], a
 	ld a, 1
 	ld [wTrainerNo], a
+	jr .skip3
+.hardmode3
+	ld a, OPP_ENGINEER
+	ld [wCurOpponent], a
+	ld a, 5
+	ld [wTrainerNo], a
+.skip3
 	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wCeladonUniversityOutsideCurScript], a
@@ -157,10 +184,19 @@ CeladonUniversityOutsideText4: ; Mt Moon guy
 	set 6, [hl]
 	set 7, [hl]
 	call Delay3
+	CheckEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
+	jr nz, .hardmode4
 	ld a, OPP_SUPER_NERD
 	ld [wCurOpponent], a
 	ld a, 7
 	ld [wTrainerNo], a
+	jr .skip4
+.hardmode4
+	ld a, OPP_SUPER_NERD
+	ld [wCurOpponent], a
+	ld a, 14
+	ld [wTrainerNo], a
+.skip4
 	ld [wIsTrainerBattle], a
 	ld a, $2
 	ld [wCeladonUniversityOutsideCurScript], a

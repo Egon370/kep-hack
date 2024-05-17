@@ -348,6 +348,7 @@ SECTION "Itemfinder 2", ROMX
 INCLUDE "engine/items/itemfinder.asm"
 INCLUDE "engine/menus/league_pc.asm"
 INCLUDE "engine/events/hidden_items.asm"
+INCLUDE "engine/overworld/use_another_repel.asm"
 
 SECTION "bank1E", ROMX
 

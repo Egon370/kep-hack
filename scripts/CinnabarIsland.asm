@@ -53,6 +53,7 @@ CinnabarIslandScript1:
 CinnabarIsland_TextPointers:
 	dw CinnabarIslandText1
 	dw CinnabarIslandText2
+	dw CinnabarPocketLapras
 	dw CinnabarIslandText3
 	dw MartSignText
 	dw PokeCenterSignText
@@ -83,3 +84,88 @@ CinnabarIslandText6:
 CinnabarIslandText7:
 	text_far _CinnabarIslandText7
 	text_end
+
+_CinnabarPocketLapras1:
+	text "Bah, this LAPRAS"
+	line "just doesn't want"
+	cont "to fight! Can you"
+	cont "believe that?"
+	
+	para "All it likes to"
+	line "do is SURF, but"
+	cont "my GYARADOS can"
+	cont "already do that!"
+	
+	para "Here, take it. I"
+	line "can't stand its"
+	cont "big ol' eyes"
+	cont "looking at me."
+	prompt
+
+_PocketLaprasNoRoomText:
+	text "You don't have"
+	line "room, either?"
+	
+	para "Well, it's not"
+	line "like it's going"
+	cont "anywhere..."
+	done
+
+_ReceivedPocketLaprasText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer
+	text "!@"
+	text_end
+	
+_CinnabarPocketLapras2:
+	text "Take care of it"
+	line "though, alright?"
+	cont "LAPRAS is very"
+	cont "endangered."
+	
+	para "You should stay"
+	line "safe, too." ; haha, llinos, you sly dog
+	done
+
+; for some reason it crashed super hard if I didn't do this.
+CinnabarPocketLapras1:
+	text_far _CinnabarPocketLapras1
+	text_end
+	
+CinnabarPocketLapras2:
+	text_far _CinnabarPocketLapras2
+	text_end
+
+PocketLaprasNoRoomText:
+	text_far _PocketLaprasNoRoomText
+	text_end
+
+ReceivedPocketLaprasText:
+	text_far _ReceivedPocketLaprasText
+	text_end
+
+CinnabarPocketLapras:
+	text_asm
+	CheckEvent EVENT_GOT_POCKET_LAPRAS
+	jr nz, .skip
+	ld hl, CinnabarPocketLapras1
+	call PrintText
+	lb bc, POCKET_LAPRAS, 1
+	call GiveItem
+	jr nc, .bag_full
+	ld hl, ReceivedPocketLaprasText
+	call PrintText
+	ld a, SFX_GET_KEY_ITEM
+	call PlaySound
+	SetEvent EVENT_GOT_POCKET_LAPRAS ; if you get here, it's done.
+	jr .end
+.bag_full
+	ld hl, PocketLaprasNoRoomText
+	jr .end
+.skip
+	ld hl, CinnabarPocketLapras2
+	call PrintText
+	; fallthrough
+.end
+	jp TextScriptEnd

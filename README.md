@@ -333,7 +333,7 @@ Many non-multiplayer, non-battle related bugs have been fixed. Battle-related bu
 - Some grammar tweaks have been made (eg. If a move is disabled, it now has an upper-case D instead of a lower-case one.)
 - Blaine is no longer addicted to Super Potions.
 - CoolTrainerF no longer switches a lot.
-- Transformed Pokemon aren't presumed to be Dittos! Mew and Animon function correctly with this at play.
+- Transformed Pokemon aren't presumed to be Dittos! Mew and Mimmeo function correctly with this at play.
 - Status curing items don't remove modifiers anymore.
 - Learning new moves plays the sound in the correct bank.
 - Falling through a hole on a bike now properly resets the music, as you fall off a bike when going down.
@@ -415,7 +415,7 @@ Kanto Prototype Pokemon:
 - Cheep -> Jabetta | L30
 - Coinpur -> Meowth | L14
 - Decilla -> Gawarhed | L40
-- Gyopin -> Goldeen | L16
+- Orfry -> Goldeen | L16
 - Gentlarva -> Pupal | L7
 - Pupal -> Carapthor | L10
 - Kotora -> Gaotora -> Gorotora | L16, L36
@@ -489,12 +489,12 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 * FrenchOrange - Reconstructions of various overworld prototype sprites.
 * Helix Chamber (RacieBeep & Orchid) - Prototype Pokémon sprites. Precise credits are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png) and below.
 * Vortiene/Vortyne - Reused a bit of code from their pureRGB hack, including their Trainer AI, move animations and Pokedex stats page. Assisted in bug fixes. Used their sprite sheet generator.
+* wrulfy - Reused a bit of code from their Carmine Red hack to improve a handful of move animations, most notably Drill Peck and Horn Drill. Technical advice.
 * Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites and the Battle Tent.
 * Rangi - Reused a bit of code from their Red* / Blue* hack to make HMs usable in the overworld, and generally being an amazing individual.
 * BGVC - Composed the original 4-channel version of the unused Koukan (trading) music.
 * Rainbow Metal Pigeon - Bug fix relating to Gym Leader rematches.
 * SatoMew - Technical advice.
-* wrulfy - Technical advice.
 * suloku - Technical advice regarding setting where you spawn after beating the Elite Four, Exp. All modernisation code
 * 大吟醸 (Daiginjo) - Assistance in translating the Tamamushi University Student Book, allowing for an accurate adaptation of the location.
 * Molk - Balancing of some prototype Pokemon, most notably Ramoose.

@@ -91,8 +91,15 @@ DisplayTitleScreen:
 	inc a
 	dec b
 	jr nz, .pokemonLogoLastTileRowLoop
-
+	call Random
+	ldh a, [hRandomAdd]
+	cp 129
+	jr c, .male
+	call DrawFPlayerCharacter
+	jr .playerskip
+.male
 	call DrawPlayerCharacter
+.playerskip
 
 ; put a pokeball in the player's hand
 	ld hl, wShadowOAMSprite10
@@ -119,11 +126,19 @@ DisplayTitleScreen:
 	call SaveScreenTilesToBuffer2
 	call LoadScreenTilesFromBuffer2
 	call EnableLCD
-
+	call Random
+	ldh a, [hRandomSub]
+	cp 129
+	jr c, .notshocks
+	ld a, SANDY_SHOCKS
+	ld [wTitleMonSpecies], a
+	call LoadTitleMonSprite
+	jr .skip
+.notshocks
 	ld a, SCREAM_TAIL
 	ld [wTitleMonSpecies], a
 	call LoadTitleMonSprite
-
+.skip
 	ld a, HIGH(vBGMap0 + $300)
 	call TitleScreenCopyTileMapToVRAM
 	call SaveScreenTilesToBuffer1
@@ -347,6 +362,43 @@ DrawPlayerCharacter:
 	jr nz, .loop
 	ret
 
+DrawFPlayerCharacter:
+	ld hl, FPlayerCharacterTitleGraphics
+	ld de, vSprites
+	ld bc, FPlayerCharacterTitleGraphicsEnd - FPlayerCharacterTitleGraphics
+	ld a, BANK(FPlayerCharacterTitleGraphics)
+	call FarCopyData2
+	call ClearSprites
+	xor a
+	ld [wFPlayerCharacterOAMTile], a
+	ld hl, wShadowOAM
+	lb de, $60, $5a
+	ld b, 7
+.loop2
+	push de
+	ld c, 5
+.innerLoop2
+	ld a, d
+	ld [hli], a ; Y
+	ld a, e
+	ld [hli], a ; X
+	add 8
+	ld e, a
+	ld a, [wFPlayerCharacterOAMTile]
+	ld [hli], a ; tile
+	inc a
+	ld [wFPlayerCharacterOAMTile], a
+	inc hl
+	dec c
+	jr nz, .innerLoop2
+	pop de
+	ld a, 8
+	add d
+	ld d, a
+	dec b
+	jr nz, .loop2
+	ret
+
 ClearBothBGMaps:
 	ld hl, vBGMap0
 	ld bc, $400 * 2
@@ -387,15 +439,15 @@ CopyrightTextString:
 
 INCLUDE "data/pokemon/title_mons.asm"
 
-; prints version text (red, blue)
+; prints version text
 PrintGameVersionOnTitleScreen:
-	hlcoord 7, 8
+	hlcoord 6, 8
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:
-	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
+	db $61,$62,$63,$64,$65,$66,$67,$68,"@"
 
 DebugNewGamePlayerName:
 	db "NINTEN@"

@@ -164,7 +164,7 @@ StartMenu_Pokemon::
 	bit 1, [hl]
 	res 1, [hl]
 	jp z, .loop
-	ld a, SURFBOARD
+	ld a, POCKET_LAPRAS
 	ld [wcf91], a
 	ld [wPseudoItemID], a
 	call UseItem
@@ -330,6 +330,7 @@ StartMenu_Item::
 	ld a, [wBagSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	call DisplayListMenuID
+	jp nz, .sortItems
 	ld a, [wCurrentMenuItem]
 	ld [wBagSavedMenuItem], a
 	jr nc, .choseItem
@@ -449,6 +450,9 @@ StartMenu_Item::
 	jp ItemMenuLoop
 .infoItem
 	farcall DisplayItemDescription
+	jp ItemMenuLoop
+.sortItems
+	farcall SortItems
 	jp ItemMenuLoop
 
 CannotUseItemsHereText:

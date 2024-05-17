@@ -17,4 +17,3 @@ TitleMons:
 	db SANDSLASH_A  ; Personal favorites
 	db IGUANARCH
 
-	

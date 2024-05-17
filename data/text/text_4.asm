@@ -20,6 +20,10 @@ _PlayerBlackedOutText::
 _RepelWoreOffText::
 	text "REPEL's effect"
 	line "wore off."
+	prompt
+
+_RepelUseAnotherText::
+	text "Use another?"
 	done
 
 _PokemartBuyingGreetingText::
@@ -229,3 +233,18 @@ ENDC
 	line "your friend and"
 	cont "come again!"
 	done
+
+_SortItemsText::
+	text "Would you like to"
+	next "sort items?"
+	done
+
+_SortComplete::
+	text "Sorting is"
+	next "complete!"
+	prompt
+
+_NothingToSort::
+	text "There are no items"
+	next "to sort."
+	prompt

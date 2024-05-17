@@ -861,6 +861,7 @@ wNumShakes::
 wWhichBadge::
 wTitleMonSpecies::
 wPlayerCharacterOAMTile::
+wFPlayerCharacterOAMTile::
 ; the number of small stars OAM entries to move down
 wMoveDownSmallStarsOAMCount::
 wChargeMoveNum::

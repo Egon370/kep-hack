@@ -1,5 +1,6 @@
 EscapeRopeTilesets:
 	db FOREST
+	db SHIP
 	db CEMETERY
 	db CAVERN
 	db FACILITY

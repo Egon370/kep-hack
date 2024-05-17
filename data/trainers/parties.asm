@@ -159,7 +159,7 @@ SailorData:
 ; Vermilion Gym
 	db 21, KOTORA, GAOTORA, 0
 ; Silph Gauntlet 3F (S.S Anne)
-	db 58, KINGDRA, MACHAMP, GOROCHU, STARMIE, POLIWRATH, TENTACRUEL, 0
+	db 58, CROAKOZUNA, MACHAMP, GOROCHU, STARMIE, POLIWRATH, TENTACRUEL, 0
 
 ; One of the most varied trainers in the game. No criticisms.
 JrTrainerMData:
@@ -232,11 +232,11 @@ PokemaniacData:
 	db 22, CHARMANDER, CUBONE, 0
 	db 23, GAVILLAIN, 0
 ; Victory Road 2F
-	db 40, MINISTARE, LAPRAS, LICKILICKY, RHYDON, 0
+	db 47, MINISTARE, LAPRAS, LICKILICKY, RHYDON, 0
 ; Rock Tunnel 1F
 	db 23, CUBONE, SLOWPOKE, 0
 ; Silph Gauntlet 2F (Mt. Moon)
-	db 57, GUARDIA, SLOWKING, CHARIZARD, STEELIX, LICKILICKY, RHYPERIOR, 0
+	db 57, GUARDIA, SLOWKING, CHARIZARD, STEELIX, LICKILICKY, RHYDON, 0
 
 ; The Super Nerd has some weird choices, but I think they're mostly inorganic Pokemon, except for Fire-types that the Cinnabar Gym Trainers use.
 SuperNerdData:
@@ -248,16 +248,19 @@ SuperNerdData:
 	db 20, GRIMER, KOFFING, KOFFING, MAGNEMITE, 0
 	db 22, VOLTORB, KOFFING, MAGNETITE, 0
 	db 26, ELECTRODE, 0
-; Unused - both now used in Celadon University
+; Celadon University
 	db 30, PORYGON, 0 ;
 	db 25, GRIMER, KOFFING, KABUTO, OMANYTE, 0 ;
 ; Silph Gauntlet 2F (Mt. Moon)
-	db 57, ELECTRODE, MUK, KABUTOPS, OMASTAR, MAGNEZONE, PORYGONZ, 0
+	db 57, ELECTRODE, MUK, KABUTOPS, OMASTAR, MAGNEZONE, PORYGON2, 0
 ; Cinnabar Gym
 	db 36, VULPIX, NINETALES, CHARIZARD, 0
 	db 34, PONYTA, CHARMANDER, RAPIDASH, ARCANINE, 0
 	db 41, FLAREON, 0
 	db 37, CHARMELEON, MAGMAR, 0
+; Celadon University
+	db 48, PORYGON2, 0 ;
+	db 42, MUK, WEEZING, KABUTOPS, OMASTAR, AERODACTYL, 0 ;
 
 ; Expanding the Hiker's cast is hard, as Rock-types are actually quite limited.
 ; Machop is more of an exception and not the rule, it's just "strong".
@@ -324,7 +327,7 @@ BikerData:
 ; Fire specialist
 BurglarData:
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, RAPIDASH, CROAKOZUNA, ARCANINE, PERSIAN_A, WEEZING, MAGMORTAR, 0
+	db 59, RAPIDASH, CROAKOZUNA, ARCANINE, UMBREON, WEEZING_G, MAGMORTAR, 0
 ; Unused
 	db 33, GROWLITHE, 0
 	db 28, VULPIX, CHARMANDER, PONYTA, 0
@@ -341,13 +344,15 @@ BurglarData:
 
 ; Electric dude with little variety due to not being seen often
 EngineerData:
-; Unused - used in celadon university
+; Celadon University
 	db 36, GOLEM, 0
 ; Route 11
 	db 21, KOTORA, VOLTORB, 0
 	db 18, MAGNEMITE, MAGNEMITE, PIKACHU, 0
 ; Silph Gauntlet 3F (S.S Anne)
 	db 58, ELECTRODE, SANDSLASH_A, ELECTIVIRE, GOROTORA, PERRSERKER, SCIZOR, 0   ; The Engineer trainer EXCLUSIVELY uses Magnemites and Voltorbs in normal battles, so I kinda had to improvise with his team a bit...
+; Celadon University
+	db 52, GOLEM_A, 0
 
 ; Super Rod encounter showcase, basically
 FisherData:
@@ -368,9 +373,9 @@ FisherData:
 ; Route 12
 	db 24, BLASTYKE, WIGLETT, 0
 ; Silph Gauntlet 3F (S.S Anne)
-	db 58, GYARADOS, SEAKING, DISTURBAN, WUGTRIO, BLASTOISE, PENDRAKEN, 0
+	db 58, SEAKING, DISTURBAN, WUGTRIO, KINGLER, PENDRAKEN, GYARADOS, 0
 ; Brunswick Trail
-	db 57, POLIWRATH, MACHAMP, GOROTORA, PENDRAKEN, TAUROS_PA, 0
+	db 57, POLIWRATH, DISTURBAN, JABETTA, PENDRAKEN, TAUROS_PA, 0
 
 ; God this took forever to remove repeats from
 ; Surf encounter extravaganza
@@ -395,7 +400,7 @@ SwimmerData:
 	db 33, BLASTYKE, STARYU, WARTORTLE, 0
 	db 32, POLIWHIRL, TENTACOOL, GOLDUCK, 0
 ; Silph Gauntlet 5F (Safari Zone)
-	db 60, LAPRAS, KINGDRA, CLOYSTER, GOLDUCK, POLIWRATH, TENTACRUEL, 0
+	db 60, LAPRAS, PENDRAKEN, CLOYSTER, GOLDUCK, POLIWRATH, VAPOREON, 0
 
 ; Fighting specialist, very odd.
 CueBallData:
@@ -424,7 +429,7 @@ GamblerData:
 ; Route 8
 	db 22, POLIWAG, RIBBITO, POLIWHIRL, 0
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, SEAKING, RHYPERIOR, ELECTRODE, ARCANINE, GOLEM, POLITOED, 0
+	db 59, SEAKING, RHYDON, CACTORMUS, DEWGONG, GOLEM, POLITOED, 0
 ; Route 8
 	db 24, CACTORMUS, 0 ; This was a repeat of Growlithe/Vulpix, so I made it a Game Corner prize instead.
 
@@ -447,7 +452,7 @@ BeautyData:
 	db 29, PERSIAN, 0 ; it doesn't have slash until like L47 trust me it's fine
 	db 29, BULBASAUR, IVYSAUR, 0
 ; Silph Gauntlet 2F (Mt. Moon)
-	db 57, PERSIAN, VICTREEBEL, WIGGLYTUFF, MACHAMP, CLOYSTER, SYLVEON, 0
+	db 57, PERSIAN_A, VICTREEBEL, WIGGLYTUFF, SHARPOON, CLOYSTER, SYLVEON, 0
 ; Route 19
 	db 27, POLIWAG, GOLDEEN, SEAKING, 0
 	db 30, BLASTYKE, GOLDUCK, 0
@@ -456,9 +461,10 @@ BeautyData:
 	db 30, KINGDRA, 0 ; Close to the Trader
 ; Brunswick Trail
 	db 58, PERSIAN, VENUSAUR, KINGDRA, SYLVEON, CLOYSTER, 0
-; Celeste Hill?
-	db 60, MR_MIME, WIGGLYTUFF, NINETALES_A, PENDRAKEN, 0 ; Mina
+; Celeste Hill
+	db 60, BALUMBA, NINETALES_A, PENDRAKEN, SYLVEON, 0 ; Mina
 	db 62, PERSIAN, PERSIAN_A, PERRSERKER, 0 ; Selphy
+; Brunswick Trail
 	db 63, MUK, ARBOK, VILEPLUME, 0 ; Ariana
 
 ; yep psychic yep psychic yep psychic
@@ -478,23 +484,23 @@ RockerData:
 ; Route 12
 	db 29, VOLTORB, ELECTRODE, 0
 ; Silph Gauntlet 3F (S.S Anne)
-	db 58, GAVILLAIN, ELECTRODE, MAGNEZONE, GOLEM_A, GOROCHU, JOLTEON, 0
+	db 58, GAVILLAIN, GAWARHED, MAGNEZONE, GOLEM_A, GOROCHU, JOLTEON, 0
 
 ; Psychic, Poison, and a little bit of Voltorb.
 JugglerData:
 ; Silph Co. 5F
 	db 29, ELECTRODE, KADABRA, MR_MIME, 0
 ; Victory Road 2F
-	db 41, DROWZEE, HYPNO, ESPEON, KADABRA, 0
+	db 45, ESPEON, UMBREON, HYPNO, MR_MIME, 0
 ; Fuchsia Gym
 	db 31, BEEDRILL, HAUNTER, VILEPLUME, 0
 	db 34, GOLBAT, TENTACRUEL, 0
 ; Victory Road 2F
 	db 48, ELECTRODE, HYPNO, MR_MIME, 0 ; buffed roster
 ; Silph Gauntlet 5F (Safari Zone)
-	db 60, HYPNO, MR_MIME, ALAKAZAM, ELECTRODE, VICTREEBEL, SLOWKING_G, 0
+	db 60, TENTACRUEL, MR_MIME, ALAKAZAM, ELECTRODE, BELLIGNAN, SLOWKING_G, 0
 ; Fuchsia Gym
-	db 38, UMBREON, 0
+	db 36, UMBREON, 0
 ; Fuchsia Gym
 	db 34, WEEPINBELL, BELLIGNAN, 0
 
@@ -509,9 +515,9 @@ TamerData:
 	db 43, RHYDON, 0
 	db 39, SANDSLASH, TRAMPEL, 0
 ; Victory Road 2F
-	db 44, KANGASKHAN, TAUROS, GOLDUCK, PRIMEAPE, 0
+	db 47, KANGASKHAN, TAUROS, GOLDUCK, PRIMEAPE, 0
 ; Silph Gauntlet 5F (Safari Zone)
-	db 60, RHYPERIOR, ARBOK, KANGASKHAN, ANNIHILAPE, TRAMPEL, TAUROS, 0
+	db 60, TAUROS, ARBOK, KANGASKHAN, ANNIHILAPE, TRAMPEL, KANGASKHAN, 0
 
 ; yep bird yep bird yep bird yep bird
 ; If nothing else, just make them less agonising to fight.
@@ -556,9 +562,9 @@ BlackbeltData:
 	db 43, GUARDIA, 0
 	db 38, CACTORMUS, DUGTRIO, STEELIX, 0
 ; Victory Road 2F
-	db 43, MACHOKE, MACHOP, MACHOKE, 0
+	db 46, POLIWRATH, MACHOKE, HITMONTOP, 0
 ; Silph Gauntlet 2F (Mt. Moon)
-	db 63, HITMONTOP, JABETTA, HITMONCHAN, POLIWRATH, CARAPTHOR, MACHAMP, 0
+	db 57, HITMONTOP, JABETTA, HITMONCHAN, POLIWRATH, CARAPTHOR, MACHAMP, 0
 
 ; Uses Silph products and Steel-types
 ChiefData:
@@ -570,7 +576,7 @@ ChiefData:
 ; Poison- and Electric-type Pokemon
 ScientistData:
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, MAGNEZONE, ELECTRODE, PORYGONZ, MIMMEO, GAVILLAIN, WEEZING, 0
+	db 59, MAGNEZONE, TRICULES, PORYGON2, MIMMEO, GAVILLAIN, WEEZING, 0
 ; Silph Co. 2F (unused)
 	db 26, GRIMER, WEEZING, KOFFING, WEEZING, 0
 	db 28, MAGNETITE, VOLTORB, MAGNETON, 0
@@ -629,7 +635,7 @@ RocketData:
 	db 26, VOLTORB, KOFFING, DROWZEE, 0
 	db 23, ZUBAT, RATTATA, RATICATE, ZUBAT, 0
 ; Silph Gauntlet 4F (Lavender Tower)
-	db 59, PERSIAN, ARBOK, RATICATE, CROBAT, HYPNO, GUARDIA, 0
+	db 59, GUARDIA, ARBOK, RATICATE, CROBAT, HYPNO, NIDOREIGN, 0
 ; Silph Co. 2F - cut
 	db 29, CUBONE, ZUBAT, 0
 	db 25, GOLBAT, ZUBAT, ZUBAT, RATICATE, ZUBAT, 0
@@ -638,7 +644,7 @@ RocketData:
 ; Silph Co. 4F - cut
 	db 29, MACHOP, DROWZEE, 0
 	db 28, EKANS, ZUBAT, CUBONE, 0
-; Silph Co. 5F - cut
+; Silph Co. 5F
 	db 33, ARBOK, 0
 	db 33, HYPNO, 0
 ; Silph Co. 6F - cut
@@ -665,12 +671,12 @@ CooltrainerMData:
 ; Viridian Gym
 	db 39, MAROWAK, NIDOKING, 0
 ; Victory Road 3F
-	db 43, EXEGGUTOR, CLOYSTER, ARCANINE, 0
-	db 43, KINGLER, TENTACRUEL, BLASTOISE, 0
+	db 50, EXEGGUTOR, CLOYSTER, ARCANINE, 0
+	db 50, KINGLER, TENTACRUEL, BLASTOISE, 0
 ; Silph Gauntlet 5F (Safari Zone)
 	db 60, GOROCHU, VENUSAUR, ESPEON, CHARIZARD, SNORLAX, TOTARTLE, 0
 ; Victory Road 1F
-	db 42, IVYSAUR, WARTORTLE, CHARMELEON, CHARIZARD, 0
+	db 48, FLAREON, VAPOREON, JOLTEON, LEAFEON, 0
 ; Unused
 	db 44, IVYSAUR, WARTORTLE, CHARMELEON, 0
 	db 49, NIDOKING, 0
@@ -681,7 +687,7 @@ CooltrainerMData:
 ; Celadon Condominiums Morimoto - Team is LGPE's with +10 Levels each.
 	db 64, KANGASKHAN, FLAREON, VAPOREON, JOLTEON, MACHAMP, DRAGONITE, 0
 ; Brunswick Trail / Glade 
-	db 60, RATICATE, POLITOED, BUTTERFREE, WIGGLYTUFF, MACHAMP, RHYPERIOR, 0 ; Primo
+	db 60, RATICATE, POLITOED, BUTTERFREE, WIGGLYTUFF, MACHAMP, RHYDON, 0 ; Primo
 	db 57, PIDGEOT, VILEPLUME, GUARDIA, RAPIDASH, SLOWBRO, JOLTEON, 0 ; Trace
 	db 60, EXEGGUTOR, SLOWBRO, JYNX, 0 ; Will
 
@@ -690,17 +696,17 @@ CooltrainerFData:
 ; Celadon Gym
 	db 24, CACTORMUS, GLOOM, 0
 ; Victory Road 3F
-	db 43, BELLIGNAN, VICTREEBEL, 0
-	db 43, PARASECT, DEWGONG, CHANSEY, 0
+	db 49, BELLIGNAN, VICTREEBEL, 0
+	db 47, PARASECT, DEWGONG, CHANSEY, 0
 ; Silph Gauntlet 5F (Safari Zone)
-	db 60, CLEFABLE, GENGAR, VICTREEBEL, NINETALES, KANGASKHAN, BLASTOISE, 0
+	db 60, CLEFABLE, GENGAR, NINETALES, LEAFEON, GLACEON, BLASTOISE, 0
 ; Victory Road 1F
-	db 44, PERSIAN, NINETALES, BELLOSSOM, 0
-; Unused - reuse somewhere? celeste, etc?
+	db 48, PERSIAN, NINETALES, BELLOSSOM, 0
+; Unused
 ;	db 45, IVYSAUR, VENUSAUR, 0
 ;	db 45, NIDORINA, NIDOQUEEN, 0
 ;	db 43, PERSIAN, NINETALES, RAICHU, 0
-; Brunswick Glade/grotto etc, whatever desired 
+; Brunswick Glade
 	db 60, BLASTOISE, VENUSAUR, CLEFABLE, ESPEON, 0 ; Leaf 
 
 ; "Dignified" Pokemon associated with the privileged class.
@@ -714,7 +720,7 @@ GentlemanData:
 	db 58, ARCANINE, NIDOQUEEN, MR_RIME, FEAROW, CARAPTHOR, RAPIDASH, 0
 ; SS Anne 2F Rooms
 	db 17, KOLTA, GROWLITHE, 0
-; Celeste Hill?
+; Celeste Hill/Brunswick Trail
 	db 56, NIDOKING, GOLDUCK, GUARDIA, DODRIO, BEEDRILL, 0 ; Fuji
 	db 57, FEAROW, RAPIDASH, GOROCHU, ALAKAZAM, SYLVEON, 0 ; Fan Club chairman
 
@@ -766,21 +772,19 @@ StudentData:
 	db 56, WIGGLYTUFF, PIDGEOT, TRAMPEL, CLEFABLE, KANGASKHAN, RAMOOSE, 0   ; all Normal types that Yujirou doesn't use
 ; Celadon University
 	db 22, BULBASAUR, CHARMANDER, SQUIRTLE, 0
+; Celadon University
+	db 40, VENUSAUR, CHARIZARD, TOTARTLE, 0
 
 ; Mainly Water specialists, but can also use anything else that hits Fire super-effectively
 FirefighterData:
 ; Cerulean Gym
 	db 15, POLIWAG, CHEEP, SQUIRTLE, 0
 ; Silph Gauntlet 3F (S.S Anne)
-	db 58, BLASTOISE, OMASTAR, SANDSLASH, KINGDRA, GUARDIA, POLIWRATH, 0
+	db 58, BLASTOISE, OMASTAR, SANDSLASH, KINGDRA, GUARDIA, PENDRAKEN, 0
 ; Cinnabar Volcano
 	db 36, WARTORTLE, MAROWAK, POLITOED, 0
 	db 35, SANDSLASH, OMANYTE, SEAKING, CROAKOZUNA, 0
 	db 38, SEADRA, BLASTOISE, 0
-
-JuniorData:
-; to be removed
-	db 5, BULBASAUR, 0
 	
 JackData:
 ; Celadon Mansion Roof House

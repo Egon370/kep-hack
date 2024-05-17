@@ -12,8 +12,8 @@ _UltraBallDescription::
 	prompt
 
 _GreatBallDescription::
-	text "A BALL with a de-"
-	next "cent success rate."
+	text "A BALL with a good"
+	next "success rate."
 	prompt
 
 _PokeBallDescription::
@@ -29,6 +29,11 @@ _TownMapDescription::
 _BicycleDescription::
 	text "A collapsible bike"
 	next "for travel."
+	prompt
+
+_PocketLaprasDescription::
+	text "A LAPRAS that lets"
+	next "you cross water."
 	prompt
 
 _SafariBallDescription::
@@ -110,7 +115,7 @@ _EscapeRopeDescription::
 
 _RepelDescription::
 	text "Repels weak #-"
-	next "MON for 100 steps."
+	next "MON. (100 steps)"
 	prompt
 
 _OldAmberDescription::
@@ -205,18 +210,18 @@ _MaxReviveDescription::
 	prompt
 
 _GuardSpecDescription::
-	text "Prevents stats"
-	next "reduction. (1 BTL)"
+	text "Prevents stat re-"
+	next "duction. (1 BTL)"
 	prompt
 
 _SuperRepelDescription::
 	text "Repels weak #-"
-	next "MON for 200 steps."
+	next "MON. (200 steps)"
 	prompt
 
 _MaxRepelDescription::
 	text "Repels weak #-"
-	next "MON for 250 steps."
+	next "MON. (250 steps)"
 	prompt
 
 _DireHitDescription::
@@ -281,7 +286,7 @@ _OaksParcelDescription::
 
 _ItemfinderDescription::
 	text "Checks for unseen"
-	next "items in the area."
+	next "items nearby."
 	prompt
 
 _SilphScopeDescription::
@@ -340,8 +345,8 @@ _ElixerDescription::
 	prompt
 
 _MaxElixerDescription::
-	text "Fully restores the"
-	next "PP of one #MON."
+	text "Fully restores PP"
+	next "of all moves."
 	prompt
 
 _CitrinePassDescription::
@@ -380,13 +385,13 @@ _HM02Description::
 	prompt
 
 _HM03Description::
-	text "A strong water-"
+	text "A strong WATER-"
 	next "type attack."
 	prompt
 
 _HM04Description::
-	text "A powerful physi-"
-	next "cal attack."
+	text "A strong physical"
+	next "attack."
 	prompt
 
 _HM05Description::
@@ -420,12 +425,12 @@ _TM05Description::
 	prompt
 
 _TM06Description::
-	text "A poison move with"
-	next "increasing damage."
+	text "A POISON move with"
+	next "rising damage."
 	prompt
 
 _TM07Description::
-	text "A one-hit KO,"
+	text "A one-hit KO"
 	next "drill attack."
 	prompt
 
@@ -475,8 +480,8 @@ _TM16Description::
 	prompt
 
 _TM17Description::
-	text "An attack that al-"
-	next "so hurts the user."
+	text "A move that also"
+	next "hurts the user."
 	prompt
 
 _TM18Description::
@@ -520,13 +525,13 @@ _TM25Description::
 	prompt
 
 _TM26Description::
-	text "Tough but useless"
-	next "vs. flying foes."
+	text "Tough, but useless"
+	next "vs. FLYING foes."
 	prompt
 
 _TM27Description::
-	text "A GROUND-type,"
-	next "one-hit KO attack."
+	text "A one-hit KO"
+	next "GROUND attack."
 	prompt
 
 _TM28Description::
@@ -595,8 +600,8 @@ _TM40Description::
 	prompt
 
 _TM41Description::
-	text "Restores HP by 1/2"
-	next "the user's max HP."
+	text "Restores 1/2 the"
+	next "user's max HP."
 	prompt
 
 _TM42Description::
@@ -615,8 +620,8 @@ _TM44Description::
 	prompt
 
 _TM45Description::
-	text "A move that may"
-	next "cause paralysis."
+	text "A move that will"
+	next "paralyze a foe."
 	prompt
 
 _TM46Description::
@@ -640,8 +645,8 @@ _TM49Description::
 	prompt
 
 _TM50Description::
-	text "Makes a decoy with"
-	next "1/4 user's max HP."
+	text "Uses 1/4 max HP"
+	next "to make a decoy."
 	prompt
 
 _UnusedItemDescription::

@@ -23,7 +23,7 @@ ItemUsePtrTable:
 	dw ItemUseBall       ; POKE_BALL
 	dw ItemUseTownMap    ; TOWN_MAP
 	dw ItemUseBicycle    ; BICYCLE
-	dw ItemUseSurfboard  ; out-of-battle Surf effect
+	dw ItemUseLapras     ; POCKET_LAPRAS
 	dw ItemUseBall       ; SAFARI_BALL
 	dw ItemUsePokedex    ; POKEDEX
 	dw ItemUseEvoStone   ; MOON_STONE
@@ -759,12 +759,17 @@ ItemUseBicycle:
 	jp PrintText
 
 ; used for Surf out-of-battle effect
-ItemUseSurfboard:
+ItemUseLapras:
 	ld a, [wWalkBikeSurfState]
 	ld [wWalkBikeSurfStateCopy], a
 	cp 2 ; is the player already surfing?
 	jr z, .tryToStopSurfing
 .tryToSurf
+	farcall IsSurfingAllowed
+	ld hl, wd728
+	bit 1, [hl]
+	res 1, [hl]
+	jp z, .no
 	call IsNextTileShoreOrWater
 	jp c, SurfingAttemptFailed
 	ld hl, TilePairCollisionsWater
@@ -836,6 +841,10 @@ ItemUseSurfboard:
 	ld [wWastedByteCD39], a
 	inc a
 	ld [wSimulatedJoypadStatesIndex], a
+	ret
+.no
+	ld a, 1
+	and a
 	ret
 
 SurfingGotOnText:

@@ -200,6 +200,7 @@ DisplayPlayerBlackedOutText::
 DisplayRepelWoreOffText::
 	ld hl, RepelWoreOffText
 	call PrintText
+	callfar UseAnotherRepel
 	jp AfterDisplayingTextID
 
 RepelWoreOffText::

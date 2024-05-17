@@ -26,7 +26,7 @@ ItemDescriptionPointers:
 	text_end
 	text_far _BicycleDescription
 	text_end
-	text_far _UnusedItemDescription
+	text_far _PocketLaprasDescription
 	text_end
 	text_far _SafariBallDescription
 	text_end

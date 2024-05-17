@@ -1,9 +1,9 @@
 _SilphCo1Text1::
 	text "Welcome!"
 
-	para "The PRESIDENT is"
-	line "in the boardroom"
-	cont "on 11F!"
+	para "The CHIEF is in"
+	line "the boardroom on"
+	cont "the top floor!"
 	done
 
 _SilphCo1Text2::

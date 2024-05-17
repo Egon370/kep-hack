@@ -39,9 +39,18 @@ DisplayDiploma::
 	hlcoord 10, 4
 	ld de, wPlayerName
 	call PlaceString
+	ld a, [wPlayerSex]
+	and a		; are you playing as Red
+	jr z, .red	; if yes, Red appears on the diploma
+	jr nz, .green	; if no, Green replaces him
+.green
+	farcall DrawFPlayerCharacter
+	jr .skip
+.red
 	farcall DrawPlayerCharacter
+.skip
 
-; Move the player 33 pixels right and set the priority bit so he appears
+; Move the player 33 pixels right and set the priority bit so they appear
 ; behind the background layer.
 	ld hl, wShadowOAMSprite00XCoord
 	lb bc, $80, $28

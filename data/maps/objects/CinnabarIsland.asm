@@ -10,14 +10,15 @@ CinnabarIsland_Object:
 	warp_event 14, 11, CINNABAR_VOLCANO_FLOORS, 1
 
 	def_bg_events
-	bg_event 11,  15, 3 ; CinnabarIslandText3
-	bg_event 22, 19, 4 ; MartSignText
-	bg_event 16, 17, 5 ; PokeCenterSignText
-	bg_event  9, 23, 6 ; CinnabarIslandText6
-	bg_event  23,  13, 7 ; CinnabarIslandText7
+	bg_event 11,  15, 4 ; CinnabarIslandText3
+	bg_event 22, 19, 5 ; MartSignText
+	bg_event 16, 17, 6 ; PokeCenterSignText
+	bg_event  9, 23, 7 ; CinnabarIslandText6
+	bg_event  23,  13, 8 ; CinnabarIslandText7
 
 	def_object_events
 	object_event 11, 18,  SPRITE_GIRL, WALK, LEFT_RIGHT, 1 ; person
 	object_event 17, 20, SPRITE_GAMBLER, STAY, NONE, 2 ; person
+	object_event 25, 18, SPRITE_COOLTRAINER_M, WALK, UP_DOWN, 3 ; Pocket Lapras
 
 	def_warps_to CINNABAR_ISLAND

@@ -12,7 +12,7 @@ _CeladonUniversityOutsideBattleText1::
 	done
 
 _CeladonUniversityOutsideBattleText2::
-	text "Ok! Go, PORYGON!"
+	text "Let's go!"
 	done
 
 _CeladonUniversityOutsideBattleText3::
@@ -32,9 +32,9 @@ _CeladonUniversityOutsideLoseText1::
 	prompt
 
 _CeladonUniversityOutsideLoseText2::
-	text "It"
-	line "needs an"
-	cont "UP-GRADE."
+	text "Darn!"
+	line "It must need an"
+	cont "update!"
 	prompt
 
 _CeladonUniversityOutsideLoseText3::
@@ -61,7 +61,7 @@ _CeladonUniversityOutsideAfterBattleText::
 
 _CeladonUniversityOutsideYesNo2::
 	text "I've been working"
-	line "on a digital"
+	line "on an artificial"
 	cont "#MON."
 	
 	para "Want to help me"
