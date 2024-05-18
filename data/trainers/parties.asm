@@ -566,13 +566,6 @@ BlackbeltData:
 ; Silph Gauntlet 2F (Mt. Moon)
 	db 57, HITMONTOP, JABETTA, HITMONCHAN, POLIWRATH, CARAPTHOR, MACHAMP, 0
 
-; Uses Silph products and Steel-types
-ChiefData:
-; Silph Gauntlet 7F
-	db $FF, 66, ELECTRODE, 65, LAPRAS, 66, SCIZOR, 65, GENGAR, 68, PORYGONZ, 70, OMEGADGE, 0
-	db $FF, 73, ELECTRODE, 72, LAPRAS, 73, SCIZOR, 72, GENGAR, 75, PORYGONZ, 78, OMEGADGE, 0
-; Lapras and Gengar are used here since Lapras is given by a Silph worker, and Gengar represents the Silph Scope.
-
 ; Poison- and Electric-type Pokemon
 ScientistData:
 ; Silph Gauntlet 4F (Lavender Tower)
