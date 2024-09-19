@@ -142,7 +142,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const MT_MOON_CRATER,                25, 25 ; $77	- Was UNUSED_MAP_75
 	map_const HALL_OF_FAME,                   5,  4 ; $78
 	map_const UNDERGROUND_PATH_NORTH_SOUTH,   4, 24 ; $79 ; UndergroundPathNorthSouth.blk is actually 4x23
-	map_const CHAMPIONS_ROOM,                 4,  4 ; $7A
+	map_const CHAMPIONS_ROOM,                 5,  6 ; $7A
 	map_const UNDERGROUND_PATH_WEST_EAST,    25,  4 ; $7B
 	map_const CELADON_MART_1F,               10,  4 ; $7C
 	map_const CELADON_MART_2F,               10,  4 ; $7D
@@ -210,7 +210,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const ROUTE_16_GATE_1F,               4,  7 ; $BB
 	map_const ROUTE_16_GATE_2F,               4,  4 ; $BC
 	map_const ROUTE_16_FLY_HOUSE,             4,  4 ; $BD
-	map_const ROUTE_12_SUPER_ROD_HOUSE,       4,  4 ; $BE
+	map_const FISHING_GURU_HOUSE,             4,  4 ; $BE
 	map_const ROUTE_18_GATE_1F,               4,  5 ; $BF
 	map_const ROUTE_18_GATE_2F,               4,  4 ; $C0
 	map_const SEAFOAM_ISLANDS_1F,            15,  9 ; $C1

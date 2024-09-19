@@ -354,7 +354,7 @@ EngineerData:
 ; Celadon University
 	db 52, GOLEM_A, 0
 
-; Super Rod encounter showcase, basically
+; Fishing Rod encounter showcase, basically
 FisherData:
 ; SS Anne 2F Rooms
 	db 17, GOLDEEN, TENTACOOL, KRABBY, 0

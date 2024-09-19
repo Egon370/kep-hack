@@ -40,8 +40,8 @@ GaryScript1:
 	ret
 
 GaryEntrance_RLEMovement:
-	db D_UP, 1
-	db D_RIGHT, 1
+	db D_UP, 2
+	db D_UP, 2
 	db D_UP, 3
 	db -1 ; end
 
@@ -159,14 +159,13 @@ OakEntranceAfterVictoryMovement:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
 	db -1 ; end
 
 GaryScript5:
 	ld a, [wd730]
 	bit 0, a
 	ret nz
-	ld a, PLAYER_DIR_LEFT
-	ld [wPlayerMovingDirection], a
 	ld a, $1
 	ldh [hSpriteIndex], a
 	ld a, SPRITE_FACING_LEFT
@@ -244,7 +243,7 @@ GaryScript9:
 	ret
 
 WalkToHallOfFame_RLEMovment:
-	db D_UP, 4
+	db D_UP, 5
 	db D_LEFT, 1
 	db -1 ; end
 

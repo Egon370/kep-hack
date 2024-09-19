@@ -69,6 +69,11 @@ _SurfingGotOnText::
 	text "!"
 	prompt
 
+_SurfingGotOnLaprasText:: ; i cringed irl doing it this way pls understand i do not like this either - pvk
+	text "<PLAYER> got on"
+	line "LAPRAS!"
+	prompt
+
 _SurfingNoPlaceToGetOffText::
 	text "There's no place"
 	line "to get off!"

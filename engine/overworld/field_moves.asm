@@ -33,10 +33,18 @@ TrySurf:
 	and a
 	jr nz, .no2
 	call GetPartyMonName2
+	
+	; pocket lapras illusion maintenance service
+	ld a, 1
+	ld [wSurfMonItemSwitch], a
+	
 	ld a, POCKET_LAPRAS
 	ld [wcf91], a
 	ld [wPseudoItemID], a
 	call UseItem
+	; pocket lapras stuff
+	xor a
+	ld [wSurfMonItemSwitch], a
 .yes2
 	call CloseFieldMoveTextBox
 .yes

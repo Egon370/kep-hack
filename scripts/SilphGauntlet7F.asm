@@ -107,7 +107,7 @@ ChiefScript4:
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	SetEvent EVENT_MEWTWO_UNLOCKED
-	ResetEventRange SILPH_GAUNTLET_EVENTS_START, SILPH_GAUNTLET_EVENTS_END, 1 
+	ResetEventRange EVENT_BEAT_GAUNTLET_YOUNGSTER, EVENT_BEAT_GAUNTLET_BLAINE
 	
 	ld a, $0
 	ld [wSilphGauntlet7FCurScript], a

@@ -532,7 +532,13 @@ wLowHealthAlarmDisabled:: db
 
 wPlayerMonMinimized:: db
 
-	ds 13
+	ds 2
+
+wEXPBarPixelLength::  ds 1
+wEXPBarBaseEXP::      ds 3
+wEXPBarCurEXP::       ds 3
+wEXPBarNeededEXP::    ds 3
+wEXPBarKeepFullFlag:: ds 1
 
 ; number of hits by enemy in attacks like Double Slap, etc.
 wEnemyNumHits:: ; db
@@ -1459,7 +1465,7 @@ wEndBattleLoseTextPointer:: dw
 	ds 2
 wEndBattleTextRomBank:: db
 
-	ds 1
+wSurfMonItemSwitch:: db ; i cant be fucked making a new item just do it this way - pvk
 
 ; the address _of the address_ of the current subanimation entry
 wSubAnimAddrPtr:: dw

@@ -3,7 +3,6 @@ UsableItems_CloseMenu:
 	db ESCAPE_ROPE
 	db ITEMFINDER
 	db POKE_FLUTE
-	;db OLD_ROD no longer exists
-	;db GOOD_ROD no longer exists
-	db SUPER_ROD
+	db FISHING_ROD
+	db POCKET_LAPRAS
 	db -1 ; end

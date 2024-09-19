@@ -386,6 +386,9 @@ INCLUDE "crysaudio/music/RBY/giovannibattle.asm"
 INCLUDE "crysaudio/music/RBY/elitefourbattle.asm"
 INCLUDE "crysaudio/music/RBY/champrival.asm"
 
+SECTION "RBY Songs 5", ROMX
+INCLUDE "crysaudio/music/RBY/galarbirds.asm"
+
 SECTION "TCG Songs 1", ROMX
 
 INCLUDE "crysaudio/music/TCG/titlescreen.asm"

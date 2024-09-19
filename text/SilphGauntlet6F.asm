@@ -69,7 +69,7 @@ _SilphGauntlet6FBattleText3::
 	cont "saved me during"
 	cont "the war! They"
 	cont "even powered my"
-	cont "plane!"
+	cont "Thunderchief!" ; Republic F-105 Thunderchief - Vietnam aircraft, referencing the FRLG Fame Checker, but also adding clarity for the player to figure out which war Surge was in.
 	
 	para "I'll zap you for"
 	line "real this time!"
@@ -83,19 +83,37 @@ _SilphGauntlet6FEndBattleText3::
 	line "a gallon, now!"
 	prompt
 
+; Originally, we wanted Surge to talk about being Major.
+; But we realised RG Blaine wears a WWII-era Japanese uniform.
+; Ergo, Blaine should loathe Surge for manning American war bases.
+ ; The implication is that Surge works at an American war base in Japan. Post-war, these propped up to ensure Japan never does what it did again. In modern-day, these are super controversial. Blaine, being a soldier, would get extremely mad.
+ ; Thus, we give Surge an explanation for being in Kanto at all...
+ ; While also giving a haunting backstory to RG Blaine's design.
+ ; This requires a lot of historical knowledge to get right, but we want to adequately represent Surge and Blaine's war uniforms.
+ ; This would make Surge around 40 years old, and Blaine around 60-70 years old.
 _SilphGauntlet6FAfterBattleText3::
-	text "Huh? BLAINE?"
-	line "Oh, man!"
+	text "Huh? BLAINE? Oh,"
+	line "man!"
 	
-	para "He won't tell you" ; Referring to Blaine's original design.
-	line "this, but he was"
-	cont "my mentor!"
+	para "Ever since I told"
+	line "him where I work,"
+	cont "he's got his"
+	cont "pants in a bunch!" ; s/o Megachiroptera for giving the american version of this saying
 	
-	para "Once, the higher-" ; Commentary on the German, French, and Chinese translations.
-	line "ups demoted me"
-	cont "to MAJOR SURGE,"
-	cont "but BLAINE got"
-	cont "me reinstated!"
+	para "Something about"
+	line "that war, maybe?" ; World War II
+	
+	para "C'mon, I wasn't"
+	line "even born yet!" ; This explains the age gap. He fought in the Vietnam War, deployed from the Japanese base.
+	
+	; Old text.
+	; We wanted to reference the Chinese and German translations.
+	; But Surge is too young, and American, so the relations wouldn't work.
+;	para "Once, the higher-" 
+;	line "ups demoted me" ; Old text from before we looked at the context of RG Blaine.
+;	cont "to MAJOR SURGE,"
+;	cont "but BLAINE got"
+;	cont "me reinstated!"
 	
 	done
 

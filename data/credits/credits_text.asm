@@ -90,7 +90,7 @@ CreditsTextPointers:
 	dw CredDannye
 	dw CredEro
 	dw CredBlueZangoose
-	dw CredSkye
+	dw CredHunnies
 	dw CredChatot
 	dw CredEni
 	dw CredVort
@@ -276,8 +276,8 @@ CredEro:
 	db -4, "EROSUNICA@"
 CredBlueZangoose:
 	db -5, "BLUEZANGOOSE@"
-CredSkye:
-	db -5, "HEADBOISKYE@"
+CredHunnies:
+	db -4, "HUNNIEBUNS@"
 CredChatot:
 	db -4, "CHATOT4444@"
 CredEni:

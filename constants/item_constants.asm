@@ -85,25 +85,25 @@ DEF SAFARI_ROCK EQU $16 ; overload
 	const LIFT_KEY      ; $4A
 	const EXP_ALL       ; $4B
 	const CANDY_JAR     ; $4C - was old rod
-	const BOTTLE_CAP      ; $4D - was good rod
-	const SUPER_ROD     ; $4E
+	const BOTTLE_CAP    ; $4D - was good rod
+	const FISHING_ROD   ; $4E
 	const PP_UP         ; $4F
 	const ETHER         ; $50
 	const MAX_ETHER     ; $51
 	const ELIXER        ; $52
 	const MAX_ELIXER    ; $53
 	const ICE_STONE     ; $54
-	const PROTECTOR		; $55
+	const PROTECTOR     ; $55
 	const POISON_STONE  ; $56
 	const BLK_AUGURITE  ; $57
 	const DUBIOUS_DISC  ; $58
 	const CITRINE_PASS  ; $59
-	const OLD_SEA_MAP	; $5A
-	const UP_GRADE		; $5B
-	const METAL_COAT	; $5C
-	const MYSTERY_BOX	; $5D
-	const TEA			; $5E
-	const SILPHLETTER	; $5F
+	const OLD_SEA_MAP   ; $5A
+	const UP_GRADE      ; $5B
+	const METAL_COAT    ; $5C
+	const MYSTERY_BOX   ; $5D
+	const TEA           ; $5E
+	const SILPHLETTER   ; $5F
 DEF NUM_ITEMS EQU const_value - 1
 
 ; elevator floors use item IDs

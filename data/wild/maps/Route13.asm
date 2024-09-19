@@ -1,7 +1,7 @@
 Route13WildMons:
 	def_grass_wildmons 20 ; encounter rate
 	db 24, ODDISH
-	db 25, PIDGEOTTO
+	db 25, FARFETCHD
 	db 23, BELLSPROUT
 	db 24, VENONAT
 	db 24, VENONAT

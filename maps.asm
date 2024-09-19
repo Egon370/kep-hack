@@ -689,7 +689,7 @@ INCLUDE "data/maps/headers/Route21.asm"
 INCLUDE "data/maps/objects/Route21.asm"
 Route21_Blocks: INCBIN "maps/Route21.blk"
 
-Route12SuperRodHouse_Blocks: INCBIN "maps/Route12SuperRodHouse.blk"
+FishingGuruHouse_Blocks: INCBIN "maps/FishingGuruHouse.blk"
 
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
@@ -721,9 +721,9 @@ INCLUDE "data/maps/headers/Daycare.asm"
 INCLUDE "scripts/Daycare.asm"
 INCLUDE "data/maps/objects/Daycare.asm"
 
-INCLUDE "data/maps/headers/Route12SuperRodHouse.asm"
-INCLUDE "scripts/Route12SuperRodHouse.asm"
-INCLUDE "data/maps/objects/Route12SuperRodHouse.asm"
+INCLUDE "data/maps/headers/FishingGuruHouse.asm"
+INCLUDE "scripts/FishingGuruHouse.asm"
+INCLUDE "data/maps/objects/FishingGuruHouse.asm"
 
 
 SECTION "Maps 13", ROMX

@@ -62,4 +62,5 @@ Music:
 	dba Music_RocketRBY
 	dba Music_GiovanniBattle
 	dba Music_EliteFourBattle
-	dba Music_ChampRival
+	; dba Music_ChampRival
+	dba Music_GalarBirds

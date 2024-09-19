@@ -74,10 +74,10 @@ KeyItemFlags:
 	dbit TRUE  ; SILPH_SCOPE
 	dbit TRUE  ; POKE_FLUTE
 	dbit TRUE  ; LIFT_KEY
-	dbit TRUE ; EXP_ALL - Did you know this wasn't a key item originally? Yeesh, what if someone sold or tossed it??
+	dbit TRUE  ; EXP_ALL - Did you know this wasn't a key item originally? Yeesh, what if someone sold or tossed it??
 	dbit TRUE  ; was TRUE for OLD_ROD, now CANDY_JAR
-	dbit FALSE  ; was GOOD_ROD & TRUE, now BOTTLE_CAP
-	dbit TRUE  ; SUPER_ROD
+	dbit FALSE ; was GOOD_ROD & TRUE, now BOTTLE_CAP
+	dbit TRUE  ; FISHING_ROD
 	dbit FALSE ; PP_UP
 	dbit FALSE ; ETHER
 	dbit FALSE ; MAX_ETHER

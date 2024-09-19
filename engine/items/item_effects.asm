@@ -72,7 +72,7 @@ ItemUsePtrTable:
 	dw ItemUseMedicine   ; REVIVE
 	dw ItemUseMedicine   ; MAX_REVIVE
 	dw ItemUseGuardSpec  ; GUARD_SPEC
-	dw ItemUseSuperRepel ; SUPER_REPL
+	dw ItemUseSuperRepel ; SUPER_REPEL
 	dw ItemUseMaxRepel   ; MAX_REPEL
 	dw ItemUseDireHit    ; DIRE_HIT
 	dw UnusableItem      ; COIN
@@ -92,10 +92,10 @@ ItemUsePtrTable:
 	dw ItemUsePokeflute  ; POKE_FLUTE
 	dw UnusableItem      ; LIFT_KEY
 	dw UnusableItem      ; EXP_ALL
-	dw ItemUseCandyJar    ; was OLD_ROD, now CANDY_JAR
-	dw UnusableItem    ; was GOOD_ROD, now BOTTLE_CAP
-	dw ItemUseSuperRod   ; SUPER_ROD
-	dw ItemUsePPUp       ; PP_UP (real one)
+	dw ItemUseCandyJar   ; was OLD_ROD, now CANDY_JAR
+	dw UnusableItem      ; was GOOD_ROD, now BOTTLE_CAP
+	dw ItemUseFishingRod ; FISHING_ROD
+	dw ItemUsePPUp       ; PP_UP
 	dw ItemUsePPRestore  ; ETHER
 	dw ItemUsePPRestore  ; MAX_ETHER
 	dw ItemUsePPRestore  ; ELIXER
@@ -110,11 +110,11 @@ ItemUsePtrTable:
 	dw ItemUseEvoStone   ; UP_GRADE
 	dw ItemUseEvoStone   ; METAL_COAT
 	dw ItemUseMysteryBox ; MYSTERY_BOX
-	dw UnusableItem		 ; TEA
-	dw ItemUseLetter	 ; SILPHLETTER
+	dw UnusableItem      ; TEA
+	dw ItemUseLetter     ; SILPHLETTER
 	dw UnusableItem      ; FLOOR_B2F
 	dw UnusableItem      ; FLOOR_B1F
-    dw UnusableItem      ; FLOOR_1F
+   	dw UnusableItem      ; FLOOR_1F
 	dw UnusableItem      ; FLOOR_2F
 	dw UnusableItem      ; FLOOR_3F
 	dw UnusableItem      ; FLOOR_4F
@@ -782,8 +782,17 @@ ItemUseLapras:
 	ld a, 2
 	ld [wWalkBikeSurfState], a ; change player state to surfing
 	call PlayDefaultMusic ; play surfing music
+	
+	; no jimmy i will NOT make a new item
+	ld hl, SurfingGotOnLaprasText
+	ld a, [wSurfMonItemSwitch] ; check if the mon item switch has been set
+	and a
+	jr z, .skip
+	
 	ld hl, SurfingGotOnText
+.skip ; now shut the fuck up
 	jp PrintText
+
 .tryToStopSurfing
 	xor a
 	ldh [hSpriteIndexOrTextID], a
@@ -849,6 +858,10 @@ ItemUseLapras:
 
 SurfingGotOnText:
 	text_far _SurfingGotOnText
+	text_end
+
+SurfingGotOnLaprasText:
+	text_far _SurfingGotOnLaprasText
 	text_end
 
 SurfingNoPlaceToGetOffText:
@@ -1986,16 +1999,31 @@ CoinCaseNumCoinsText:
 
 ;INCLUDE "data/wild/good_rod.asm"
 
-ItemUseSuperRod:
+ItemUseFishingRod:
 	call FishingInit
 	jp c, ItemUseNotTime
-	call ReadSuperRodData
-	ld a, e
+	call ReadFishingRodData
+	ld c, e
+	ld b, d
+	ld a, $2
+	ld [wRodResponse], a
+	ld a, c
+	and a ; are there fish in the map?
+	jr z, DoNotGenerateFishingEncounter ; if not, do not generate an encounter
+	ld a, $1
+	ld [wRodResponse], a
+	call Random
+	and $1
+	jr nz, RodResponse
+	xor a
+	ld [wRodResponse], a
+	jr DoNotGenerateFishingEncounter
+
 RodResponse:
 	ld [wRodResponse], a
 
 	dec a ; is there a bite?
-	jr nz, .next
+	jr nz, DoNotGenerateFishingEncounter
 	; if yes, store level and species data
 	ld a, 1
 	ld [wMoveMissed], a
@@ -2004,7 +2032,7 @@ RodResponse:
 	ld a, c ; species
 	ld [wCurOpponent], a
 
-.next
+DoNotGenerateFishingEncounter:
 	ld hl, wWalkBikeSurfState
 	ld a, [hl] ; store the value in a
 	push af
@@ -2029,7 +2057,7 @@ FishingInit:
 	ret c
 	ld a, [wWalkBikeSurfState]
 	cp 2 ; Surfing?
-	jr z, .surfing
+	jr z, .cannotFish
 	call ItemUseReloadOverworldData
 	ld hl, ItemUseText00
 	call PrintText
@@ -2039,7 +2067,7 @@ FishingInit:
 	call DelayFrames
 	and a
 	ret
-.surfing
+.cannotFish
 	scf ; can't fish when surfing
 	ret
 
@@ -2971,52 +2999,47 @@ IsNextTileShoreOrWater:
 
 INCLUDE "data/tilesets/water_tilesets.asm"
 
-ReadSuperRodData:
-; return e = 2 if no fish on this map
-; return e = 1 if a bite, bc = level,species
-; return e = 0 if no bite
+ReadFishingRodData:
 	ld a, [wCurMap]
-	ld de, 3 ; each fishing group is three bytes wide
-	ld hl, SuperRodData
-	call IsInArray
-	jr c, .ReadFishingGroup
-	ld e, $2 ; $2 if no fishing groups found
-	ret
-
-.ReadFishingGroup
-; hl points to the fishing group entry in the index
-	inc hl ; skip map id
-
-	; read fishing group address
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-
-	ld b, [hl] ; how many mons in group
-	inc hl ; point to data
-	ld e, $0 ; no bite yet
-
-.RandomLoop
-	call Random
-	srl a
-	ret c ; 50% chance of no battle
-
-	and %11 ; 2-bit random number
-	cp b
-	jr nc, .RandomLoop ; if a is greater than the number of mons, regenerate
-
-	; get the mon
-	add a
 	ld c, a
-	ld b, $0
-	add hl, bc
-	ld b, [hl] ; level
-	inc hl
-	ld c, [hl] ; species
-	ld e, $1 ; $1 if there's a bite
+	ld hl, FishingRodSlots
+.loop
+	ld a, [hli]
+	cp $ff
+	jr z, .notfound
+	cp c
+	jr z, .found
+	ld de, $8
+	add hl, de
+	jr .loop
+.found
+	call GenerateRandomFishingEncounter
+	ret
+.notfound
+	ld de, $0
 	ret
 
-INCLUDE "data/wild/super_rod.asm"
+GenerateRandomFishingEncounter:
+	call Random
+	cp $66
+	jr c, .asm_f5ed6
+	inc hl
+	inc hl
+	cp $b2
+	jr c, .asm_f5ed6
+	inc hl
+	inc hl
+	cp $e5
+	jr c, .asm_f5ed6
+	inc hl
+	inc hl
+.asm_f5ed6
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	ret
+
+INCLUDE "data/wild/fishing_rod.asm"
 
 ; reloads map view and processes sprite data
 ; for items that cause the overworld to be displayed

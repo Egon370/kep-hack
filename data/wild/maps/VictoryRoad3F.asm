@@ -7,7 +7,7 @@ VictoryRoad3FWildMons:
 	db 43, RHYHORN
 	db 43, GOLBAT
 	db 44, GAVILLAIN
-	db 44, SANDSLASH
+	db 50, CHANSEY ; Possible to Repel Trick, used for grinding.
 	db 44, PARASECT
 	db 45, DIGLETT
 	end_grass_wildmons

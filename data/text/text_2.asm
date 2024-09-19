@@ -674,7 +674,9 @@ _ViridianBlackboardSleepText::
 	cont "battles."
 
 	para "Use AWAKENING to"
-	line "wake them up!"
+	line "wake it up, or"
+	cont "wait for it to"
+	cont "wake itself up!"
 	prompt
 
 _ViridianBlackboardPoisonText::
@@ -695,11 +697,11 @@ _ViridianBlackboardPoisonText::
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
+	text "Paralysis may"
+	line "make a #MON"
+	cont "unable to act!"
 	
-	para "It even lowers"
+	para "It also lowers"
 	line "their SPEED!"
 
 	para "Paralysis remains"

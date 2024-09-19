@@ -179,7 +179,7 @@ SortItems::
 	ld de, 0
 	ld hl, ItemSortList
 	ld b, [hl] ; This is the first item to check for
-	ld hl, wBagItems
+	call .ldHLbagorbox
 	ld c, 0 ; Relative to wBagItems, this is where we'd like to begin swapping
 .loopCurrItemInBag
 	ld a, [hl] ; Load the value of hl to a (which is an item number) and Increments to the quantity
@@ -196,7 +196,7 @@ SortItems::
 	ld hl, ItemSortList
 	add hl, de
 	ld b, [hl]
-	ld hl, wBagItems ; Resets hl to start at the beginning of the bag
+	call .ldHLbagorbox ; Resets hl to start at the beginning of the bag
 	ld a, b
 	cp -1 ; Check if we got through all of the items, to the last one
 	jr z, .finishedSwapping
@@ -207,7 +207,7 @@ SortItems::
 	push de
 	ld d, h
 	ld e, l
-	ld hl, wBagItems
+	call .ldHLbagorbox
 	ld a, b
 	ld b, 0
 	add hl, bc ; hl now holds where we'd like to swap to
@@ -240,6 +240,15 @@ SortItems::
 	pop de
 	jr .findNextItem
 
+;Allow for sorting both the bag and the item PC box
+.ldHLbagorbox
+	ld hl, wBagItems
+	ld a, [wFlags_0xcd60]
+	bit 4, a
+	ret z
+	ld hl, wBoxItems
+	ret
+
 SortItemsText::
 	text_far _SortItemsText
 	db "@"
@@ -255,7 +264,7 @@ NothingToSort::
 ItemSortList::
 	; Used Key Items
 	db BICYCLE
-	db SUPER_ROD
+	db FISHING_ROD
 	db POCKET_LAPRAS
 	db ITEMFINDER
 	db TOWN_MAP

@@ -20,11 +20,6 @@ Plateau_Block::     INCBIN "gfx/blocksets/plateau.bst"
 
 SECTION "Tilesets 2", ROMX
 
-Dojo_GFX::
-Gym_GFX::           INCBIN "gfx/tilesets/gym.2bpp"
-Dojo_Block::
-Gym_Block::         INCBIN "gfx/blocksets/gym.bst"
-
 Mart_GFX::
 Pokecenter_GFX::    INCBIN "gfx/tilesets/pokecenter.2bpp"
 Mart_Block::
@@ -78,6 +73,11 @@ House_GFX::         INCBIN "gfx/tilesets/house.2bpp"
 House_Block::       INCBIN "gfx/blocksets/house.bst"
 
 SECTION "Tilesets 5", ROMX
+
+Dojo_GFX::
+Gym_GFX::           INCBIN "gfx/tilesets/gym.2bpp"
+Dojo_Block::
+Gym_Block::         INCBIN "gfx/blocksets/gym.bst"
 
 Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"
 Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"

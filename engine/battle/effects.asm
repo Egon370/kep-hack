@@ -831,7 +831,6 @@ ThrashPetalDanceEffect:
 	inc a
 	ld [de], a ; set thrash/petal dance counter to 2 or 3 at random
 	ldh a, [hWhoseTurn]
-	add SHRINKING_SQUARE_ANIM
 	jp PlayBattleAnimation2
 
 SwitchAndTeleportEffect:

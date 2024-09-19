@@ -365,6 +365,8 @@ OaksLabScript9: ; This is where Blue picks up the ball and removes the sprite.
 	cp $7
 	jr nz, .rivalDidNotChoseBall4
 	ld a, HS_STARTER_BALL_4
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, HS_DAMIEN			; This makes the starter gifts show up if you and your rival picked Pikachu and Eevee. It used to be coded differently but for some reason they still showed up if you picked Charmander or Squirtle, so I had to change it.
 	ld [wMissableObjectIndex], a
 	predef ShowObject
@@ -374,6 +376,8 @@ OaksLabScript9: ; This is where Blue picks up the ball and removes the sprite.
 	jr .hideBallAndContinue
 .rivalDidNotChoseBall4
 	ld a, HS_STARTER_BALL_5
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, HS_DAMIEN
 	ld [wMissableObjectIndex], a
 	predef ShowObject

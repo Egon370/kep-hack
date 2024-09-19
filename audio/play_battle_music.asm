@@ -26,6 +26,8 @@ PlayBattleMusic::
 	jp z, .legendaryBattle
 	cp OMEGADGE
 	jp z, .legendaryBattle
+	cp ARCANINE
+	jp z, .legendaryBattle
 	cp SNORLAX ; Just like LGPE. Snorlax is basically a legendary in RBY, so I love this.
 	jp z, .legendaryBattle
 	cp DRATINI ; In the Tajiri lore, the Dratini family is considered legendary. Also, we have a static Dragonite. I think the appearance of Dratini in the Safari Zone with this theme could also add some reeeeeal nice hype to the whole ordeal.
@@ -35,11 +37,11 @@ PlayBattleMusic::
 	cp DRAGONITE
 	jp z, .legendaryBattle
 	cp ARTICUNO_G
-	jp z, .legendaryBattle
+	jp z, .birdsBattle
 	cp ZAPDOS_G
-	jp z, .legendaryBattle
+	jp z, .birdsBattle
 	cp MOLTRES_G
-	jp z, .legendaryBattle
+	jp z, .birdsBattle
 	cp OPP_ID_OFFSET
 	jp c, .wildBattle
 	cp OPP_YUJIROU
@@ -106,6 +108,9 @@ PlayBattleMusic::
 	jr .playSong
 .legendaryBattle
 	ld a, MUSIC_LEGENDARYBATTLE
+	jr .playSong
+.birdsBattle
+	ld a, MUSIC_GALAR_BIRDS
 	jr .playSong
 .wildBattle
 	ld a, MUSIC_WILD_BATTLE
