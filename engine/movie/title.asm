@@ -129,7 +129,6 @@ DisplayTitleScreen:
 	call Random
 	ldh a, [hRandomSub]
 	cp 129
-<<<<<<< HEAD
 	jr c, .notdecadybug
 	ld a, DECADYBUG
 	ld [wTitleMonSpecies], a
