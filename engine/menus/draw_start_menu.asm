@@ -73,6 +73,9 @@ StartMenuPokemonText:
 
 StartMenuItemText:
 	db "ITEM@"
+	
+StartMenuPortablePCText: ; new
+	db "PORT.PC@"	
 
 StartMenuSaveText:
 	db "SAVE@"
@@ -86,9 +89,6 @@ StartMenuExitText:
 StartMenuOptionText:
 	db "OPTION@"
 	
-StartMenuPortablePCText: ; new
-	db "PORT.PC@"
-
 PrintStartMenuItem:
 	push hl
 	call PlaceString
