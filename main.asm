@@ -349,15 +349,15 @@ INCLUDE "engine/items/itemfinder.asm"
 INCLUDE "engine/menus/league_pc.asm"
 INCLUDE "engine/events/hidden_items.asm"
 INCLUDE "engine/overworld/use_another_repel.asm"
-INCLUDE "data/battle_anims/frame_blocks.asm"
+INCLUDE "engine/overworld/cut2.asm"
 
 SECTION "bank1E", ROMX
 
 INCLUDE "engine/battle/animations.asm"
-INCLUDE "engine/overworld/cut2.asm"
 INCLUDE "engine/overworld/dust_smoke.asm"
 INCLUDE "data/moves/animations.asm"
 INCLUDE "data/battle_anims/subanimations.asm"
+INCLUDE "data/battle_anims/frame_blocks.asm"
 
 SECTION "Engine Spillover", ROMX
 
