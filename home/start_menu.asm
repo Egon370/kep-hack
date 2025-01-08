@@ -61,6 +61,9 @@ RedisplayStartMenu::
 	ld a, [wCurrentMenuItem]
 	jr nz, .displayMenuItem
 	inc a ; adjust position to account for missing pokedex menu item
+	cp 3
+	jr c, .displayMenuItem
+	inc a ; adjust again to account for missing portpc
 .displayMenuItem
 	cp 0
 	jp z, StartMenu_Pokedex
